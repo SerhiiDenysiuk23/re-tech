@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RETECH</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/slick/slick.css">
+  <link rel="stylesheet" href="styles/index.css">
+
+</head>
+<body>
+<header>
+
+
+  <section class="container">
+    <div class="row justify-content-between w-100 desktop">
+      <div class="col col-lg-9 col-xl-8">
+        <ul class="list-main">
+          <li>
+            <svg class="icon-s">
+              <use xlink:href="../assets/icons/sprites.svg#phone"></use>
+            </svg>
+            <b>0800 331 221</b>
+          </li>
+          <li>
+            <svg class="icon-s">
+              <use xlink:href="../assets/icons/sprites.svg#mail"></use>
+            </svg>
+            info@re-tech.com.ua
+          </li>
+          <li>
+            <svg class="icon-promo">
+              <use xlink:href="../assets/icons/sprites.svg#promo"></use>
+            </svg>
+            Акції
+          </li>
+
+        </ul>
+
+      </div>
+      <div class="col-2 text-end authorize">
+        <a href="#">
+          <svg class="icon-s">
+            <use xlink:href="../assets/icons/sprites.svg#authorization"></use>
+          </svg>
+          Авторизація
+        </a>
+      </div>
+    </div>
+
+    <div class="row w-100 mobile">
+      <div class="col-6">
+        <ul class="list-main">
+          <li>
+            <b>0800 331 221</b>
+          </li>
+          <li>
+            info@re-tech.com.ua
+          </li>
+        </ul>
+
+      </div>
+      <div class="col-6 text-end authorize">
+        <div class="trade-in-col justify-content-center d-flex">
+          <a href="/trade-in" previewlistener="true">
+            <div class="trade-in desktop">
+              Trade In
+            </div>
+          </a>
+        </div>
+
+        <a href="#">
+          <svg class="icon-s">
+            <use xlink:href="../assets/icons/sprites.svg#authorization"></use>
+          </svg>
+          Авторизація
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="row align-items-center">
+
+      <div class="col-lg-3 col-md-3 col-12">
+        <div class="logo">
+          <a href="/" previewlistener="true"><img src="assets/images/logo.png" alt="logo"></a>
+        </div>
+      </div>
+
+      <div class="col-lg-5 col-md-4 col-12">
+        <div class="search-bar-top">
+          <div class="search-bar">
+            <form class="search-form-desktop">
+              <input type="hidden" name="_token" value="65iv1JinNf0I8cfLXoxZ20Qh0hAdGqf6opM0Pv1i" autocomplete="off">
+              <input name="q" placeholder="Шукати товари....." type="search" class="search-form-input">
+              <button class="btnn" id="inptTopSearch"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-2 trade-in-col justify-content-center d-flex">
+        <a href="/trade-in" previewlistener="true">
+          <div class="trade-in desktop">
+            Trade In
+          </div>
+        </a>
+      </div>
+
+      <div class="col-lg-2 col-md-3 col-12 right-bar justify-content-between d-flex">
+        <div class="single-bar">
+          <a href="/account/wishlist" class="single-icon" title="Cписок бажань | Кабінет користувача"
+             previewlistener="true">
+            <svg class="icon-m">
+              <use xlink:href="../assets/icons/sprites.svg#heart"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="single-bar">
+          <a href="/account/personal-information" class="single-icon"
+             title="Персональна інформація | Кабінет користувача" previewlistener="true">
+            <svg class="icon-m">
+              <use xlink:href="../assets/icons/sprites.svg#user"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="single-bar shopping" id="usercart_top">
+          <a href="/cart" class="single-icon" previewlistener="true">
+            <svg class="icon-m">
+              <use xlink:href="../assets/icons/sprites.svg#basket"></use>
+            </svg>
+          </a>
+          <div class="shopping-item">
+            <span>Ваш кошик порожній</span>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</header>
+
+
+<main>
+  <section class="container">
+    <div class="cat-nav-head">
+      <div class="row ">
+
+        <!--        dropdown-hover-all-->
+        <div class="col-lg-3">
+
+          <div class="dropdown">
+
+            <div class="all-category dropdown-toggle" id="global-categories" data-bs-toggle="dropdown"
+                 aria-haspopup="true"
+                 aria-expanded="false">
+              <h3 class="cat-heading">Каталог</h3>
+
+              <svg class="button-arrow">
+                <use xlink:href="../assets/icons/sprites.svg#button-arrow"></use>
+              </svg>
+
+            </div>
+
+            <div class="dropdown-menu" aria-labelledby="global-categories">
+              <div class="dropdown dropend">
+
+                <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-layouts" data-bs-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">Apple</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown-layouts">
+                  <li><a class="dropdown-item" href="#">Basic</a></li>
+                  <li><a class="dropdown-item" href="#">Compact Aside</a></li>
+                </ul>
+
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="col-9 breadcrumbs align-items-center d-flex">
+          <div class="bread-inner">
+
+            <ul class="bread-list">
+              <li><a href="/" previewlistener="true">Home</a></li>
+              <li><a href="/" previewlistener="true">Category</a></li>
+              <li class="active"> Name of product</li>
+            </ul>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container product">
+    <div class="row">
+      <div class="col-4">
+        <div class="product-gallery">
+          <div id="product-gallery" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/images/32.jpg" class="d-block w-100" alt="Slide 1">
+                <div class="info-icons-group">
+                  <img src="assets/icons/Battery.svg" alt="">
+                  <img src="assets/icons/24.svg" alt="">
+                  <img src="assets/icons/Private.svg" alt="">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/images/5331.jpg" class="d-block w-100" alt="Slide 2">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/images/5330.jpg" class="d-block w-100" alt="Slide 3">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/images/5329.jpg" class="d-block w-100" alt="Slide 4">
+              </div>
+            </div>
+          </div>
+
+          <div class="thumbnails mt-3 text-center">
+            <div class="thumbnail active" data-bs-target="#product-gallery" data-bs-slide-to="0">
+              <img src="assets/images/32.jpg" alt="Slide 1 Thumbnail">
+            </div>
+            <div class="thumbnail" data-bs-target="#product-gallery" data-bs-slide-to="1">
+              <img src="assets/images/5331.jpg" alt="Slide 2 Thumbnail">
+            </div>
+            <div class="thumbnail" data-bs-target="#product-gallery" data-bs-slide-to="2">
+              <img src="assets/images/5330.jpg" alt="Slide 3 Thumbnail">
+            </div>
+            <div class="thumbnail" data-bs-target="#product-gallery" data-bs-slide-to="3">
+              <img src="assets/images/5329.jpg" alt="Slide 4 Thumbnail">
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="col-8">
+
+        <div class="row">
+          <div class="product-des">
+            <div class="short">
+              <h1>Apple iPhone 14 Pro Max 512GB Space Black (MQAF3)</h1>
+            </div>
+
+            <div class="color-size d-flex">
+
+              <div class="color product-des-first-col">
+                <h4> Кольори</h4>
+                <ul>
+                  <li><a href="/product/apple-iphone-14-pro-max-512gb-deep-purple" class="color-filter-value-341"
+                         title="фіолетовий"><i class="ti-check"></i></a></li>
+
+                  <li><a href="/product/apple-iphone-14-pro-max-512gb-gold" class="color-filter-value-474"
+                         title="золотистий"><i class="ti-check"></i></a></li>
+
+                  <li><a href="/product/apple-iphone-14-pro-max-512gb-silver" class="color-filter-value-507"
+                         title="сріблястий"><i class="ti-check"></i></a></li>
+
+                </ul>
+              </div>
+
+              <div class="size">
+                <h4>Пам`ять</h4>
+                <ul>
+
+                  <li><a href="/product/apple-iphone-14-pro-max-128gb-space-black" class="one">128</a></li>
+
+
+                  <li><a href="/product/apple-iphone-14-pro-max-1tb-space-black" class="one">1000</a></li>
+
+
+                  <li><a class="one selected">512</a></li>
+                </ul>
+
+              </div>
+
+            </div>
+
+            <div class="product-buy d-flex">
+              <div class="prices product-des-first-col">
+
+                <p class="price">
+                  56 155грн
+
+                </p>
+              </div>
+              <div class="add-to-cart d-flex">
+                <a href="#" class="btn addToCart addToCartSingle addToCart_40" iditem="40" source="normalUserCart">Купити</a>
+                <input type="hidden" name="qty" value="1" id="qty_40" class="qtItem" iditem="40"
+                       source="normalUserCart">
+                <input type="hidden" name="extwarranty" value="0" id="extwarranty" class="extwarranty">
+
+                <a href="/trade-in" class="btn trade-in">Хочу дешевше на 10000 грн</a>
+              </div>
+            </div>
+
+            <div class="credit-buy d-flex align-items-center">
+              <div class="credit-buy-header product-des-first-col">
+                <h6 class="credit-price">18 719 грн/міс</h6>
+                <p>Оплата частинами від</p>
+              </div>
+
+              <a href="#" class="creditBuyBank addToCart addToCart_2543" iditem="2543" source="pay_parts" bank_id="1"
+                 pay_parts_count="3">
+                <img src="assets/images/privateLogo.png" class="creditBuyBankIco">
+              </a>
+            </div>
+
+            <div class="extWarranty">
+
+              <h6>Гарантія</h6>
+
+              <ul>
+                <li>
+                  <a class="btn warranty selected text-center warranty_0 " iditem="0">12 місяців від виробника<br>Безкоштовно</a>
+                </li>
+                <li>
+                  <a href="#" class="btn warranty  text-center warranty_4904" iditem="4904">12 місяців<br>1 499 грн</a>
+                </li>
+                <li>
+                  <a href="#" class="btn warranty  text-center warranty_4905" iditem="4905">24 місяця<br>2 499 грн</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="delivery-payment">
+            <div class="delivery col-12">
+              <h6>Доставка <i class="fas fa-info-circle" data-bs-toggle="modal" data-bs-target="#modalDelivery"></i>
+              </h6>
+              <ul>
+
+                <li>
+                  <span>
+                      <svg class="icon-xs">
+                        <use xlink:href="../assets/icons/sprites.svg#building"></use>
+                      </svg>
+                      Самовивіз із нашого магазину.
+                      <i class="fas fa-question-circle" data-bs-toggle="modal"
+                         data-bs-target="#modalDeliveryPickUp"></i>
+                  </span>
+                  <span>Безкоштовно</span>
+                </li>
+
+                <li>
+                  <span>
+                     <svg class="icon-xs">
+                        <use xlink:href="../assets/icons/sprites.svg#nova-post"></use>
+                      </svg>
+                      Доставка службою "Нова Пошта".
+                      <i class="fas fa-question-circle" data-bs-toggle="modal" data-bs-target="#modalDeliveryNP"></i>
+                  </span>
+                  <span>Безкоштовно</span>
+                </li>
+
+                <li>
+                  <span>
+                     <svg class="icon-xs">
+                        <use xlink:href="../assets/icons/sprites.svg#car"></use>
+                      </svg>
+                    Доставка кур'єром по Києву.</span>
+                  <span>Безкоштовно</span>
+                </li>
+              </ul>
+
+            </div>
+
+            <div class="payment  col-12">
+              <h6>Оплата <i class="fas fa-info-circle" data-bs-toggle="modal" data-bs-target="#modalPayment"></i></h6>
+              <ul>
+                <li>
+                  <svg class="icon-xs">
+                    <use xlink:href="../assets/icons/sprites.svg#cash"></use>
+                  </svg>
+                  Готівкою
+                  <i class="fas fa-question-circle" data-bs-toggle="modal" data-bs-target="#modalPaymentCash"></i>
+                  <span>Без комісії</span>
+                </li>
+
+                <li>
+                  <svg class="icon-xs">
+                    <use xlink:href="../assets/icons/sprites.svg#credit-card"></use>
+                  </svg>
+                  Карткою
+                  <i class="fas fa-question-circle" data-bs-toggle="modal" data-bs-target="#modalPaymentCard"></i>
+                  <span>1,5% комісія</span>
+                </li>
+
+                <li>
+                  <svg class="icon-xs">
+                    <use xlink:href="../assets/icons/sprites.svg#credit"></use>
+                  </svg>
+                  Оплата частинами і розстрочка
+                  <i class="fas fa-question-circle" data-bs-toggle="modal"
+                     data-bs-target="#modalPaymentCredit"></i>
+                  <span>Без комісії</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="row pt-5">
+      <div class="col-12">
+
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="section-title d-flex justify-content-between align-center">
+                <div class="d-flex section-title-left">
+
+                  <h2><b>Рекомендуємо замовити</b></h2>
+                </div>
+                <div class="section-title-right">
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-list-wrapper">
+            <div class="product-list-slider">
+              <div class="product-list-slider__item">
+                <div class="single-product">
+                  <div class="product-img">
+                    <a href="/product/acefast-d7-car-mount-magnetic-holder-afd7">
+                      <img class="product-img" src="assets/images/32.jpg" alt="#">
+                    </a>
+                    <div class="button-head">
+                      <div class="product-action">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-content">
+                    <h3><a href="/product/acefast-d7-car-mount-magnetic-holder-afd7">Acefast D7 Car Mount Magnetic
+                      Holder (AFD7)</a></h3>
+
+                    <div class="product-price d-flex justify-content-between align-items-end">
+                      <div class="current">23 144 грн</div>
+                      <div class="old">26 199 грн</div>
+                    </div>
+                    <div class="product-buy">
+                      <div class="add-to-cart">
+                        Купити
+                        <svg class="button-arrow">
+                          <use xlink:href="../assets/icons/sprites.svg#button-arrow"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-list-slider__item">
+                <div class="single-product">
+                  <div class="product-img">
+                    <a href="/product/acefast-d7-car-mount-magnetic-holder-afd7">
+                      <img class="product-img" src="assets/images/32.jpg" alt="#">
+                    </a>
+                    <div class="button-head">
+                      <div class="product-action">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-content">
+                    <h3><a href="/product/acefast-d7-car-mount-magnetic-holder-afd7">Acefast D7 Car Mount Magnetic
+                      Holder (AFD7)</a></h3>
+
+                    <div class="product-price d-flex justify-content-between align-items-end">
+                      <div class="current">23 144 грн</div>
+                      <div class="old">26 199 грн</div>
+                    </div>
+                    <div class="product-buy">
+                      <div class="add-to-cart">
+                        Купити
+                        <svg class="button-arrow">
+                          <use xlink:href="../assets/icons/sprites.svg#button-arrow"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-list-slider__item">
+                <div class="single-product">
+                  <div class="product-img">
+                    <a href="/product/acefast-d7-car-mount-magnetic-holder-afd7">
+                      <img class="product-img" src="assets/images/32.jpg" alt="#">
+                    </a>
+                    <div class="button-head">
+                      <div class="product-action">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-content">
+                    <h3><a href="/product/acefast-d7-car-mount-magnetic-holder-afd7">Acefast D7 Car Mount Magnetic
+                      Holder (AFD7)</a></h3>
+
+                    <div class="product-price d-flex justify-content-between align-items-end">
+                      <div class="current">23 144 грн</div>
+                      <div class="old">26 199 грн</div>
+                    </div>
+                    <div class="product-buy">
+                      <div class="add-to-cart">
+                        Купити
+                        <svg class="button-arrow">
+                          <use xlink:href="../assets/icons/sprites.svg#button-arrow"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-list-slider__item">
+                <div class="single-product">
+                  <div class="product-img">
+                    <a href="/product/acefast-d7-car-mount-magnetic-holder-afd7">
+                      <img class="product-img" src="assets/images/32.jpg" alt="#">
+                    </a>
+                    <div class="button-head">
+                      <div class="product-action">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-content">
+                    <h3><a href="/product/acefast-d7-car-mount-magnetic-holder-afd7">Acefast D7 Car Mount Magnetic
+                      Holder (AFD7)</a></h3>
+
+                    <div class="product-price d-flex justify-content-between align-items-end">
+                      <div class="current">23 144 грн</div>
+                      <div class="old">26 199 грн</div>
+                    </div>
+                    <div class="product-buy">
+                      <div class="add-to-cart">
+                        Купити
+                        <svg class="button-arrow">
+                          <use xlink:href="../assets/icons/sprites.svg#button-arrow"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-list-slider__item">
+                <div class="single-product">
+                  <div class="product-img">
+                    <a href="/product/acefast-d7-car-mount-magnetic-holder-afd7">
+                      <img class="product-img" src="assets/images/32.jpg" alt="#">
+                    </a>
+                    <div class="button-head">
+                      <div class="product-action">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-content">
+                    <h3><a href="/product/acefast-d7-car-mount-magnetic-holder-afd7">Acefast D7 Car Mount Magnetic
+                      Holder (AFD7)</a></h3>
+
+                    <div class="product-price d-flex justify-content-between align-items-end">
+                      <div class="current">23 144 грн</div>
+                      <div class="old">26 199 грн</div>
+                    </div>
+                    <div class="product-buy">
+                      <div class="add-to-cart">
+                        Купити
+                        <svg class="button-arrow">
+                          <use xlink:href="../assets/icons/sprites.svg#button-arrow"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-list-slider__item">
+                <div class="single-product">
+                  <div class="product-img">
+                    <a href="/product/acefast-d7-car-mount-magnetic-holder-afd7">
+                      <img class="product-img" src="assets/images/32.jpg" alt="#">
+                    </a>
+                    <div class="button-head">
+                      <div class="product-action">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-content">
+                    <h3><a href="/product/acefast-d7-car-mount-magnetic-holder-afd7">Acefast D7 Car Mount Magnetic
+                      Holder (AFD7)</a></h3>
+
+                    <div class="product-price d-flex justify-content-between align-items-end">
+                      <div class="current">23 144 грн</div>
+                      <div class="old">26 199 грн</div>
+                    </div>
+                    <div class="product-buy">
+                      <div class="add-to-cart">
+                        Купити
+                        <svg class="button-arrow">
+                          <use xlink:href="../assets/icons/sprites.svg#button-arrow"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <button class="slick-prev slick-arrows">
+              <svg>
+                <use xlink:href="../assets/icons/sprites.svg#slider-arrow"></use>
+              </svg>
+            </button>
+            <button class="slick-next slick-arrows">
+              <svg>
+                <use xlink:href="../assets/icons/sprites.svg#slider-arrow"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <div class="product-info">
+
+          <nav class="nav-main">
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <button class="nav-link active" id="nav-feature-tab" data-bs-toggle="tab" data-bs-target="#nav-feature"
+                      type="button" role="tab" aria-controls="nav-feature" aria-selected="true">Характеристики товару
+              </button>
+              <button class="nav-link" id="nav-review-tab" data-bs-toggle="tab" data-bs-target="#nav-review"
+                      type="button" role="tab" aria-controls="nav-review" aria-selected="false" tabindex="-1">Відгуки
+              </button>
+
+
+            </div>
+          </nav>
+
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade " id="nav-description" role="tabpanel" aria-labelledby="nav-description-tab">
+              <div class="tab-single">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="single-des">
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade active show" id="nav-feature" role="tabpanel" aria-labelledby="nav-feature-tab">
+              <div class="tab-single">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="single-des product-specifics">
+                      <ul>
+                        <li class=""><strong>Бренд</strong> : <span>Apple</span></li>
+                        <li class=""><strong>Оперативна пам'ять, ГБ</strong> : <span>6</span></li>
+                        <li class=""><strong>Діагональ, дюйми</strong> : <span>6,7</span></li>
+                        <li class=""><strong>Основна камера, Мп</strong> : <span>48 (f/1.78, ширококутна) + 12 (f/2.2, 120 градусів, надширококутна) + 12 (f/2.8, 3х кратний телеоб'єктив)</span>
+                        </li>
+                        <li class=""><strong>Лінійка</strong> : <span>iPhone 14 Pro Max</span></li>
+                        <li class=""><strong>Тип</strong> : <span>Смартфон</span></li>
+                        <li class=""><strong>Попередньо встановлена ОС</strong> : <span>iOS 16</span></li>
+                        <li class=""><strong>Вбудована пам'ять, ГБ</strong> : <span>512</span></li>
+                        <li class=""><strong>Слот розширення</strong> : <span>немає</span></li>
+                        <li class=""><strong>Тип SIM-карти</strong> : <span>Nano-SIM</span></li>
+                        <li class="more10 hidden"><strong>Кількість SIM-карт</strong> : <span>SIM + eSIM</span></li>
+                        <li class="more10 hidden"><strong>Процесор</strong> : <span>Apple A16 Bionic</span></li>
+                        <li class="more10 hidden"><strong>Кількість ядер</strong> : <span>6</span></li>
+                        <li class="more10 hidden"><strong>Швидка зарядка, Вт</strong> : <span>20</span></li>
+                        <li class="more10 hidden"><strong>Бездротова зарядка, Вт</strong> : <span>15 (MagSafe)</span>
+                        </li>
+                        <li class="more10 hidden"><strong>Акумулятор</strong> : <span>незнімний</span></li>
+                        <li class="more10 hidden"><strong>Роздільна здатність</strong> : <span>2796x1290</span></li>
+                        <li class="more10 hidden"><strong>Тип матриці</strong> : <span>OLED</span></li>
+                        <li class="more10 hidden"><strong>PPI</strong> : <span>460</span></li>
+                        <li class="more10 hidden"><strong>Датчик регулювання яскравості</strong> : <span>є</span></li>
+                        <li class="more10 hidden"><strong>Відеозйомка</strong> : <span>4K @ 60к / с</span></li>
+                        <li class=""><strong>Фронтальна камера, Мп</strong> : <span>12 (f / 1.9)</span></li>
+                        <li class="more10 hidden"><strong>Стандарти зв'язку</strong> : <span>5G, 4G, 3G, 2G</span></li>
+                        <li class="more10 hidden"><strong>Wi-Fi</strong> : <span>802.11ax</span></li>
+                        <li class="more10 hidden"><strong>Bluetooth</strong> : <span>+ (5.3)</span></li>
+                        <li class="more10 hidden"><strong>GPS</strong> :
+                          <span>+ (GPS, ГЛОНАСС, Galileo, QZSS, BeiDou)</span></li>
+                        <li class="more10 hidden"><strong>Аудіо-кодеки</strong> : <span>AAC</span></li>
+                        <li class="more10 hidden"><strong>Аудіороз'єм</strong> : <span>немає</span></li>
+                        <li class="more10 hidden"><strong>NFC</strong> : <span>+ (Apple Pay)</span></li>
+                        <li class="more10 hidden"><strong>Інтерфейсний роз'єм</strong> : <span>Apple Lightning</span>
+                        </li>
+                        <li class="more10 hidden"><strong>Висота, мм</strong> : <span>160,7</span></li>
+                        <li class="more10 hidden"><strong>Ширина, мм</strong> : <span>77,6</span></li>
+                        <li class="more10 hidden"><strong>Товщина, мм</strong> : <span>7,85</span></li>
+                        <li class="more10 hidden"><strong>Вага, г</strong> : <span>240</span></li>
+                        <li class="more10 hidden"><strong>Захист від пилу і вологи</strong> : <span>+ (IP68)</span></li>
+                        <li class="more10 hidden"><strong>Тип корпусу</strong> : <span>моноблок (нерозбірний)</span>
+                        </li>
+                        <li class="more10 hidden"><strong>Матеріал кришки/рамки</strong> : <span>скло/сталь</span></li>
+                        <li class=""><strong>Колір корпусу</strong> : <span>фіолетовий</span></li>
+                        <li class="more10 hidden"><strong>Тип клавіатури</strong> : <span>екранне введення</span></li>
+                        <li class="more10 hidden"><strong>Сканер відбитка/обличчя</strong> : <span>Сканер обличчя (Face ID)</span>
+                        </li>
+                        <li class="more10 hidden"><strong>Частота оновлення, Гц</strong> : <span>120</span></li>
+                        <li class="more10 hidden"><strong>IrDA</strong> : <span>немає</span></li>
+                        <li class="more10 hidden"><strong>Стереодинаміки</strong> : <span>є</span></li>
+                        <li class=""><strong>Стан</strong> : <span>Новий</span></li>
+                        <li class="more10 hidden"><strong>Гарантія</strong> : <span>12 місяців від виробника</span></li>
+                        <li class="more10"><strong>ID</strong> : <span>2543</span></li>
+                        <div class="show_more_specific_value">
+                          <div>Показати всі характеристики</div>
+                          <svg class="button-arrow">
+                            <use xlink:href="../assets/icons/sprites.svg#button-arrow"></use>
+                          </svg>
+                        </div>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="nav-review" role="tabpanel" aria-labelledby="nav-review-tab">
+              <div class="tab-single review-panel">
+                <div class="row">
+                  <div class="col-12">
+
+                    <div class="comment-review">
+                      <div class="add-review">
+                        <h5>Додати відгук</h5>
+                        <p>Обов`язкові поля позначені маркером</p>
+                      </div>
+                    </div>
+
+
+                    <form class="form" method="post" action="https://re-tech.com.ua/send-product-review"
+                          id="productReviewFormIndex">
+                      <input type="hidden" name="_token" value="Nof1ySdT2gLGKyOipvWK1U7lh2nZRYaKIVZKXMkV"
+                             autocomplete="off">
+                      <div class="row">
+                        <div class="alert alert-success alert-dismissible fade col-12 text-center" role="alert"
+                             style="display: none">
+
+                        </div>
+                        <div class="alert alert-danger alert-dismissible fade col-12 text-center" role="alert"
+                             style="display: none">
+
+                          Щось погане трапилось. Виправте помилки та спробуйте пізніше.
+                        </div>
+                        <div class="col-lg-6 col-12">
+                          <div class="form-group">
+                            <input type="text" class="form-control " id="name" name="name"
+                                   placeholder="Введіть своє ім`я" onfocus="this.placeholder = ''"
+                                   onblur="this.placeholder = 'Введіть своє ім`я'" required="required" value="">
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                          <div class="form-group">
+                            <input type="text" class="form-control " id="email" name="email" placeholder="Ваше Email"
+                                   onfocus="this.placeholder = ''" onblur="this.placeholder = 'Ваше Email'"
+                                   required="required" value="">
+                          </div>
+                        </div>
+                        <div class="col-lg-12 col-12">
+                          <div class="form-group">
+                            <textarea class="form-control " name="message" id="message" rows="8"
+                                      placeholder="Введіть текст повідомлення" onfocus="this.placeholder = ''"
+                                      onblur="this.placeholder = 'Введіть текст повідомлення'"
+                                      required="required">            </textarea>
+                          </div>
+                        </div>
+                        <div class="col-lg-12 col-12">
+                          <div class="form-group button5">
+                            <input type="hidden" id="item_id" name="item_id" value="2543">
+                            <button type="button" class="andro_btn-custom primary" id="btnProductReview" name="button">
+                              Відправити
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <input type="hidden" name="_method" value="POST"></form>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-top section">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-2 d-flex flex-column">
+          <div class="logo">
+            <a href="/"><img src="assets/images/logo.png" alt="#"></a>
+          </div>
+          <div class="copyright">
+            © <span id="date">2024</span> re-tech
+          </div>
+        </div>
+
+        <div class="col-4">
+          <h4>Наша дружня RETECH-команда чекає на ВАС та готова надати найкращі послуги:</h4>
+          <ul>
+            <li>Викуп по програмі Trade-in: можливість обміну вашого старого пристрою на новий.</li>
+            <li>Обмін iPhone на гроші: ви можете обміняти свій iPhone на грошову винагороду.</li>
+            <li>Гарантована якість: всі наші телефони перевірені та сертифіковані в офіційних центрах Apple.</li>
+            <li>Конкурентні ціни: ми пропонуємо доступні та конкурентоспроможні ціни на всі товари.</li>
+          </ul>
+        </div>
+
+        <div class="col-2">
+          <h4>Інформація</h4>
+          <ul>
+            <li><a href="/about">Про нас</a></li>
+            <li><a href="/contacts">Контакти</a></li>
+            <li class="promo-menu"><a href="/promo">Акції</a></li>
+          </ul>
+        </div>
+
+        <div class="col-2">
+          <h4>Обслуговування Клієнтів</h4>
+          <ul>
+            <li><a href="/delivery-and-payments">Умови доставки і оплати товару</a></li>
+            <li><a href="/return">Умови повернення товару</a></li>
+            <li><a href="/terms-of-use">Умови користування сайтом</a></li>
+          </ul>
+        </div>
+
+        <div class="col-2">
+          <h4>Зв`яжіться з нами</h4>
+          <ul>
+            <li>вул. Велика Васильківська, 33, Київ, Україна</li>
+            <li><a href="#">info@re-tech.com.ua</a></li>
+            <li class="phone"><b>0800 331 221</b></li>
+            <li class="social-media">
+              <a href="https://www.facebook.com/retech.tradein">
+                <svg class="icon-m">
+                  <use xlink:href="../assets/icons/sprites.svg#facebook"></use>
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/retech_tradein/">
+                <svg class="icon-m">
+                  <use xlink:href="../assets/icons/sprites.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/504ede88cc.js" crossorigin="anonymous"></script>
+
+<script src="scripts/slick.min.js"></script>
+<script src="scripts/index.js"></script>
+
+<script>
+  (function ($bs) {
+    const CLASS_NAME = 'has-child-dropdown-show';
+    $bs.Dropdown.prototype.toggle = function (_orginal) {
+      return function () {
+        document.querySelectorAll('.' + CLASS_NAME).forEach(function (e) {
+          e.classList.remove(CLASS_NAME);
+        });
+        let dd = this._element.closest('.dropdown').parentNode.closest('.dropdown');
+        for (; dd && dd !== document; dd = dd.parentNode.closest('.dropdown')) {
+          dd.classList.add(CLASS_NAME);
+        }
+        return _orginal.call(this);
+      }
+    }($bs.Dropdown.prototype.toggle);
+
+    document.querySelectorAll('.dropdown').forEach(function (dd) {
+      dd.addEventListener('hide.bs.dropdown', function (e) {
+        if (this.classList.contains(CLASS_NAME)) {
+          this.classList.remove(CLASS_NAME);
+          e.preventDefault();
+        }
+        e.stopPropagation(); // do not need pop in multi level mode
+      });
+    });
+
+    // for hover
+    document.querySelectorAll('.dropdown-hover, .dropdown-hover-all .dropdown').forEach(function (dd) {
+      dd.addEventListener('mouseenter', function (e) {
+        let toggle = e.target.querySelector(':scope>[data-bs-toggle="dropdown"]');
+        if (!toggle.classList.contains('show')) {
+          $bs.Dropdown.getOrCreateInstance(toggle).toggle();
+          dd.classList.add(CLASS_NAME);
+          $bs.Dropdown.clearMenus();
+        }
+      });
+      dd.addEventListener('mouseleave', function (e) {
+        let toggle = e.target.querySelector(':scope>[data-bs-toggle="dropdown"]');
+        if (toggle.classList.contains('show')) {
+          $bs.Dropdown.getOrCreateInstance(toggle).toggle();
+        }
+      });
+    });
+  })(bootstrap);
+
+</script>
+
+</body>
+</html>

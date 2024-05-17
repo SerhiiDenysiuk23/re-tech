@@ -1,0 +1,38 @@
+.bread-list{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+}
+.bread-list li:hover a{
+    color: #b6cb00;
+}
+.bread-list li+li:before {
+    padding: 8px;
+    color: black;
+    content: "🡢";
+}
+
+
+.icon-xs {
+    width: 16px;
+    height: 16px;
+}
+
+.icon-s {
+    width: 25px;
+    height: 25px;
+}
+.icon-m {
+    width: 48px;
+    height: 48px;
+}
+.icon-promo {
+    width: 30px;
+    height: 30px;
+}
+
+.button-arrow{
+    width: 35px;
+    height: 35px;
+}

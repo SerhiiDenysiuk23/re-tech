@@ -1,0 +1,32 @@
+.delivery-payment ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.delivery-payment .icon-xs{
+    margin-right: 0.5em;
+}
+
+.delivery-payment i{
+    color: #b6cb00;
+    cursor: pointer;
+    margin-left: 0.5em;
+}
+
+.delivery-payment ul li{
+    display: flex;
+    align-items: center;
+    width: 70%;
+}
+.delivery-payment ul li span:last-of-type{
+    display: inline-block;
+    margin-left: auto;
+    width: 100px;
+}
+.delivery-payment h6{
+    margin-bottom: 14px;
+}
+
+.delivery-payment > *{
+    margin-top: 45px;
+}

@@ -1,0 +1,167 @@
+@import "categories.css";
+
+header {
+    padding-top: 20px;
+}
+
+header > section{
+    margin-bottom: 30px;
+}
+
+.list-main{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 25px;
+}
+
+.list-main, .authorize{
+    font-weight: 500;
+}
+
+.list-main li{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.logo {
+    float: left;
+    margin: 0;
+    max-width: 251px;
+    width: 100%;
+}
+
+.search-bar-top {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.search-bar {
+    width: 100%;
+    height: 50px;
+    display: inline-block;
+    background: #fff;
+    position: relative;
+    margin: 0;
+    line-height: 45px;
+    border-radius: 50px;
+    border: 2px solid #ececec;
+    transition: all .5s ease-in-out;
+}
+
+.search-bar form {
+    display: inline-block;
+    float: left;
+    width: 260px;
+}
+
+.search-bar input {
+    height: 48px;
+    background: transparent;
+    color: #666;
+    border-radius: 0;
+    border: none;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0 25px 0 20px;
+    width: 328px;
+    outline: none;
+}
+
+input[type=search]::-ms-clear {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+input[type=search]::-ms-reveal {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-cancel-button {
+    display: none;
+}
+
+
+.search-bar .btnn {
+    height: 35.5px;
+    line-height: 38px;
+    width: 60px;
+    text-align: center;
+    font-size: 18px;
+    color: rgb(125, 135, 156);
+    position: absolute;
+    background: transparent;
+    right: 0;
+    top: 5px;
+    border: none;
+    border-radius: 50px;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.right-bar {
+    display: inline-block;
+    position: relative;
+    gap: 5px;
+}
+
+.single-bar .single-icon {
+    position: relative;
+}
+
+.shopping-item {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 300px;
+    background: #fff;
+    padding: 20px 25px;
+    border-radius: 8px;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    transform: translateY(10px);
+    -webkit-box-shadow: rgb(0 0 0 / 16%) 0px 6px 12px;
+    -moz-box-shadow: rgb(0 0 0 / 16%) 0px 6px 12px;
+    box-shadow: rgb(0 0 0 / 16%) 0px 6px 12px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 99;
+}
+
+.shopping:hover .shopping-item {
+    transform: translateY(0px);
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.trade-in-col a{
+    display: inline-block;
+    height: 48px;
+    max-width: 144px;
+    width: 100%;
+}
+
+header .trade-in {
+    height: 100%;
+
+    background: #919ddd;
+    text-align: center;
+    text-transform: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 12px 0;
+    border-radius: 24px;
+}
+
+

@@ -1,0 +1,142 @@
+.product-info{
+    padding: 44px 0;
+}
+
+.nav{
+    border: none;
+}
+
+.nav-tabs{
+    gap: 70px;
+}
+
+.nav-tabs .nav-link {
+    margin-bottom: -1px;
+    border: none;
+    border-bottom: 2px solid transparent;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+    padding-left: 0;
+    padding-right: 0;
+
+}
+
+.nav-tabs .nav-link.active {
+    border-color: #7fab16;
+    background: none;
+}
+
+.single-des {
+    margin-top: 35px;
+}
+
+.single-des h4 {
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.single-des ul li {
+    color: #555;
+    display: block;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.review-panel {
+    margin-top: 35px;
+}
+
+.comment-review {
+    margin-bottom: 30px;
+}
+
+.comment-review .add-review {
+    margin-top: 30px;
+}
+
+.comment-review .add-review h5 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.comment-review .add-review p {
+    color: #333;
+}
+
+.form .form-group {
+    margin-bottom: 20px;
+}
+
+.form .form-group input {
+    width: 100%;
+    height: 45px;
+    padding: 10px 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    resize: none;
+    border-radius: 8px;
+    outline: none;
+    color: #333;
+}
+
+.form .form-group textarea {
+    width: 100%;
+    height: 200px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    resize: none;
+    border-radius: 8px;
+    outline: none;
+    color: #333;
+}
+
+.form .form-group button {
+    border: none;
+    padding: 17px 50px;
+    border-radius: 10px;
+}
+
+.show_more_specific_value{
+    width: 295px;
+    height: 36px;
+    border-radius: 18px;
+    background: #abb0cb;
+
+    margin-top: 50px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+
+.show_more_specific_value > div{
+    text-align: center;
+    flex-grow: 1;
+    font-weight: 500;
+    color: white;
+}
+
+.show_more_specific_value .button-arrow{
+    fill: #abb0cb;
+    width: 26px;
+    height: 26px;
+
+}
+
+.show_more_specific_value.show .button-arrow{
+    transform: rotate(-90deg);
+}
+
+
+
+.hidden.more10 {
+    display: none;
+}

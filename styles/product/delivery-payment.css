@@ -16,12 +16,18 @@
 .delivery-payment ul li{
     display: flex;
     align-items: center;
-    width: 70%;
+    width: 100%;
 }
-.delivery-payment ul li span:last-of-type{
+
+
+.delivery-payment ul li span:first-child{
     display: inline-block;
-    margin-left: auto;
-    width: 100px;
+    width: 64%;
+}
+
+.delivery-payment ul li>span:last-of-type{
+    display: inline-block;
+    width: 36%;
 }
 .delivery-payment h6{
     margin-bottom: 14px;
@@ -29,4 +35,10 @@
 
 .delivery-payment > *{
     margin-top: 45px;
+}
+
+@media screen and (max-width: 600px){
+    .delivery-payment ul li{
+        width: 100%;
+    }
 }

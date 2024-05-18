@@ -19,18 +19,44 @@ $(document).ready(function() {
           slidesToShow: 2,
           slidesToScroll: 1
         }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
       }
     ]
   });
 
+  $('.search-icon').click(function() {
+    $('.search-form').toggleClass('active');
+  });
+
+  $(document).click(function(event) {
+    if (!$(event.target).closest('.search-form').length && !$(event.target).closest('.search-icon').length) {
+      $('.search-form').removeClass('active');
+    }
+  });
 
 
+
+
+
+
+  $('#product-gallery').carousel({
+    interval: false
+  });
+
+  // Обработчик кликов по миниатюрам
   $('.thumbnail').on('click', function() {
-    let index = $(this).data('bs-slide-to');
+    var index = $(this).data('bs-slide-to');
     updateActiveThumbnail(index);
     $('#carouselExample').carousel(index);
   });
 
+  // Обновление активной миниатюры при смене слайда
   $('#product-gallery').on('slid.bs.carousel', function(event) {
     updateActiveThumbnail(event.to);
   });
@@ -39,6 +65,8 @@ $(document).ready(function() {
     $('.thumbnail').removeClass('active');
     $('.thumbnail[data-bs-slide-to="' + index + '"]').addClass('active');
   }
+
+
 
   let isShow = false
 

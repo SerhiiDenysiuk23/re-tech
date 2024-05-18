@@ -32,40 +32,43 @@ header > section{
     width: 100%;
 }
 
-.search-bar-top {
-    text-align: center;
-    margin-top: 10px;
-}
+
+
 
 .search-bar {
-    width: 100%;
-    height: 50px;
-    display: inline-block;
-    background: #fff;
-    position: relative;
-    margin: 0;
-    line-height: 45px;
-    border-radius: 50px;
-    border: 2px solid #ececec;
-    transition: all .5s ease-in-out;
+    display: flex;
+    justify-content: end;
 }
 
-.search-bar form {
-    display: inline-block;
-    float: left;
-    width: 260px;
+.search-icon{
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 50%;
+    color: #7D7D7D;
+    background: #EAEAEE;
+    font-size: 18px;
 }
+
+.search-bar .search-form{
+    display: flex;
+    width: 100%;
+    height: 48px;
+    background: #fff;
+    border-radius: 24px;
+    border: 2px solid #ececec;
+}
+
 
 .search-bar input {
-    height: 48px;
+    flex-grow: 1;
     background: transparent;
     color: #666;
     border-radius: 0;
     border: none;
     font-size: 14px;
     font-weight: 400;
-    padding: 0 25px 0 20px;
-    width: 328px;
+    padding-left: 20px;
     outline: none;
 }
 
@@ -88,22 +91,19 @@ input[type=search]::-webkit-search-cancel-button {
 
 
 .search-bar .btnn {
-    height: 35.5px;
-    line-height: 38px;
-    width: 60px;
+    height: 100%;
+    padding: 0 25px;
     text-align: center;
     font-size: 18px;
     color: rgb(125, 135, 156);
-    position: absolute;
-    background: transparent;
-    right: 0;
-    top: 5px;
+    background: none;
     border: none;
-    border-radius: 50px;
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    transition: all 0.4s ease;
+    border-radius: 50%;
 }
+
+
+
+
 
 .right-bar {
     display: inline-block;
@@ -113,6 +113,11 @@ input[type=search]::-webkit-search-cancel-button {
 
 .single-bar .single-icon {
     position: relative;
+}
+
+a.single-icon{
+    display: inline-block;
+    height: fit-content;
 }
 
 .shopping-item {
@@ -137,6 +142,20 @@ input[type=search]::-webkit-search-cancel-button {
     z-index: 99;
 }
 
+.shopping-count{
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    width: 27px;
+    height: 27px;
+    background: #ff4132;
+    color: white;
+    font-size: 14px;
+    line-height: 27px;
+    text-align: center;
+    border-radius: 50%;
+}
+
 .shopping:hover .shopping-item {
     transform: translateY(0px);
     opacity: 1;
@@ -153,7 +172,6 @@ input[type=search]::-webkit-search-cancel-button {
 
 header .trade-in {
     height: 100%;
-
     background: #919ddd;
     text-align: center;
     text-transform: none;
@@ -165,3 +183,79 @@ header .trade-in {
 }
 
 
+.burger-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.burger-icon {
+    cursor: pointer;
+    width: 43px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.line {
+    width: 100%;
+    height: 3px;
+    background-color: #7fab16;
+}
+.line:first-child {
+    width: 70%;
+}
+
+@media screen and (max-width: 600px) {
+    .list-main{
+        align-items: start;
+        justify-content: flex-end;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .trade-in-col a{
+        display: inline-block;
+        height: 31px;
+        max-width: 95px;
+        width: 100%;
+    }
+
+    header .trade-in {
+        font-size: 14px;
+        padding: 0;
+        line-height: 31px;
+        border-radius: 15.88px;
+    }
+    .authorize{
+        padding: 5px 0;
+    }
+
+
+
+    .search-bar .search-form{
+        position: absolute;
+        width: 100vw;
+        left: 0;
+        bottom: -50px;
+        display: none;
+    }
+    .search-bar .search-form.active{
+        display: flex;
+    }
+
+    .slicknav_menu .slicknav_no-text {
+        margin-right: 16px;
+        margin-top: 4px;
+    }
+
+    .slicknav_menu .slicknav_icon-bar {
+        display: block;
+        width: 32px;
+        height: 3px;
+        margin-bottom: 8px;
+        border-radius: unset;
+    }
+}

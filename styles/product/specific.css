@@ -140,3 +140,10 @@
 .hidden.more10 {
     display: none;
 }
+
+@media screen and (max-width: 600px){
+    .nav-tabs{
+        justify-content: space-between;
+        gap: 0;
+    }
+}

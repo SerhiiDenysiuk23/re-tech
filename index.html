@@ -61,47 +61,50 @@
         </ul>
 
       </div>
-      <div class="col-6 text-end authorize">
-        <div class="trade-in-col justify-content-center d-flex">
+      <div class="col-6 text-end flex-column">
+        <div class="trade-in-col justify-content-end d-flex">
           <a href="/trade-in" previewlistener="true">
-            <div class="trade-in desktop">
+            <div class="trade-in">
               Trade In
             </div>
           </a>
         </div>
 
-        <a href="#">
-          <svg class="icon-s">
-            <use xlink:href="./assets/icons/sprites.svg#authorization"></use>
-          </svg>
-          Авторизація
-        </a>
+        <div class="authorize">
+          <a href="#">
+            <svg class="icon-s">
+              <use xlink:href="./assets/icons/sprites.svg#authorization"></use>
+            </svg>
+            Авторизація
+          </a>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="container">
-    <div class="row align-items-center">
+  <section class="container ">
+    <div class="row align-items-center position-relative">
 
-      <div class="col-lg-3 col-md-3 col-12">
+      <div class="col-lg-3 col-md-3 col-4">
         <div class="logo">
           <a href="/" previewlistener="true"><img src="assets/images/logo.png" alt="logo"></a>
         </div>
       </div>
 
-      <div class="col-lg-5 col-md-4 col-12">
-        <div class="search-bar-top">
-          <div class="search-bar">
-            <form class="search-form-desktop">
-              <input type="hidden" name="_token" value="65iv1JinNf0I8cfLXoxZ20Qh0hAdGqf6opM0Pv1i" autocomplete="off">
-              <input name="q" placeholder="Шукати товари....." type="search" class="search-form-input">
-              <button class="btnn" id="inptTopSearch"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </form>
-          </div>
+      <div class="col-lg-5 col-md-4 col-4">
+
+        <div class="search-bar">
+          <form class="search-form">
+            <input type="hidden" name="_token" value="65iv1JinNf0I8cfLXoxZ20Qh0hAdGqf6opM0Pv1i" autocomplete="off">
+            <input name="q" placeholder="Шукати товари....." type="search" class="search-form-input">
+
+            <button class="btnn" id="inptTopSearch"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+          <button class="mobile search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
       </div>
 
-      <div class="col-lg-2 trade-in-col justify-content-center d-flex">
+      <div class="col-lg-2 trade-in-col justify-content-center d-flex desktop">
         <a href="/trade-in" previewlistener="true">
           <div class="trade-in desktop">
             Trade In
@@ -109,8 +112,8 @@
         </a>
       </div>
 
-      <div class="col-lg-2 col-md-3 col-12 right-bar justify-content-between d-flex">
-        <div class="single-bar">
+      <div class="col-lg-2 col-md-3 col-2 right-bar justify-content-between d-flex">
+        <div class="single-bar desktop">
           <a href="/account/wishlist" class="single-icon" title="Cписок бажань | Кабінет користувача"
              previewlistener="true">
             <svg class="icon-m">
@@ -118,7 +121,7 @@
             </svg>
           </a>
         </div>
-        <div class="single-bar">
+        <div class="single-bar desktop">
           <a href="/account/personal-information" class="single-icon"
              title="Персональна інформація | Кабінет користувача" previewlistener="true">
             <svg class="icon-m">
@@ -131,7 +134,10 @@
             <svg class="icon-m">
               <use xlink:href="./assets/icons/sprites.svg#basket"></use>
             </svg>
+            <div class="shopping-count">2</div>
           </a>
+
+
           <div class="shopping-item">
             <span>Ваш кошик порожній</span>
 
@@ -139,6 +145,15 @@
         </div>
       </div>
 
+      <div class="col-2 mobile">
+        <div class="burger-menu">
+          <div class="burger-icon" id="burger-icon">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 </header>
@@ -150,7 +165,7 @@
       <div class="row ">
 
         <!--        dropdown-hover-all-->
-        <div class="col-lg-3">
+        <div class="col-lg-3 desktop">
 
           <div class="dropdown">
 
@@ -182,7 +197,7 @@
 
         </div>
 
-        <div class="col-9 breadcrumbs align-items-center d-flex">
+        <div class="col-md-9 col-12 breadcrumbs align-items-center d-flex">
           <div class="bread-inner">
 
             <ul class="bread-list">
@@ -200,7 +215,7 @@
 
   <section class="container product">
     <div class="row">
-      <div class="col-4">
+      <div class="col-md-4 col-12">
         <div class="product-gallery">
           <div id="product-gallery" class="carousel slide" data-bs-ride="false">
             <div class="carousel-inner">
@@ -224,7 +239,7 @@
             </div>
           </div>
 
-          <div class="thumbnails mt-3 text-center">
+          <div class="thumbnails mt-3 text-center desktop">
             <div class="thumbnail active" data-bs-target="#product-gallery" data-bs-slide-to="0">
               <img src="assets/images/32.jpg" alt="Slide 1 Thumbnail">
             </div>
@@ -242,7 +257,7 @@
 
 
       </div>
-      <div class="col-8">
+      <div class="col-md-8 col-12">
 
         <div class="row">
           <div class="product-des">
@@ -250,9 +265,9 @@
               <h1>Apple iPhone 14 Pro Max 512GB Space Black (MQAF3)</h1>
             </div>
 
-            <div class="color-size d-flex">
+            <div class="color-size d-flex row desktop">
 
-              <div class="color product-des-first-col">
+              <div class="color col-md-4 col-12">
                 <h4> Кольори</h4>
                 <ul>
                   <li><a href="/product/apple-iphone-14-pro-max-512gb-deep-purple" class="color-filter-value-341"
@@ -267,7 +282,7 @@
                 </ul>
               </div>
 
-              <div class="size">
+              <div class="size col-md-8 col-12">
                 <h4>Пам`ять</h4>
                 <ul>
 
@@ -284,15 +299,15 @@
 
             </div>
 
-            <div class="product-buy d-flex">
-              <div class="prices product-des-first-col">
+            <div class="product-buy row">
+              <div class="prices col-md-4 col-12">
 
                 <p class="price">
                   56 155грн
 
                 </p>
               </div>
-              <div class="add-to-cart d-flex">
+              <div class="add-to-cart d-flex col-md-8 col-12">
                 <a href="#" class="btn addToCart addToCartSingle addToCart_40" iditem="40" source="normalUserCart">Купити</a>
                 <input type="hidden" name="qty" value="1" id="qty_40" class="qtItem" iditem="40"
                        source="normalUserCart">
@@ -302,16 +317,18 @@
               </div>
             </div>
 
-            <div class="credit-buy d-flex align-items-center">
-              <div class="credit-buy-header product-des-first-col">
+            <div class="credit-buy d-flex align-items-center row">
+              <div class="credit-buy-header col-4">
                 <h6 class="credit-price">18 719 грн/міс</h6>
                 <p>Оплата частинами від</p>
               </div>
 
-              <a href="#" class="creditBuyBank addToCart addToCart_2543" iditem="2543" source="pay_parts" bank_id="1"
-                 pay_parts_count="3">
-                <img src="assets/images/privateLogo.png" class="creditBuyBankIco">
-              </a>
+              <div class="col-8">
+                <a href="#" class="creditBuyBank addToCart addToCart_2543" iditem="2543" source="pay_parts" bank_id="1"
+                   pay_parts_count="3">
+                  <img src="assets/images/privateLogo.png" class="creditBuyBankIco">
+                </a>
+              </div>
             </div>
 
             <div class="extWarranty">
@@ -377,30 +394,36 @@
               <h6>Оплата <i class="fas fa-info-circle" data-bs-toggle="modal" data-bs-target="#modalPayment"></i></h6>
               <ul>
                 <li>
-                  <svg class="icon-xs">
-                    <use xlink:href="./assets/icons/sprites.svg#cash"></use>
-                  </svg>
-                  Готівкою
-                  <i class="fas fa-question-circle" data-bs-toggle="modal" data-bs-target="#modalPaymentCash"></i>
+                  <span>
+                      <svg class="icon-xs">
+                        <use xlink:href="./assets/icons/sprites.svg#cash"></use>
+                      </svg>
+                      Готівкою
+                      <i class="fas fa-question-circle" data-bs-toggle="modal" data-bs-target="#modalPaymentCash"></i>
+                    </span>
                   <span>Без комісії</span>
                 </li>
 
                 <li>
-                  <svg class="icon-xs">
-                    <use xlink:href="./assets/icons/sprites.svg#credit-card"></use>
-                  </svg>
-                  Карткою
-                  <i class="fas fa-question-circle" data-bs-toggle="modal" data-bs-target="#modalPaymentCard"></i>
+                  <span>
+                    <svg class="icon-xs">
+                      <use xlink:href="./assets/icons/sprites.svg#credit-card"></use>
+                    </svg>
+                    Карткою
+                    <i class="fas fa-question-circle" data-bs-toggle="modal" data-bs-target="#modalPaymentCard"></i>
+                  </span>
                   <span>1,5% комісія</span>
                 </li>
 
                 <li>
-                  <svg class="icon-xs">
-                    <use xlink:href="./assets/icons/sprites.svg#credit"></use>
-                  </svg>
-                  Оплата частинами і розстрочка
-                  <i class="fas fa-question-circle" data-bs-toggle="modal"
-                     data-bs-target="#modalPaymentCredit"></i>
+                  <span>
+                    <svg class="icon-xs">
+                      <use xlink:href="./assets/icons/sprites.svg#credit"></use>
+                    </svg>
+                    Оплата частинами і розстрочка
+                    <i class="fas fa-question-circle" data-bs-toggle="modal"
+                       data-bs-target="#modalPaymentCredit"></i>
+                  </span>
                   <span>Без комісії</span>
                 </li>
               </ul>
@@ -804,16 +827,16 @@
   <div class="footer-top section">
     <div class="container">
       <div class="row g-5">
-        <div class="col-2 d-flex flex-column">
+        <div class="col-md-2 d-flex flex-column">
           <div class="logo">
             <a href="/"><img src="assets/images/logo.png" alt="#"></a>
           </div>
-          <div class="copyright">
+          <div class="copyright desktop">
             © <span id="date">2024</span> re-tech
           </div>
         </div>
 
-        <div class="col-4">
+        <div class="col-md-4 col-12">
           <h4>Наша дружня RETECH-команда чекає на ВАС та готова надати найкращі послуги:</h4>
           <ul>
             <li>Викуп по програмі Trade-in: можливість обміну вашого старого пристрою на новий.</li>
@@ -823,7 +846,7 @@
           </ul>
         </div>
 
-        <div class="col-2">
+        <div class="col-md-2 col-6">
           <h4>Інформація</h4>
           <ul>
             <li><a href="/about">Про нас</a></li>
@@ -832,7 +855,7 @@
           </ul>
         </div>
 
-        <div class="col-2">
+        <div class="col-md-2 col-6">
           <h4>Обслуговування Клієнтів</h4>
           <ul>
             <li><a href="/delivery-and-payments">Умови доставки і оплати товару</a></li>
@@ -841,11 +864,33 @@
           </ul>
         </div>
 
-        <div class="col-2">
+        <div class="col-md-2 col-6">
           <h4>Зв`яжіться з нами</h4>
           <ul>
             <li>вул. Велика Васильківська, 33, Київ, Україна</li>
             <li><a href="#">info@re-tech.com.ua</a></li>
+            <li class="phone desktop"><b>0800 331 221</b></li>
+            <li class="social-media desktop">
+              <a href="https://www.facebook.com/retech.tradein">
+                <svg class="icon-m">
+                  <use xlink:href="./assets/icons/sprites.svg#facebook"></use>
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/retech_tradein/">
+                <svg class="icon-m">
+                  <use xlink:href="./assets/icons/sprites.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile">© <span id="date-mobile">2024</span> re-tech</li>
+          </ul>
+        </div>
+
+        <div class="col-md-2 col-6 mobile">
+          <h4></h4>
+          <ul>
+            <li></li>
+            <li></li>
             <li class="phone"><b>0800 331 221</b></li>
             <li class="social-media">
               <a href="https://www.facebook.com/retech.tradein">

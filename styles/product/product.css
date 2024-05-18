@@ -19,7 +19,7 @@
 }
 
 .product-des-first-col {
-    width: 33%;
+    /*width: 33%;*/
 }
 
 .product-des {
@@ -75,7 +75,9 @@
 }
 
 .add-to-cart .trade-in {
-    width: 255px;
+    max-width: 255px;
+    min-width: 228px;
+    width: 100%;
     height: 41px;
     background: white;
     border: 1px solid #d2d2d2;
@@ -85,7 +87,8 @@
 }
 
 .addToCartSingle {
-    width: 124px;
+    max-width: 124px;
+    width: 100%;
     height: 41px;
     display: block;
     background: #b6cb00;
@@ -135,6 +138,24 @@ ul li a.selected {
 .product-des .btn:hover {
     background: #a7b900;
     color: white;
+}
+
+@media screen and (max-width: 600px){
+    .product-des {
+        gap: 30px;
+        margin-top: 38px;
+    }
+
+    .extWarranty ul a {
+        border-radius: 22px;
+    }
+
+    .add-to-cart {
+        gap: 6px;
+    }
+    .addToCartSingle {
+        font-size: 14px;
+    }
 }
 
 

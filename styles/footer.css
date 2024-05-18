@@ -48,3 +48,9 @@
 }
 
 
+@media screen and (max-width: 600px){
+    .footer h4{
+        margin-bottom: 25px;
+    }
+}
+

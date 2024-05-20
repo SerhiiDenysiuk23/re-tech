@@ -208,6 +208,24 @@ header .trade-in {
     width: 70%;
 }
 
+.burger-menu ul{
+    display: none;
+}
+
+.burger-menu.active ul{
+    display: flex;
+    flex-direction: column;
+    background: #f7f6fb;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100vw;
+    padding: 20px 12px 0;
+    height: 100vh;
+    z-index: 20;
+    gap: 1em;
+}
+
 @media screen and (max-width: 600px) {
     .list-main{
         align-items: start;

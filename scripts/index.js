@@ -41,7 +41,13 @@ $(document).ready(function() {
   });
 
 
+  $(".burger-icon").click(function(){
+    $(".burger-menu").toggleClass("active");
+  });
 
+  $(".burger-menu ul li a").click(function(){
+    $(".burger-menu").removeClass("active");
+  });
 
 
 

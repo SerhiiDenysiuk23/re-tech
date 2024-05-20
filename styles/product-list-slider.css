@@ -18,6 +18,10 @@
 .slick-arrows svg {
     width: 100%;
     height: 100%;
+    fill: #AAAFCA;
+}
+.slick-arrows:hover svg {
+    fill: #7fab16;
 }
 
 .slick-prev {
@@ -109,9 +113,8 @@
     font-size: 20px;
 }
 
-.single-product .add-to-cart {
-    text-align: center;
-    flex-grow: 1;
+.single-product .add-to-cart:hover {
+    background: #7fab16;
 }
 
 .single-product .add-to-cart .button-arrow {
@@ -120,6 +123,9 @@
     transform: translateY(-50%) rotate(-90deg);
     right: 5px;
     fill: #b6cb00;
+}
+.single-product .add-to-cart:hover .button-arrow {
+    fill: #7fab16;
 }
 
 @media screen and (max-width: 1400px) {

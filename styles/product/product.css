@@ -18,10 +18,6 @@
     mix-blend-mode: multiply;
 }
 
-.product-des-first-col {
-    /*width: 33%;*/
-}
-
 .product-des {
     display: flex;
     flex-direction: column;
@@ -72,6 +68,61 @@
 .add-to-cart {
     font-weight: 500;
     gap: 1em;
+}
+
+.credit-buy {
+    padding: 0;
+    height: 80px;
+}
+
+.creditBuyBank {
+    height: 70px;
+    padding: 10px 8px 8px 8px;
+    font-size: 15px;
+    display: flex;
+    gap: 5px;
+    border: 1px solid #8493ca;
+    border-radius: 6px;
+    width: 95%;
+    color: #757575;
+}
+
+.creditBuyBank:hover {
+    background: #b6cc00;
+    color: #fff;
+}
+
+.creditBuyBankIco {
+    width: 50px;
+}
+
+.creditBuyBankDescr {
+    display: block;
+    width: 130px;
+}
+
+.credit-bank-name {
+    line-height: 23px;
+    margin: 0 0 0 2px;
+    font-size: 15px;
+    font-weight: bold;
+    display: block;
+}
+
+.credit-price {
+    line-height: 23px;
+    margin: 0px 0px 0px 2px;
+    font-size: 13px;
+    font-weight: bold;
+    display: block;
+}
+
+.credit-buy-header {
+    font-size: 26px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    text-align: left;
 }
 
 .add-to-cart .trade-in {
@@ -155,6 +206,10 @@ ul li a.selected {
     }
     .addToCartSingle {
         font-size: 14px;
+    }
+
+    .creditBuyBank{
+        width: 100%;
     }
 }
 

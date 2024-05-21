@@ -4,6 +4,7 @@
 @import "product/product.css";
 @import "footer.css";
 @import "product-list-slider.css";
+@import "modals.css";
 
 .thumbnails{
     display: flex;
@@ -51,6 +52,28 @@
     aspect-ratio: 76 / 76;
 }
 
+
+#scrollUp {
+    right: 20px;
+    z-index: 33;
+    bottom: 20px;
+    text-align: center;
+}
+
+#scrollUp i {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    background: #8493CA;
+    border-radius: 50px;
+    font-size: 20px;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    transition: all 500ms ease;
+    display: block;
+    color: #fff;
+    box-shadow: 0px 4px 19px #00000038;
+}
 
 
 @media screen and (max-width: 1199px){

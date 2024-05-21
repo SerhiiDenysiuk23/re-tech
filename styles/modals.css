@@ -1,0 +1,139 @@
+.shopping-cart-single {
+    background: #F6F7FB;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+}
+
+
+.cart-title i {
+    font-size: 20px;
+}
+
+.cart-price b {
+    margin-left: 10px;
+    color: #7fab16;
+}
+
+.cat-qty-btn {
+    padding: 5px 8px;
+    border-radius: 5px;
+    background: #7fab16;
+    border: none;
+    color: #fff;
+}
+
+.cart-qty input {
+    width: 40px;
+    height: 25px;
+    background: transparent;
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+.cart-total-amount {
+    background: #F6F7FB;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.cart-total-amount .last {
+    padding-top: 12px;
+    border-top: 1px solid #c8c8c8;
+    font-weight: 600;
+}
+
+.cart-total-amount li {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.cart-total-amount li span {
+    float: right;
+}
+
+.checkout-section .btn {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.checkout-btn {
+    background: #7fab16;
+}
+
+.shopping-cart{
+    padding: 20px 0;
+}
+
+.modal .btn-close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 1;
+}
+
+
+
+.custom-modal-content {
+    border: none;
+}
+
+.custom-modal-content .custom-close-btn, .custom-slide-number{
+    position: absolute;
+    right: 0;
+    z-index: 11;
+}
+
+.custom-modal-content .custom-close-btn{
+    top: -30px;
+}
+
+.custom-slide-number {
+    bottom: -30px;
+    color: white;
+    font-size: 12px;
+}
+
+.custom-modal-content .carousel-item img {
+    width: 100%;
+    height: auto;
+    max-height: calc(100vh - 120px);
+    object-fit: contain;
+}
+
+.custom-nav {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    height: auto;
+    background: none;
+    border: none;
+    padding: 0;
+    z-index: 11;
+    color: white;
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.carousel-control-prev {
+    left: 40px;
+}
+
+.carousel-control-next {
+    right: 40px;
+}
+
+
+.infoModalPopup p {
+    margin: 0;
+}
+
+.infoModalPopup .modal-body{
+    color: #757575;
+    line-height: 24px;
+}

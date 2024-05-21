@@ -134,19 +134,35 @@
             <svg class="icon-m">
               <use xlink:href="./assets/icons/sprites.svg#basket"></use>
             </svg>
-            <div class="shopping-count">2</div>
+            <div class="total-count">2</div>
           </a>
 
 
-          <div class="shopping-item">
-            <span>Ваш кошик порожній</span>
+          <!--          <div class="shopping-item">-->
+          <!--            <span>Ваш кошик порожній</span>-->
 
+          <!--          </div>-->
+
+          <div class="shopping-item">
+            <div class="dropdown-cart-header">
+              <span>2 товарів</span>
+              <a href="/cart">Кошик</a>
+            </div>
+            <ul class="shopping-list">
+              <li><a class="cart-img" href="/product/apple-iphone-13-128gb-midnight-mlml3"><img
+                  src="/assets/images/32.jpg" alt="Apple iPhone 13 128GB Midnight (MLPF3)"></a><h4><a
+                  href="/product/apple-iphone-13-128gb-midnight-mlml3">Apple iPhone 13 128GB Midnight (MLPF3)</a></h4>
+                <p class="quantity">1x - <span class="amount">23144.00грн</span></p></li>
+            </ul>
+            <div class="bottom">
+              <div class="total"><span>Сума</span><span class="total-amount">23144 грн</span></div>
+              <a href="/checkout" class="btn animate">Оформити замовлення</a></div>
           </div>
         </div>
       </div>
 
       <div class="col-2 mobile">
-        <div class="burger-menu active">
+        <div class="burger-menu">
           <div class="burger-icon" id="burger-icon">
             <div class="line"></div>
             <div class="line"></div>
@@ -540,7 +556,8 @@
                 </p>
               </div>
               <div class="add-to-cart d-flex col-md-8 col-12">
-                <a href="#" class="btn addToCart addToCartSingle addToCart_40" iditem="40" source="normalUserCart">Купити</a>
+                <a id="openModalBtn" href="#" class="btn addToCart addToCartSingle addToCart_40" iditem="40"
+                   source="normalUserCart">Купити</a>
                 <input type="hidden" name="qty" value="1" id="qty_40" class="qtItem" iditem="40"
                        source="normalUserCart">
                 <input type="hidden" name="extwarranty" value="0" id="extwarranty" class="extwarranty">
@@ -549,19 +566,19 @@
               </div>
             </div>
 
-            <div class="credit-buy d-flex align-items-center row">
+            <a href="#" class="credit-buy d-flex align-items-center row creditBuyBank addToCart addToCart_2543"
+               iditem="2543" source="pay_parts" bank_id="1"
+               pay_parts_count="3">
               <div class="credit-buy-header col-4">
                 <h6 class="credit-price">18 719 грн/міс</h6>
                 <p>Оплата частинами від</p>
               </div>
 
               <div class="col-8">
-                <a href="#" class="creditBuyBank addToCart addToCart_2543" iditem="2543" source="pay_parts" bank_id="1"
-                   pay_parts_count="3">
-                  <img src="assets/images/privateLogo.png" class="creditBuyBankIco">
-                </a>
+                <img src="assets/images/privateLogo.png" class="creditBuyBankIco">
               </div>
-            </div>
+            </a>
+
 
             <div class="extWarranty">
 
@@ -583,7 +600,8 @@
 
           <div class="delivery-payment">
             <div class="delivery col-12">
-              <h6>Доставка <i class="fas fa-info-circle" data-bs-toggle="modal" data-bs-target="#modalDelivery"></i>
+              <h6>Доставка <i class="fas fa-info-circle" data-bs-toggle="modal" data-bs-target="#infoModal"
+                              data-bs-whatever="delivery"></i>
               </h6>
               <ul>
 
@@ -593,8 +611,8 @@
                         <use xlink:href="./assets/icons/sprites.svg#building"></use>
                       </svg>
                       Самовивіз із нашого магазину.
-                      <i class="fas fa-question-circle" data-bs-toggle="modal"
-                         data-bs-target="#modalDeliveryPickUp"></i>
+                      <i class="fas fa-question-circle" data-bs-toggle="modal" data-bs-target="#infoModal"
+                         data-bs-whatever="pickup"></i>
                   </span>
                   <span>Безкоштовно</span>
                 </li>
@@ -605,7 +623,8 @@
                         <use xlink:href="./assets/icons/sprites.svg#nova-post"></use>
                       </svg>
                       Доставка службою "Нова Пошта".
-                      <i class="fas fa-question-circle" data-bs-toggle="modal" data-bs-target="#modalDeliveryNP"></i>
+                      <i class="fas fa-question-circle" data-bs-toggle="modal" data-bs-target="#infoModal"
+                         data-bs-whatever="novaPost"></i>
                   </span>
                   <span>Безкоштовно</span>
                 </li>
@@ -623,7 +642,8 @@
             </div>
 
             <div class="payment  col-12">
-              <h6>Оплата <i class="fas fa-info-circle" data-bs-toggle="modal" data-bs-target="#modalPayment"></i></h6>
+              <h6>Оплата <i class="fas fa-info-circle" data-bs-toggle="modal" data-bs-target="#infoModal"
+                            data-bs-whatever="payment"></i></h6>
               <ul>
                 <li>
                   <span>
@@ -631,7 +651,8 @@
                         <use xlink:href="./assets/icons/sprites.svg#cash"></use>
                       </svg>
                       Готівкою
-                      <i class="fas fa-question-circle" data-bs-toggle="modal" data-bs-target="#modalPaymentCash"></i>
+                      <i class="fas fa-question-circle" data-bs-toggle="modal" data-bs-target="#infoModal"
+                         data-bs-whatever="cash"></i>
                     </span>
                   <span>Без комісії</span>
                 </li>
@@ -642,7 +663,8 @@
                       <use xlink:href="./assets/icons/sprites.svg#credit-card"></use>
                     </svg>
                     Карткою
-                    <i class="fas fa-question-circle" data-bs-toggle="modal" data-bs-target="#modalPaymentCard"></i>
+                    <i class="fas fa-question-circle" data-bs-toggle="modal" data-bs-target="#infoModal"
+                       data-bs-whatever="card"></i>
                   </span>
                   <span>1,5% комісія</span>
                 </li>
@@ -653,8 +675,8 @@
                       <use xlink:href="./assets/icons/sprites.svg#credit"></use>
                     </svg>
                     Оплата частинами і розстрочка
-                    <i class="fas fa-question-circle" data-bs-toggle="modal"
-                       data-bs-target="#modalPaymentCredit"></i>
+                    <i class="fas fa-question-circle" data-bs-toggle="modal" data-bs-target="#infoModal"
+                       data-bs-whatever="credit"></i>
                   </span>
                   <span>Без комісії</span>
                 </li>
@@ -1143,6 +1165,136 @@
   </div>
 </footer>
 
+<div class="modal fade infoModalPopup" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="infoModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="infoModalLabel">___</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+      </div>
+      <div class="modal-body">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="fullScreenModal" tabindex="-1" aria-labelledby="fullScreenModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content custom-modal-content">
+      <div class="modal-body p-0 position-relative">
+        <button type="button" class="btn-close btn-close-white custom-close-btn" data-bs-dismiss="modal"
+                aria-label="Close"></button>
+        <div id="fullScreenCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/images/32.jpg" class="d-block w-100" alt="Slide 1">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/images/5331.jpg" class="d-block w-100" alt="Slide 2">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/images/5330.jpg" class="d-block w-100" alt="Slide 3">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/images/5329.jpg" class="d-block w-100" alt="Slide 4">
+            </div>
+          </div>
+        </div>
+        <div class="custom-slide-number">
+          <span>1 of 4</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button class="carousel-control-prev custom-nav" type="button" data-bs-target="#fullScreenCarousel"
+          data-bs-slide="prev">
+    <span aria-hidden="true">◀</span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next custom-nav" type="button" data-bs-target="#fullScreenCarousel"
+          data-bs-slide="next">
+    <span aria-hidden="true">▶</span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<div class="modal modalUserCartPopUp" id="modalUserCartPopUp" tabindex="-1" aria-labelledby="modalUserCartPopUp"
+     aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-body">
+        <!-- Shopping Cart -->
+        <div class="shopping-cart section modalPopUp">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="shopping-cart-single" id="tr_item_2561">
+                  <div class="row">
+                    <div class="col-lg-2">
+                      <img src="./assets/images/32.jpg" alt="Apple iPhone 14 128GB Yellow (MR3X3)">
+                    </div>
+                    <div class="col-lg-10 my-auto">
+                      <div class="d-flex justify-content-between cart-title">
+                        <h6>Apple iPhone 14 128GB Yellow (MR3X3)</h6>
+                        <a href="#" class="close-btn close-danger remove-from-cart" id="remove_from_cart_2561"
+                           iditem="2561"><i class="fa-solid fa-xmark"></i></a>
+                      </div>
+                      <div class="d-flex justify-content-between mt-4">
+                        <div class="cart-price my-auto">
+                          27099.00 грн x 1 <b id="item_total_2561">27099 грн</b>
+                        </div>
+                        <div class="row g-0 cart-qty">
+                          <div class="col-auto">
+                            <button type="button" class="minus cat-qty-btn" id="minus_qty_2561"
+                                    source="modalUserCartPopUp"><i class="fa-solid fa-minus"></i></button>
+                          </div>
+                          <div class="col-auto">
+                            <input type="text" id="qty_2561" class="qty input-number modalPopUp" value="1" iditem="2561"
+                                   min="0" max="10" readonly="" source="modalUserCartPopUp">
+                          </div>
+                          <div class="col-auto">
+                            <button type="submit" class="plus cat-qty-btn" id="plus_qty_2561"
+                                    source="modalUserCartPopUp"><i class="fa-solid fa-plus"></i></button>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-lg-4">
+
+                <!-- Total Amount -->
+                <div class="cart-total-amount">
+                  <ul>
+                    <li class="last">Разом<span id="cart_total"><b>27099грн</b></span></li>
+                  </ul>
+                  <div class="checkout-section">
+                    <a href="https://re-tech.com.ua/checkout" class="btn checkout-btn">Оформити замовлення</a>
+                    <a href="https://re-tech.com.ua" class="btn checkout-btn">Продовжити покупки</a>
+                  </div>
+                </div>
+
+              </div>
+              <!--/ End Total Amount -->
+            </div>
+          </div>
+        </div>
+        <!--/ End Shopping Cart -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<a id="scrollUp" href="#top" style="position: fixed; z-index: 13; display: none"><span><i
+    class="fa-solid fa-arrow-up-long"></i></span></a>
 
 <script
     src="https://code.jquery.com/jquery-3.7.1.min.js"

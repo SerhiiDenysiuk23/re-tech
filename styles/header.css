@@ -142,7 +142,7 @@ a.single-icon{
     z-index: 99;
 }
 
-.shopping-count{
+.total-count{
     position: absolute;
     top: -5px;
     right: -10px;
@@ -161,6 +161,111 @@ a.single-icon{
     opacity: 1;
     visibility: visible;
 }
+
+.dropdown-cart-header {
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.dropdown-cart-header span {
+    text-transform: uppercase;
+    color: #222;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.dropdown-cart-header a {
+    float: right;
+    text-transform: uppercase;
+    color: #222;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.shopping-list li {
+    overflow: hidden;
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.shopping-list .cart-img {
+    float: right;
+    border: 1px solid #ededed;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.shopping-list h4 {
+    font-weight: 600;
+    font-size: 13px;
+    color: #333;
+}
+
+.shopping-list .quantity {
+    line-height: 22px;
+    font-size: 13px;
+    padding-bottom: 30px;
+}
+
+.shopping-list .quantity {
+    line-height: 22px;
+    font-size: 13px;
+    padding-bottom: 30px;
+}
+
+.shopping-item .bottom {
+    text-align: center;
+}
+
+.shopping-item .total {
+    overflow: hidden;
+    display: block;
+    padding-bottom: 10px;
+}
+
+.shopping-item .total span {
+    text-transform: uppercase;
+    color: #222;
+    font-size: 13px;
+    font-weight: 600;
+    float: left;
+}
+
+.shopping-item .total .total-amount {
+    float: right;
+    font-size: 14px;
+}
+
+.shopping-item .bottom .btn {
+    background: #222;
+    padding: 10px 20px;
+    display: block;
+    color: #fff;
+    margin-top: 10px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.shopping-list .cart-img {
+    float: right;
+    border: 1px solid #ededed;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.shopping-list .cart-img img {
+    width: 70px;
+    height: 70px;
+    border-radius: 0;
+}
+
+
+
 
 
 .trade-in-col a{

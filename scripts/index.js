@@ -63,6 +63,52 @@ $(document).ready(function () {
     ]
   });
 
+
+  const gallerySlider = $('.gallery-slider')
+  const thumbnails = $('.thumbnails')
+  gallerySlider.slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    infinite: false,
+    swipe: false,
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          swipe: true
+        }
+      }
+    ]
+  });
+  thumbnails.slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: false,
+    infinite: false,
+    focusOnSelect: false
+  });
+
+
+  thumbnails.on('click', '.slick-slide', function(event) {
+    var index = $(this).data("slick-index");
+    gallerySlider.slick('slickGoTo', index);
+
+    if (index === thumbnails.slick('slickCurrentSlide')) {
+      thumbnails.slick('slickPrev');
+    }
+
+    if (index === thumbnails.slick('slickCurrentSlide') + thumbnails.slick('getSlick').options.slidesToShow - 1) {
+      thumbnails.slick('slickNext');
+    }
+
+    thumbnails.find('.slick-slide.slick-current').removeClass('slick-current');
+
+    $(this).addClass('slick-current');
+  });
+
+
+
   $('.search-icon').click(function () {
     $('.search-form').toggleClass('active');
   });
@@ -87,20 +133,9 @@ $(document).ready(function () {
     interval: false
   });
 
-  $('.thumbnail').on('click', function () {
-    var index = $(this).data('bs-slide-to');
-    updateActiveThumbnail(index);
-    $('#carouselExample').carousel(index);
-  });
 
-  $('#product-gallery').on('slid.bs.carousel', function (event) {
-    updateActiveThumbnail(event.to);
-  });
 
-  function updateActiveThumbnail(index) {
-    $('.thumbnail').removeClass('active');
-    $('.thumbnail[data-bs-slide-to="' + index + '"]').addClass('active');
-  }
+
 
   $('#openModalBtn').on('click', function(e) {
     e.preventDefault(); // Предотвращаем переход по ссылке
@@ -121,7 +156,7 @@ $(document).ready(function () {
   });
 
 
-  $('#product-gallery .carousel-item').on('click', function () {
+  $('.gallery-slider__item').on('click', function () {
     const index = $(this).index();
     $('#fullScreenCarousel').carousel(index);
     $('#fullScreenModal').modal('show');

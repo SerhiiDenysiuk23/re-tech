@@ -1,22 +1,54 @@
 @import "delivery-payment.css";
 @import "specific.css";
 
-.slider {
-    height: 450px;
+
+.thumbnail {
+    padding: 5px;
 }
 
-.slider-nav .slider-item {
-    width: 95px;
-    height: 95px;
+.thumbnail img {
+    border: 1px solid #d2d2d2;
+    background: white;
+    border-radius: 9px;
+    cursor: pointer;
+    aspect-ratio: 96/96;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
+
+.thumbnail.slick-current img{
+    -webkit-box-shadow: 6px 10px 15px -8px rgba(87,87,87,1);
+    -moz-box-shadow: 6px 10px 15px -8px rgba(87,87,87,1);
+    box-shadow: 6px 10px 15px -8px rgba(87,87,87,1);
+}
+
+.info-icons-group{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    gap: 1rem;
+}
+
+.info-icons-group img{
+    width: 76px;
+    height: 76px;
+    aspect-ratio: 76 / 76;
+}
+
+
 
 .product {
     margin-top: 55px;
 }
 
-.product-gallery img {
+.gallery-slider .slick-list {
     mix-blend-mode: multiply;
 }
+
 
 .product-des {
     display: flex;

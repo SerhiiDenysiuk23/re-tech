@@ -7,10 +7,18 @@
 .bread-list li:hover a{
     color: #b6cb00;
 }
+.bread-list li{
+    display: flex;
+    align-items: center;
+}
 .bread-list li+li:before {
-    padding: 8px;
-    color: black;
-    content: "🡢";
+    margin: 0 8px;
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000000' viewBox='0 0 256 256' id='Flat'%3E%3Cpath d='M218.82812,130.82812l-72,72a3.99957,3.99957,0,0,1-5.65625-5.65625L206.34326,132H40a4,4,0,0,1,0-8H206.34326L141.17187,58.82812a3.99957,3.99957,0,0,1,5.65625-5.65625l72,72A3.99854,3.99854,0,0,1,218.82812,130.82812Z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
 }
 
 

@@ -86,7 +86,8 @@ $(document).ready(function () {
     slidesToScroll: 1,
     arrows: false,
     infinite: false,
-    focusOnSelect: false
+    focusOnSelect: false,
+    swipe: false
   });
 
 

@@ -137,6 +137,37 @@
 
 
 
+
+
+
+.ratting-main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+.rating-des {
+    /*background: #f9f8f8;*/
+    background: white;
+    padding: 17px 20px 17px 107px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.rating-des h6 {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+}
+
+.rating-des p {
+    margin-top: 5px;
+}
+
+
+
+
+
 .hidden.more10 {
     display: none;
 }

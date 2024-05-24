@@ -18,9 +18,10 @@
 }
 
 .thumbnail.slick-current img{
-    -webkit-box-shadow: 6px 10px 15px -8px rgba(87,87,87,1);
-    -moz-box-shadow: 6px 10px 15px -8px rgba(87,87,87,1);
-    box-shadow: 6px 10px 15px -8px rgba(87,87,87,1);
+    -moz-box-shadow: 2px 1px 7px 0px rgba(0,0,0,0.33);
+    -webkit-box-shadow: 2px 1px 7px 0px rgba(0,0,0,0.33);
+    box-shadow: 2px 1px 7px 0px rgba(0,0,0,0.33);
+    border-color: #7fab16;
 }
 
 .info-icons-group{

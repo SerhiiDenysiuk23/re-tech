@@ -202,6 +202,7 @@ a.single-icon{
     font-weight: 600;
     font-size: 13px;
     color: #333;
+    margin: 0;
 }
 
 .shopping-list .quantity {

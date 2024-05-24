@@ -1,10 +1,58 @@
-@import "global.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 @import "header.css";
 @import "ui.css";
 @import "product/product.css";
 @import "footer.css";
 @import "product-list-slider.css";
 @import "modals.css";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f7f6fb;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+h1, h2{
+    font-size: 24px;
+}
+
+
+h4{
+    font-size: 14px;
+}
+
+h6{
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
+
+
 
 
 #scrollUp {
@@ -30,26 +78,6 @@
 }
 
 
-@media screen and (max-width: 1199px){
-    .info-icons-group img{
-        width: 60px;
-        height: 60px;
-    }
-}
-
-@media screen and (max-width: 992px){
-    .info-icons-group{
-        top: 20px;
-    }
-
-
-    .info-icons-group img{
-        width: 50px;
-        height: 50px;
-    }
-}
-
-
 
 
 @media screen and (max-width: 600px){
@@ -58,6 +86,9 @@
     }
 }
 @media screen and (min-width: 600px){
+    h1, h2{
+        font-size: 20px;
+    }
     .mobile{
         display: none !important;
     }

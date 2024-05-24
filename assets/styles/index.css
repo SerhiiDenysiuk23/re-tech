@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
 @import "header.css";
 @import "ui.css";
-@import "product/product.css";
+@import "./product/product.css";
 @import "footer.css";
 @import "product-list-slider.css";
 @import "modals.css";
+
 
 * {
     padding: 0;

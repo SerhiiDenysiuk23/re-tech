@@ -103,40 +103,8 @@
 
 .show_more_specific_value{
     width: 295px;
-    height: 36px;
-    border-radius: 18px;
-    background: #abb0cb;
-
     margin-top: 50px;
-    cursor: pointer;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px;
 }
-
-
-.show_more_specific_value > div{
-    text-align: center;
-    flex-grow: 1;
-    font-weight: 500;
-    color: white;
-}
-
-.show_more_specific_value .button-arrow{
-    fill: #abb0cb;
-    width: 26px;
-    height: 26px;
-
-}
-
-.show_more_specific_value.show .button-arrow{
-    transform: rotate(-90deg);
-}
-
-
-
 
 
 

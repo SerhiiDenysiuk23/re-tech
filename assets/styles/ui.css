@@ -44,3 +44,32 @@
     width: 35px;
     height: 35px;
 }
+
+.grey-button{
+    height: 36px;
+    border-radius: 18px;
+    background: #abb0cb;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.grey-button > div{
+    text-align: center;
+    flex-grow: 1;
+    font-weight: 500;
+    color: white;
+}
+
+.grey-button .button-arrow{
+    fill: #abb0cb;
+    width: 26px;
+    height: 26px;
+
+}
+.grey-button.show .button-arrow{
+    transform: rotate(-90deg);
+}

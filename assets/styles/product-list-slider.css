@@ -1,6 +1,10 @@
 .product-list-wrapper {
     position: relative;
-    padding: 44px 0;
+    padding: 20px 0 44px;
+}
+
+.section-title-right .grey-button{
+    width: 125px;
 }
 
 .slick-arrows {

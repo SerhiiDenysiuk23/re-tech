@@ -1,3 +1,8 @@
+.category-icon{
+    height: 20px;
+    width: 20px;
+}
+
 .all-category{
     position: relative;
     max-width: 251px;
@@ -61,6 +66,23 @@
     display: none;
 }
 
+.main-category.home{
+    display: block;
+    position: relative;
+    top: auto;
+    left: auto;
+    background: none;
+}
+
+.main-category.home .category-icon{
+    width: 36px;
+    height: 36px;
+    background: #abb0cb;
+    border-radius: 50%;
+    padding: 10px;
+    fill: white;
+}
+
 .main-category > li{
     font-size: 14px;
     font-weight: 600;
@@ -69,6 +91,11 @@
     display: block;
     border-bottom: 1px solid rgba(0, 0, 0, 0.07);
 }
+
+.main-category.home > li{
+    padding-left: 0;
+}
+
 .main-category > li > a{
     display: flex;
     width: 100%;
@@ -111,4 +138,39 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+.categories-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 28px;
+}
+
+.categories-grid h3{
+    font-size: 14px;
+}
+
+.category-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 28px;
+    border-radius: 24px;
+    gap: 21px;
+}
+
+.category-card.iphone{
+    background: #f0e0a4;
+}
+.category-card.ipad{
+    background: #c7cdd6;
+}
+.category-card.macbook{
+    background: #c0d8d4;
+}
+.category-card.airpods{
+    background: #e0bab7;
 }

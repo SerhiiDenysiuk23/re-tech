@@ -2,6 +2,14 @@
     position: relative;
     padding: 20px 0 44px;
 }
+.product-list-wrapper.test {
+    width: 25%;
+    margin: auto;
+}
+.product-list-wrapper.day-products {
+    position: relative;
+    padding: 0;
+}
 
 .section-title-right .grey-button{
     width: 125px;

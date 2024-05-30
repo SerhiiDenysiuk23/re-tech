@@ -2,25 +2,17 @@
     position: relative;
     padding: 20px 0 44px;
 }
-.product-list-wrapper.test {
-    width: 25%;
-    margin: auto;
-}
-@media screen and (max-width: 1200px){
-    .product-list-wrapper.test {
-        width: 40%;
-        margin: auto;
-    }
-}
-@media screen and (max-width: 600px){
-    .product-list-wrapper.test {
-        width: 100%;
-    }
-}
+
 
 .product-list-wrapper.day-products {
     position: relative;
+    display: inline-block;
     padding: 0;
+    width: 34%;
+    height: 448px;
+}
+.product-list-wrapper.day-products .single-product{
+    height: 448px;
 }
 
 .section-title-right .grey-button{
@@ -76,6 +68,8 @@
     background: white;
     padding: 20px;
     border-radius: 24px;
+    display: flex;
+    flex-direction: column;
 }
 
 .single-product .product-img {
@@ -85,11 +79,13 @@
 
 .single-product .product-price {
     font-weight: 500;
-    margin: 20px 0;
 }
 
 .single-product .product-price .current {
     font-size: 23px;
+}
+.day-products .single-product .product-price .current {
+    font-size: 16px;
 }
 
 .single-product .product-price .old {
@@ -100,6 +96,13 @@
 
 .single-product .product-content {
     margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+}
+.day-products .single-product .product-content {
+    gap: 10px;
 }
 
 .single-product .product-img a {
@@ -110,7 +113,8 @@
 .single-product .product-content h3 {
     font-size: 12px;
     font-weight: 500;
-    height: 35px;
+    /*height: 35px;*/
+    margin: 0;
 }
 
 .single-product .product-content h3 a {
@@ -120,7 +124,7 @@
 }
 
 .single-product .product-buy {
-    margin: 0 -1.5em;
+    margin: auto -1.5em 0;
 }
 
 .single-product .add-to-cart {
@@ -158,5 +162,18 @@
     }
     .single-product .product-price .old {
         font-size: 12px;
+    }
+    .day-products .single-product .product-content {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .product-list-wrapper.day-products {
+        width: 100%;
+        height: auto;
+    }
+    .product-list-wrapper.day-products .single-product{
+        height: auto;
     }
 }

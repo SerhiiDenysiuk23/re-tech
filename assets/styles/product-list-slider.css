@@ -6,6 +6,18 @@
     width: 25%;
     margin: auto;
 }
+@media screen and (max-width: 1200px){
+    .product-list-wrapper.test {
+        width: 40%;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 600px){
+    .product-list-wrapper.test {
+        width: 100%;
+    }
+}
+
 .product-list-wrapper.day-products {
     position: relative;
     padding: 0;

@@ -1,17 +1,20 @@
-.bread-list{
+.bread-list {
     display: flex;
     align-items: center;
     width: 100%;
     padding: 0;
 }
-.bread-list li:hover a{
+
+.bread-list li:hover a {
     color: #b6cb00;
 }
-.bread-list li{
+
+.bread-list li {
     display: flex;
     align-items: center;
 }
-.bread-list li+li:before {
+
+.bread-list li + li:before {
     margin: 0 8px;
     content: "";
     display: inline-block;
@@ -31,21 +34,23 @@
     width: 25px;
     height: 25px;
 }
+
 .icon-m {
     width: 48px;
     height: 48px;
 }
+
 .icon-promo {
     width: 30px;
     height: 30px;
 }
 
-.button-arrow{
+.button-arrow {
     width: 35px;
     height: 35px;
 }
 
-.grey-button{
+.grey-button {
     height: 36px;
     border-radius: 18px;
     background: #abb0cb;
@@ -57,19 +62,54 @@
     padding: 5px;
 }
 
-.grey-button > div{
+.grey-button > div {
     text-align: center;
     flex-grow: 1;
     font-weight: 500;
     color: white;
 }
 
-.grey-button .button-arrow{
+.grey-button .button-arrow {
     fill: #abb0cb;
     width: 26px;
     height: 26px;
 
 }
-.grey-button.show .button-arrow{
+
+.grey-button.show .button-arrow {
     transform: rotate(-90deg);
+}
+
+
+
+.color-filter-value-341 {
+    background: #b76e79;
+}
+
+.color-filter-value-474 {
+    background: #c0c0c0;
+}
+
+.color-filter-value-507 {
+    background: #050505;
+}
+
+.color-filter-value-1502 {
+    background: #F5F5DC;
+}
+
+.color-filter-value-1029 {
+    background: #00ffff;
+}
+
+.color-filter-value-504 {
+    background: #ffffff;
+}
+
+.color-filter-value-473 {
+    background: #17fc50;
+}
+
+.color-filter-value-500 {
+    background: #b76e79;
 }

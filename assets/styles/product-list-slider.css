@@ -56,7 +56,7 @@
     margin: 0 -14px
 }
 
-.product-list-slider__item {
+.product-list-slider .product-list-slider__item {
     padding: 0 14px
 }
 
@@ -90,6 +90,7 @@
 
 .single-product .product-price .old {
     font-size: 14px;
+    min-height: 18px;
     text-decoration: line-through;
     opacity: .5;
 }
@@ -175,5 +176,14 @@
     }
     .product-list-wrapper.day-products .single-product{
         height: auto;
+    }
+    .single-product .add-to-cart {
+        font-size: 14px;
+        height: 34px;
+    }
+
+    .single-product .add-to-cart .button-arrow {
+        width: 26px;
+        height: 26px;
     }
 }

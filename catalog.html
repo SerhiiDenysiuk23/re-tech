@@ -1,0 +1,2072 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RETECH</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles/slick/slick.css">
+  <link rel="stylesheet" href="assets/fonts/Montserrat/font.css">
+
+  <link rel="stylesheet" href="assets/styles/index.css">
+
+</head>
+<body>
+<header>
+  <section class="container">
+    <div class="row justify-content-between w-100 desktop">
+      <div class="col col-lg-9 col-xl-8">
+        <ul class="list-main">
+          <li>
+            <a href="tel:0800331221">
+              <svg class="icon-s">
+                <use xlink:href="./assets/img/icons/sprites.svg#phone"></use>
+              </svg>
+              <b>0800 331 221</b>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:info@re-tech.com.ua">
+              <svg class="icon-s">
+                <use xlink:href="./assets/img/icons/sprites.svg#mail"></use>
+              </svg>
+              info@re-tech.com.ua
+            </a>
+          </li>
+          <li>
+            <a href="/promo">
+              <svg class="icon-promo">
+                <use xlink:href="./assets/img/icons/sprites.svg#promo"></use>
+              </svg>
+              Акції
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+      <div class="col-2 text-end authorize">
+        <a href="/login">
+          <svg class="icon-s">
+            <use xlink:href="./assets/img/icons/sprites.svg#authorization"></use>
+          </svg>
+          Авторизація
+        </a>
+      </div>
+    </div>
+
+    <div class="row w-100 mobile">
+      <div class="col-6">
+        <ul class="list-main">
+          <li>
+            <a href="tel:0800331221"><b>0800 331 221</b></a>
+          </li>
+          <li>
+            <a href="mailto:info@re-tech.com.ua">info@re-tech.com.ua</a>
+          </li>
+        </ul>
+
+      </div>
+      <div class="col-6 text-end flex-column">
+        <div class="trade-in-col justify-content-end d-flex">
+          <a href="/trade-in" previewlistener="true">
+            <div class="trade-in">
+              Trade In
+            </div>
+          </a>
+        </div>
+
+        <div class="authorize">
+          <a href="#">
+            <svg class="icon-s">
+              <use xlink:href="./assets/img/icons/sprites.svg#authorization"></use>
+            </svg>
+            Авторизація
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container ">
+    <div class="row align-items-center position-relative">
+
+      <div class="col-lg-3 col-md-3 col-4">
+        <div class="logo">
+          <a href="/" previewlistener="true"><img src="assets/img/images/logo.png" alt="logo"></a>
+        </div>
+      </div>
+
+      <div class="col-lg-5 col-md-4 col-4">
+
+        <div class="search-bar">
+          <form class="search-form">
+            <input type="hidden" name="_token" value="65iv1JinNf0I8cfLXoxZ20Qh0hAdGqf6opM0Pv1i" autocomplete="off">
+            <input name="q" placeholder="Шукати товари....." type="search" class="search-form-input">
+
+            <button class="btnn" id="inptTopSearch"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+          <button class="mobile search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+      </div>
+
+      <div class="col-lg-2 trade-in-col justify-content-center d-flex desktop">
+        <a href="/trade-in" previewlistener="true">
+          <div class="trade-in desktop">
+            Trade In
+          </div>
+        </a>
+      </div>
+
+      <div class="col-lg-2 col-md-3 col-2 right-bar justify-content-between d-flex">
+        <div class="single-bar desktop">
+          <a href="/account/wishlist" class="single-icon" title="Cписок бажань | Кабінет користувача"
+             previewlistener="true">
+            <svg class="icon-m">
+              <use xlink:href="./assets/img/icons/sprites.svg#heart"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="single-bar desktop">
+          <a href="/account/personal-information" class="single-icon"
+             title="Персональна інформація | Кабінет користувача" previewlistener="true">
+            <svg class="icon-m">
+              <use xlink:href="./assets/img/icons/sprites.svg#user"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="single-bar shopping" id="usercart_top">
+          <a href="/cart" class="single-icon" previewlistener="true">
+            <svg class="icon-m">
+              <use xlink:href="./assets/img/icons/sprites.svg#basket"></use>
+            </svg>
+            <div class="total-count">2</div>
+          </a>
+
+
+          <!--          <div class="shopping-item">-->
+          <!--            <span>Ваш кошик порожній</span>-->
+
+          <!--          </div>-->
+
+          <div class="shopping-item">
+            <div class="dropdown-cart-header">
+              <span>2 товарів</span>
+              <a href="/cart">Кошик</a>
+            </div>
+            <ul class="shopping-list">
+              <li>
+                <a class="cart-img" href="/product/apple-iphone-13-128gb-midnight-mlml3">
+                  <img src="assets/img/images/32.jpg" alt="Apple iPhone 13 128GB Midnight (MLPF3)">
+                </a>
+                <h4>
+                  <a href="/product/apple-iphone-13-128gb-midnight-mlml3">Apple iPhone 13 128GB Midnight (MLPF3)</a>
+                </h4>
+                <p class="quantity">1x - <span class="amount">23144.00грн</span></p>
+              </li>
+              <li>
+                <a class="cart-img" href="/product/apple-iphone-13-128gb-midnight-mlml3">
+                  <img src="assets/img/images/32.jpg" alt="Apple iPhone 13 128GB Midnight (MLPF3)">
+                </a>
+                <h4>
+                  <a href="/product/apple-iphone-13-128gb-midnight-mlml3">Apple iPhone 13 128GB Midnight (MLPF3)</a>
+                </h4>
+                <p class="quantity">1x - <span class="amount">23144.00грн</span></p>
+              </li>
+              <li>
+                <a class="cart-img" href="/product/apple-iphone-13-128gb-midnight-mlml3">
+                  <img src="assets/img/images/32.jpg" alt="Apple iPhone 13 128GB Midnight (MLPF3)">
+                </a>
+                <h4>
+                  <a href="/product/apple-iphone-13-128gb-midnight-mlml3">Apple iPhone 13 128GB Midnight (MLPF3)</a>
+                </h4>
+                <p class="quantity">1x - <span class="amount">23144.00грн</span></p>
+              </li>
+
+            </ul>
+            <div class="bottom">
+              <div class="total"><span>Сума</span><span class="total-amount">23144 грн</span></div>
+              <a href="/checkout" class="btn animate">Оформити замовлення</a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-2 mobile">
+        <div class="burger-menu">
+          <div class="burger-icon" id="burger-icon">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+
+          <ul>
+            <li><a href="#">Головна</a></li>
+            <li><a href="#">Акції</a></li>
+            <li><a href="#">Apple Iphone</a></li>
+            <li><a href="#">Apple Airpods</a></li>
+            <li><a href="#">Apple Iphone</a></li>
+            <li><a href="#">Apple Airpods</a></li>
+            <li><a href="#">Apple Iphone</a></li>
+            <li><a href="#">Apple Airpods</a></li>
+            <li><a href="#">Apple Iphone</a></li>
+            <li><a href="#">Apple Airpods</a></li>
+            <li><a href="#">Apple Iphone</a></li>
+            <li><a href="#">Apple Airpods</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</header>
+
+<main>
+  <section class="container">
+    <div class="cat-nav-head">
+      <div class="row ">
+
+        <div class="col-lg-3 desktop">
+
+
+          <div class="all-category">
+            <div class="all-category__wrapper">
+              <h3 class="cat-heading">Каталог</h3>
+
+              <svg class="button-arrow">
+                <use xlink:href="./assets/img/icons/sprites.svg#button-arrow"></use>
+              </svg>
+            </div>
+
+
+            <ul class="main-category">
+              <li>
+                <a href="#">
+                  <svg class="category-icon">
+                    <use xlink:href="./assets/img/icons/sprites.svg#category-apple"></use>
+                  </svg>
+                  Apple
+                  <i class="fa-solid fa-angle-right"></i>
+                </a>
+
+                <ul class="category">
+                  <li>
+                    <h6><a href="#">Apple Category</a></h6>
+                    <ul class="sub-category">
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h6><a href="#">Apple Category</a></h6>
+                    <ul class="sub-category">
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h6><a href="#">Apple Category</a></h6>
+                    <ul class="sub-category">
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h6><a href="#">Apple Category</a></h6>
+                    <ul class="sub-category">
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h6><a href="#">Apple Category</a></h6>
+                    <ul class="sub-category">
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="category-icon">
+                    <use xlink:href="./assets/img/icons/sprites.svg#category-phone"></use>
+                  </svg>
+                  Apple Оновлені
+                  <i class="fa-solid fa-angle-right"></i>
+                </a>
+
+                <ul class="category">
+                  <li>
+                    <h6><a href="#">Apple Category</a></h6>
+                    <ul class="sub-category">
+                      <li><a href="">Apple Iphone 2</a></li>
+                      <li><a href="">Apple Iphone 2</a></li>
+                      <li><a href="">Apple Iphone 2</a></li>
+                      <li><a href="">Apple Iphone 2</a></li>
+                      <li><a href="">Apple Iphone 2</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h6><a href="#">Apple Category</a></h6>
+                    <ul class="sub-category">
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h6><a href="#">Apple Category</a></h6>
+                    <ul class="sub-category">
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h6><a href="#">Apple Category</a></h6>
+                    <ul class="sub-category">
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h6><a href="#">Apple Category</a></h6>
+                    <ul class="sub-category">
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="category-icon">
+                    <use xlink:href="./assets/img/icons/sprites.svg#category-airpods"></use>
+                  </svg>
+                  Apple Airpods
+                  <i class="fa-solid fa-angle-right"></i>
+                </a>
+
+                <ul class="category">
+                  <li>
+                    <h6><a href="#">Apple Category</a></h6>
+                    <ul class="sub-category">
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="category-icon">
+                    <use xlink:href="./assets/img/icons/sprites.svg#category-phone"></use>
+                  </svg>
+                  Смартфони
+                  <i class="fa-solid fa-angle-right"></i>
+                </a>
+
+                <ul class="category">
+                  <li>
+                    <h6><a href="#">Apple Category4</a></h6>
+                    <ul class="sub-category">
+                      <li><a href="">Apple Iphone4</a></li>
+                      <li><a href="">Apple Iphone4</a></li>
+                      <li><a href="">Apple Iphone4</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h6><a href="#">Apple Category</a></h6>
+                    <ul class="sub-category">
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h6><a href="#">Apple Category</a></h6>
+                    <ul class="sub-category">
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h6><a href="#">Apple Category</a></h6>
+                    <ul class="sub-category">
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h6><a href="#">Apple Category</a></h6>
+                    <ul class="sub-category">
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="category-icon">
+                    <use xlink:href="./assets/img/icons/sprites.svg#category-macbook"></use>
+                  </svg>
+                  Ноутбуки
+                  <i class="fa-solid fa-angle-right"></i>
+                </a>
+
+                <ul class="category">
+                  <li>
+                    <h6><a href="#">Apple Category</a></h6>
+                    <ul class="sub-category">
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h6><a href="#">Apple Category</a></h6>
+                    <ul class="sub-category">
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h6><a href="#">Apple Category</a></h6>
+                    <ul class="sub-category">
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="category-icon">
+                    <use xlink:href="./assets/img/icons/sprites.svg#category-tablet"></use>
+                  </svg>
+                  Планшети
+                  <i class="fa-solid fa-angle-right"></i>
+                </a>
+
+                <ul class="category">
+                  <li>
+                    <h6><a href="#">Apple Category</a></h6>
+                    <ul class="sub-category">
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h6><a href="#">Apple Category</a></h6>
+                    <ul class="sub-category">
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h6><a href="#">Apple Category</a></h6>
+                    <ul class="sub-category">
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="category-icon">
+                    <use xlink:href="./assets/img/icons/sprites.svg#category-watch"></use>
+                  </svg>
+                  Гаджети
+                  <i class="fa-solid fa-angle-right"></i>
+                </a>
+
+                <ul class="category">
+                  <li>
+                    <h6><a href="#">Apple Category</a></h6>
+                    <ul class="sub-category">
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h6><a href="#">Apple Category</a></h6>
+                    <ul class="sub-category">
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h6><a href="#">Apple Category</a></h6>
+                    <ul class="sub-category">
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="category-icon">
+                    <use xlink:href="./assets/img/icons/sprites.svg#category-accessories"></use>
+                  </svg>
+                  Аксесуари
+                  <i class="fa-solid fa-angle-right"></i>
+                </a>
+
+                <ul class="category">
+                  <li>
+                    <h6><a href="#">Apple Category</a></h6>
+                    <ul class="sub-category">
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h6><a href="#">Apple Category</a></h6>
+                    <ul class="sub-category">
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h6><a href="#">Apple Category</a></h6>
+                    <ul class="sub-category">
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                      <li><a href="">Apple Iphone</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+
+            </ul>
+
+          </div>
+
+
+        </div>
+
+        <div class="col-md-9 col-12 breadcrumbs align-items-center d-flex justify-content-between flex-wrap">
+          <div class="bread-inner">
+
+            <ul class="bread-list">
+              <li><a href="/" previewlistener="true">Home</a></li>
+              <li><a href="/" previewlistener="true">Category</a></li>
+              <li class="active"> Name of product</li>
+            </ul>
+
+          </div>
+
+
+          <div class="filter-button-group">
+            <div class="sort-container filter-container mobile">
+              <div id="filter-toggle" class="filter-toggle">
+                <div class="filter-toggle__button">
+                  <div class="select-caret"></div>
+                  Фільтр
+                </div>
+              </div>
+            </div>
+
+            <div class="sort-container">
+              <label for="sort" class="sort-label desktop">Сортувати:</label>
+              <div id="sort" class="custom-select-wrapper">
+                <div class="custom-select" id="custom-select">
+                  <div class="select-caret"></div>
+
+                  <div class="custom-select-trigger">За популярністю
+                  </div>
+                  <div class="custom-options">
+                    <div class="custom-option selected" data-value="popularity">За популярністю</div>
+                    <div class="custom-option" data-value="price_down">Спочатку дешевше</div>
+                    <div class="custom-option" data-value="price_up">Спочатку дороще</div>
+                    <div class="custom-option" data-value="new_products">Новинки</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="container mt-md-5">
+    <div class="row">
+      <div class="col-md-3 col-12 mt-3">
+
+        <div class="shop-sidebar">
+          <div class="single-widget">
+            <h3 class="title">Ціна</h3>
+
+            <div class="range-container">
+              <div id="range-component" class="range-component">
+                <div id="range" class="range"></div>
+                <div id="thumbMin" class="thumb"></div>
+                <div id="thumbMax" class="thumb"></div>
+              </div>
+              <div class="values-container">
+                <span id="min-value" class="value-label"></span>
+                <b>—</b>
+                <span id="max-value" class="value-label"></span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="single-widget">
+            <h3 class="title collapse-button collapsed" data-bs-toggle="collapse" data-bs-target="#brands"
+                aria-expanded="false" aria-controls="brand">
+              Бренд
+              <div class="collapse-caret"></div>
+            </h3>
+            <div class="collapse" id="brands">
+
+
+              <div class="container-catalog-filter">
+                <div class="checkbox">
+                  <input class="catalog-filter-checkbox" type="checkbox" value="" id="filter-value-1"
+                         name="filter-value-1" specific_id="1" url="1=1">
+                  <label for="filter-value-1">
+                    Apple <sup>245</sup> </label>
+                </div>
+
+
+                <div class="checkbox">
+                  <input class="catalog-filter-checkbox" type="checkbox" value="" id="filter-value-4551"
+                         name="filter-value-4551" specific_id="1" url="1=4551">
+                  <label for="filter-value-4551">
+                    Google <sup>4</sup> </label>
+                </div>
+
+
+                <div class="checkbox">
+                  <input class="catalog-filter-checkbox" type="checkbox" value="" id="filter-value-5365"
+                         name="filter-value-5365" specific_id="1" url="1=5365">
+                  <label for="filter-value-5365">
+                    OnePlus <sup>16</sup> </label>
+                </div>
+
+
+                <div class="checkbox">
+                  <input class="catalog-filter-checkbox" type="checkbox" value="" id="filter-value-559"
+                         name="filter-value-559" specific_id="1" url="1=559">
+                  <label for="filter-value-559">
+                    Samsung <sup>32</sup> </label>
+                </div>
+
+
+                <div class="checkbox">
+                  <input class="catalog-filter-checkbox" type="checkbox" value="" id="filter-value-1224"
+                         name="filter-value-1224" specific_id="1" url="1=1224">
+                  <label for="filter-value-1224">
+                    Xiaomi <sup>79</sup> </label>
+                </div>
+
+
+              </div>
+
+
+            </div>
+
+          </div>
+
+          <div class="single-widget">
+            <h3 class="title collapse-button collapsed" data-bs-toggle="collapse" data-bs-target="#diagonal"
+                aria-expanded="false" aria-controls="diagonal">
+              Діагональ, дюйми
+              <div class="collapse-caret"></div>
+            </h3>
+            <div class="collapse" id="diagonal">
+
+
+              <div class="container-catalog-filter">
+                <div class="checkbox">
+                  <input class="catalog-filter-checkbox" type="checkbox" value="" id="filter-value-386"
+                         name="filter-value-386" specific_id="3" url="3=386">
+                  <label for="filter-value-386">
+                    5,4 <sup>11</sup> </label>
+                </div>
+
+                <div class="checkbox">
+                  <input class="catalog-filter-checkbox" type="checkbox" value="" id="filter-value-442"
+                         name="filter-value-442" specific_id="3" url="3=442">
+                  <label for="filter-value-442">
+                    5,8 <sup>15</sup> </label>
+                </div>
+
+                <div class="checkbox">
+                  <input class="catalog-filter-checkbox" type="checkbox" value="" id="filter-value-3"
+                         name="filter-value-3" specific_id="3" url="3=3">
+                  <label for="filter-value-3">
+                    6,1 <sup>149</sup> </label>
+                </div>
+
+                <div class="checkbox">
+                  <input class="catalog-filter-checkbox" type="checkbox" value="" id="filter-value-669"
+                         name="filter-value-669" specific_id="3" url="3=669">
+                  <label for="filter-value-669">
+                    6,2 <sup>5</sup> </label>
+                </div>
+
+                <div class="checkbox">
+                  <input class="catalog-filter-checkbox" type="checkbox" value=""
+                         id="filter-value-1944" name="filter-value-1944" specific_id="3" url="3=1944">
+                  <label for="filter-value-1944">
+                    6,28 <sup>1</sup> </label>
+                </div>
+
+                <div class="checkbox">
+                  <input class="catalog-filter-checkbox" type="checkbox" value="" id="filter-value-883"
+                         name="filter-value-883" specific_id="3" url="3=883">
+                  <label for="filter-value-883">
+                    6,3 <sup>1</sup> </label>
+                </div>
+
+                <div class="checkbox">
+                  <input class="catalog-filter-checkbox" type="checkbox" value=""
+                         id="filter-value-1906" name="filter-value-1906" specific_id="3" url="3=1906">
+                  <label for="filter-value-1906">
+                    6,36 <sup>5</sup> </label>
+                </div>
+
+                <div class="checkbox">
+                  <input class="catalog-filter-checkbox" type="checkbox" value="" id="filter-value-590"
+                         name="filter-value-590" specific_id="3" url="3=590">
+                  <label for="filter-value-590">
+                    6,4 <sup>5</sup> </label>
+                </div>
+
+                <div class="checkbox">
+                  <input class="catalog-filter-checkbox" type="checkbox" value=""
+                         id="filter-value-1249" name="filter-value-1249" specific_id="3" url="3=1249">
+                  <label for="filter-value-1249">
+                    6,43 <sup>4</sup> </label>
+                </div>
+
+                <div class="checkbox">
+                  <input class="catalog-filter-checkbox" type="checkbox" value="" id="filter-value-468"
+                         name="filter-value-468" specific_id="3" url="3=468">
+                  <label for="filter-value-468">
+                    6,5 <sup>9</sup> </label>
+                </div>
+
+                <div class="checkbox hidden more10">
+                  <input class="catalog-filter-checkbox" type="checkbox" value="" id="filter-value-1283"
+                         name="filter-value-1283" specific_id="3" url="3=1283">
+                  <label for="filter-value-1283">
+                    6,53 <sup>6</sup> </label>
+                </div>
+
+                <div class="checkbox hidden more10">
+                  <input class="catalog-filter-checkbox" type="checkbox" value="" id="filter-value-1228"
+                         name="filter-value-1228" specific_id="3" url="3=1228">
+                  <label for="filter-value-1228">
+                    6,67 <sup>48</sup> </label>
+                </div>
+
+                <div class="checkbox hidden more10">
+                  <input class="catalog-filter-checkbox" type="checkbox" value="" id="filter-value-343"
+                         name="filter-value-343" specific_id="3" url="3=343">
+                  <label for="filter-value-343">
+                    6,7 <sup>75</sup> </label>
+                </div>
+
+                <div class="checkbox hidden more10">
+                  <input class="catalog-filter-checkbox" type="checkbox" value=""
+                         id="filter-value-1430" name="filter-value-1430" specific_id="3" url="3=1430">
+                  <label for="filter-value-1430">
+                    6,71 <sup>4</sup> </label>
+                </div>
+
+                <div class="checkbox hidden more10">
+                  <input class="catalog-filter-checkbox" type="checkbox" value=""
+                         id="filter-value-5422" name="filter-value-5422" specific_id="3" url="3=5422">
+                  <label for="filter-value-5422">
+                    6,72 <sup>2</sup> </label>
+                </div>
+
+                <div class="checkbox hidden more10">
+                  <input class="catalog-filter-checkbox" type="checkbox" value=""
+                         id="filter-value-5144" name="filter-value-5144" specific_id="3" url="3=5144">
+                  <label for="filter-value-5144">
+                    6,74 <sup>13</sup> </label>
+                </div>
+
+                <div class="checkbox hidden more10">
+                  <input class="catalog-filter-checkbox" type="checkbox" value=""
+                         id="filter-value-5251" name="filter-value-5251" specific_id="3" url="3=5251">
+                  <label for="filter-value-5251">
+                    6,78 <sup>3</sup> </label>
+                </div>
+
+                <div class="checkbox hidden more10">
+                  <input class="catalog-filter-checkbox" type="checkbox" value=""
+                         id="filter-value-1936" name="filter-value-1936" specific_id="3" url="3=1936">
+                  <label for="filter-value-1936">
+                    6,79 <sup>1</sup> </label>
+                </div>
+
+                <div class="checkbox hidden more10">
+                  <input class="catalog-filter-checkbox" type="checkbox" value="" id="filter-value-569"
+                         name="filter-value-569" specific_id="3" url="3=569">
+                  <label for="filter-value-569">
+                    6,8 <sup>12</sup> </label>
+                </div>
+
+                <div class="checkbox hidden more10">
+                  <input class="catalog-filter-checkbox" type="checkbox" value=""
+                         id="filter-value-5368" name="filter-value-5368" specific_id="3" url="3=5368">
+                  <label for="filter-value-5368">
+                    6,82 <sup>6</sup> </label>
+                </div>
+
+                <div class="show_more_filters_value" id="show_more_3">
+                  <span>Всі параметри</span>
+                  <div class="collapse-caret"></div>
+                </div>
+              </div>
+
+
+            </div>
+
+          </div>
+
+          <div class="single-widget">
+            <h3 class="title collapse-button collapsed" data-bs-toggle="collapse" data-bs-target="#frontal-camera"
+                aria-expanded="false" aria-controls="frontal-camera">
+              Фронтальна камера, Мп
+              <div class="collapse-caret"></div>
+            </h3>
+            <div class="collapse" id="frontal-camera">
+
+              <div class="container-catalog-filter">
+                <div class="checkbox">
+                  <input class="catalog-filter-checkbox" type="checkbox" value=""
+                         id="filter-value-632" name="filter-value-632" specific_id="286"
+                         url="286=632">
+                  <label for="filter-value-632"> 10 (f / 2.2) <sup>1</sup> </label>
+                </div>
+
+                <div class="checkbox">
+                  <input class="catalog-filter-checkbox" type="checkbox" value="" id="filter-value-780"
+                         name="filter-value-780" specific_id="286" url="286=780">
+                  <label for="filter-value-780">
+                    10 (f / 2.4) <sup>3</sup> </label>
+                </div>
+
+
+                <div class="checkbox">
+                  <input class="catalog-filter-checkbox" type="checkbox" value="" id="filter-value-4557"
+                         name="filter-value-4557" specific_id="286" url="286=4557">
+                  <label for="filter-value-4557">
+                    10,8 (f/2.2) <sup>2</sup> </label>
+                </div>
+
+
+                <div class="checkbox">
+                  <input class="catalog-filter-checkbox" type="checkbox" value="" id="filter-value-623"
+                         name="filter-value-623" specific_id="286" url="286=623">
+                  <label for="filter-value-623">
+                    12 <sup>1</sup> </label>
+                </div>
+
+
+                <div class="checkbox">
+                  <input class="catalog-filter-checkbox" type="checkbox" value="" id="filter-value-323"
+                         name="filter-value-323" specific_id="286" url="286=323">
+                  <label for="filter-value-323">
+                    12 (f / 1.9) <sup>90</sup> </label>
+                </div>
+
+
+                <div class="checkbox">
+                  <input class="catalog-filter-checkbox" type="checkbox" value="" id="filter-value-295"
+                         name="filter-value-295" specific_id="286" url="286=295">
+                  <label for="filter-value-295">
+                    12 (f / 2.2) <sup>145</sup> </label>
+                </div>
+
+
+                <div class="checkbox">
+                  <input class="catalog-filter-checkbox" type="checkbox" value="" id="filter-value-351"
+                         name="filter-value-351" specific_id="286" url="286=351">
+                  <label for="filter-value-351">
+                    12 (f/12.9) <sup>16</sup> </label>
+                </div>
+
+
+                <div class="checkbox">
+                  <input class="catalog-filter-checkbox" type="checkbox" value="" id="filter-value-606"
+                         name="filter-value-606" specific_id="286" url="286=606">
+                  <label for="filter-value-606">
+                    13 (f / 2.2) <sup>2</sup> </label>
+                </div>
+
+
+                <div class="checkbox">
+                  <input class="catalog-filter-checkbox" type="checkbox" value="" id="filter-value-1328"
+                         name="filter-value-1328" specific_id="286" url="286=1328">
+                  <label for="filter-value-1328">
+                    13 (f / 2.4) <sup>3</sup> </label>
+                </div>
+
+
+                <div class="checkbox">
+                  <input class="catalog-filter-checkbox" type="checkbox" value="" id="filter-value-1198"
+                         name="filter-value-1198" specific_id="286" url="286=1198">
+                  <label for="filter-value-1198">
+                    16 <sup>2</sup> </label>
+                </div>
+
+
+                <div class="checkbox hidden more10">
+                  <input class="catalog-filter-checkbox" type="checkbox" value="" id="filter-value-1402"
+                         name="filter-value-1402" specific_id="286" url="286=1402">
+                  <label for="filter-value-1402">
+                    16 (f / 2.4) <sup>31</sup> </label>
+                </div>
+
+
+                <div class="checkbox hidden more10">
+                  <input class="catalog-filter-checkbox" type="checkbox" value="" id="filter-value-1915"
+                         name="filter-value-1915" specific_id="286" url="286=1915">
+                  <label for="filter-value-1915">
+                    16 (f / 2.45) <sup>20</sup> </label>
+                </div>
+
+
+                <div class="checkbox hidden more10">
+                  <input class="catalog-filter-checkbox" type="checkbox" value="" id="filter-value-286"
+                         name="filter-value-286" specific_id="286" url="286=286">
+                  <label for="filter-value-286">
+                    20 <sup>1</sup> </label>
+                </div>
+
+
+                <div class="checkbox hidden more10">
+                  <input class="catalog-filter-checkbox" type="checkbox" value="" id="filter-value-2031"
+                         name="filter-value-2031" specific_id="286" url="286=2031">
+                  <label for="filter-value-2031">
+                    20 (f / 2.2) <sup>2</sup> </label>
+                </div>
+
+
+                <div class="checkbox hidden more10">
+                  <input class="catalog-filter-checkbox" type="checkbox" value="" id="filter-value-486"
+                         name="filter-value-486" specific_id="286" url="286=486">
+                  <label for="filter-value-486">
+                    32 <sup>1</sup> </label>
+                </div>
+
+
+                <div class="checkbox hidden more10">
+                  <input class="catalog-filter-checkbox" type="checkbox" value="" id="filter-value-1187"
+                         name="filter-value-1187" specific_id="286" url="286=1187">
+                  <label for="filter-value-1187">
+                    32 (f / 2.0) <sup>5</sup> </label>
+                </div>
+
+
+                <div class="checkbox hidden more10">
+                  <input class="catalog-filter-checkbox" type="checkbox" value="" id="filter-value-594"
+                         name="filter-value-594" specific_id="286" url="286=594">
+                  <label for="filter-value-594">
+                    32 (f / 2.2) <sup>2</sup> </label>
+                </div>
+
+
+                <div class="checkbox hidden more10">
+                  <input class="catalog-filter-checkbox" type="checkbox" value="" id="filter-value-5373"
+                         name="filter-value-5373" specific_id="286" url="286=5373">
+                  <label for="filter-value-5373">
+                    32 (f / 2.4) <sup>6</sup> </label>
+                </div>
+
+
+                <div class="checkbox hidden more10">
+                  <input class="catalog-filter-checkbox" type="checkbox" value="" id="filter-value-702"
+                         name="filter-value-702" specific_id="286" url="286=702">
+                  <label for="filter-value-702">
+                    40 (f / 2.2) <sup>1</sup> </label>
+                </div>
+
+
+                <div class="checkbox hidden more10">
+                  <input class="catalog-filter-checkbox" type="checkbox" value="" id="filter-value-514"
+                         name="filter-value-514" specific_id="286" url="286=514">
+                  <label for="filter-value-514">
+                    5 <sup>7</sup> </label>
+                </div>
+
+
+                <div class="checkbox hidden more10">
+                  <input class="catalog-filter-checkbox" type="checkbox" value="" id="filter-value-756"
+                         name="filter-value-756" specific_id="286" url="286=756">
+                  <label for="filter-value-756">
+                    5 (f / 2.2) <sup>3</sup> </label>
+                </div>
+
+
+                <div class="checkbox hidden more10">
+                  <input class="catalog-filter-checkbox" type="checkbox" value="" id="filter-value-419"
+                         name="filter-value-419" specific_id="286" url="286=419">
+                  <label for="filter-value-419">
+                    7 (f / 2.2) <sup>18</sup> </label>
+                </div>
+
+
+                <div class="checkbox hidden more10">
+                  <input class="catalog-filter-checkbox" type="checkbox" value="" id="filter-value-1050"
+                         name="filter-value-1050" specific_id="286" url="286=1050">
+                  <label for="filter-value-1050">
+                    8 (f / 2.0) <sup>12</sup> </label>
+                </div>
+
+
+                <div class="checkbox hidden more10">
+                  <input class="catalog-filter-checkbox" type="checkbox" value="" id="filter-value-1415"
+                         name="filter-value-1415" specific_id="286" url="286=1415">
+                  <label for="filter-value-1415">
+                    8 (f / 2.1) <sup>1</sup> </label>
+                </div>
+
+
+                <div class="show_more_filters_value" id="show_more_286">
+                  <span>Всі параметри</span>
+                  <div class="collapse-caret"></div>
+                </div>
+              </div>
+
+            </div>
+
+
+          </div>
+
+          <div class="single-widget">
+            <h3 class="title collapse-button collapsed" data-bs-toggle="collapse" data-bs-target="#line"
+                aria-expanded="false" aria-controls="line">
+              Лінійка
+              <div class="collapse-caret"></div>
+            </h3>
+            <div class="collapse" id="line">
+
+              <div class="container-catalog-filter">
+                <div class="checkbox">
+                  <input class="catalog-filter-checkbox" type="checkbox" value="" id="filter-value-4552"
+                         name="filter-value-4552" specific_id="269" url="1=4551;269=4552">
+                  <label for="filter-value-4552">
+                    Pixel 7 <sup>1</sup> </label>
+                </div>
+
+                <div class="checkbox hidden more10">
+                  <input class="catalog-filter-checkbox" type="checkbox" value=""
+                         id="filter-value-5196" name="filter-value-5196" specific_id="269" url="1=4551;269=5196"
+                         disabled="">
+                  <label for="filter-value-5196">
+                    Poco C65 </label>
+                </div>
+                <div class="show_more_filters_value" id="show_more_269">
+                  <span>Всі параметри</span>
+                  <div class="collapse-caret"></div>
+                </div>
+              </div>
+
+            </div>
+
+
+          </div>
+
+          <div class="single-widget">
+            <h3 class="title collapse-button collapsed" data-bs-toggle="collapse" data-bs-target="#sim-type"
+                aria-expanded="false" aria-controls="sim-type">
+              Тип SIM-карти
+              <div class="collapse-caret"></div>
+            </h3>
+            <div class="collapse" id="sim-type">
+
+              <div class="container-catalog-filter">
+                <div class="checkbox">
+                  <input class="catalog-filter-checkbox" type="checkbox" value="" id="filter-value-283"
+                         name="filter-value-283" specific_id="274" url="1=4551;274=283">
+                  <label for="filter-value-283">
+                    Nano-SIM <sup>3</sup> </label>
+                </div>
+
+                <div class="checkbox">
+                  <input class="catalog-filter-checkbox" type="checkbox" value=""
+                         id="filter-value-4451" name="filter-value-4451" specific_id="274" url="1=4551;274=4451"
+                         disabled="">
+                  <label for="filter-value-4451">
+                    Nano-SIM + eSIM </label>
+                </div>
+
+                <div class="checkbox">
+                  <input class="catalog-filter-checkbox" type="checkbox" value="" id="filter-value-406"
+                         name="filter-value-406" specific_id="274" url="1=4551;274=406" disabled="">
+                  <label for="filter-value-406">
+                    eSIM </label>
+                </div>
+
+
+              </div>
+
+            </div>
+
+
+          </div>
+
+          <div class="single-widget">
+            <h3 class="title collapse-button collapsed" data-bs-toggle="collapse" data-bs-target="#state"
+                aria-expanded="false" aria-controls="state">
+              Стан
+              <div class="collapse-caret"></div>
+            </h3>
+            <div class="collapse" id="state">
+
+              <div class="container-catalog-filter">
+                <div class="checkbox">
+                  <input class="catalog-filter-checkbox" type="checkbox" value=""
+                         id="filter-value-4772" name="filter-value-4772" specific_id="704" url="1=4551;704=4772">
+                  <label for="filter-value-4772">
+                    Новий <sup>4</sup> </label>
+                </div>
+
+                <div class="checkbox">
+                  <input class="catalog-filter-checkbox" type="checkbox" value=""
+                         id="filter-value-4773" name="filter-value-4773" specific_id="704" url="1=4551;704=4773"
+                         disabled="">
+                  <label for="filter-value-4773">
+                    Оновлений </label>
+                </div>
+
+
+              </div>
+
+            </div>
+
+
+          </div>
+
+          <div class="single-widget">
+            <h3 class="title collapse-button collapsed" data-bs-toggle="collapse" data-bs-target="#rom"
+                aria-expanded="false" aria-controls="rom">
+              Вбудована пам'ять, ГБ
+              <div class="collapse-caret"></div>
+            </h3>
+            <div class="collapse" id="rom">
+
+              <div class="container-catalog-filter filter-row-container">
+                <div class="checkbox-size">
+                  <input class="catalog-filter-checkbox-size" type="checkbox" value=""
+                         id="filter-value-281" name="filter-value-281">
+                  <label for="filter-value-281">
+                    128 </label>
+                </div>
+
+                <div class="checkbox-size">
+                  <input class="catalog-filter-checkbox-size" type="checkbox" value=""
+                         id="filter-value-340" name="filter-value-340"
+                         disabled="">
+                  <label for="filter-value-340">
+                    256 </label>
+                </div>
+
+                <div class="checkbox-size">
+                  <input class="catalog-filter-checkbox-size" type="checkbox" value=""
+                         id="filter-value-404" name="filter-value-404"
+                         disabled="">
+                  <label for="filter-value-404">
+                    64 </label>
+                </div>
+
+                <div class="checkbox-size">
+                  <input class="catalog-filter-checkbox-size" type="checkbox" value=""
+                         id="filter-value-427" name="filter-value-427"
+                         disabled="">
+                  <label for="filter-value-427">
+                    512 </label>
+                </div>
+
+                <div class="checkbox-size">
+                  <input class="catalog-filter-checkbox-size" type="checkbox" value=""
+                         id="filter-value-262" name="filter-value-262"
+                         disabled="">
+                  <label for="filter-value-262">
+                    1024 </label>
+                </div>
+
+
+              </div>
+
+            </div>
+
+
+          </div>
+
+          <div class="single-widget">
+            <h3 class="title collapse-button collapsed" data-bs-toggle="collapse" data-bs-target="#ram"
+                aria-expanded="false" aria-controls="ram">
+              Оперативна пам'ять, ГБ
+              <div class="collapse-caret"></div>
+            </h3>
+            <div class="collapse" id="ram">
+
+              <div class="container-catalog-filter filter-row-container">
+                <div class="checkbox-size">
+                  <input class="catalog-filter-checkbox-size" type="checkbox" value=""
+                         id="filter-value-562" name="filter-value-562">
+                  <label for="filter-value-562">
+                    8 </label>
+                </div>
+
+                <div class="checkbox-size">
+                  <input class="catalog-filter-checkbox-size" type="checkbox" value=""
+                         id="filter-value-436" name="filter-value-436"
+                         disabled="">
+                  <label for="filter-value-436">
+                    3 </label>
+                </div>
+
+              </div>
+
+            </div>
+
+
+          </div>
+
+          <div class="single-widget">
+            <h3 class="title collapse-button collapsed" data-bs-toggle="collapse" data-bs-target="#color"
+                aria-expanded="false" aria-controls="color">
+              Колір корпусу
+              <div class="collapse-caret"></div>
+            </h3>
+            <div class="collapse" id="color">
+
+              <div class="container-catalog-filter filter-row-container">
+                <div class="checkbox-color">
+                  <input class="catalog-filter-checkbox-color" type="checkbox" value=""
+                         id="filter-value-1502" name="filter-value-1502">
+                  <label class="color-filter-value-1502" for="filter-value-1502"></label>
+                </div>
+
+                <div class="checkbox-color">
+                  <input class="catalog-filter-checkbox-color" type="checkbox" value=""
+                         id="filter-value-1029" name="filter-value-1029">
+                  <label class="color-filter-value-1029" for="filter-value-1029"></label>
+                </div>
+
+                <div class="checkbox-color">
+                  <input class="catalog-filter-checkbox-color" type="checkbox" value=""
+                         id="filter-value-504" name="filter-value-504">
+                  <label class="color-filter-value-504" for="filter-value-504"></label>
+                </div>
+
+                <div class="checkbox-color">
+                  <input class="catalog-filter-checkbox-color" type="checkbox" value=""
+                         id="filter-value-473" name="filter-value-473" disabled="">
+                  <label class="color-filter-value-473" for="filter-value-473"></label>
+                </div>
+
+                <div class="checkbox-color">
+                  <input class="catalog-filter-checkbox-color" type="checkbox" value=""
+                         id="filter-value-500" name="filter-value-500" disabled="">
+                  <label class="color-filter-value-500" for="filter-value-500"></label>
+                </div>
+
+                <div class="checkbox-color hidden more10">
+                  <input class="catalog-filter-checkbox-color" type="checkbox" value=""
+                         id="filter-value-341" name="filter-value-341" disabled="">
+                  <label class="color-filter-value-341" for="filter-value-341"></label>
+                </div>
+
+
+                <div class="show_more_filters_value" id="show_more_4">
+                  <span>Всі параметри</span>
+                  <div class="collapse-caret"></div>
+                </div>
+              </div>
+
+            </div>
+
+
+          </div>
+
+
+        </div>
+
+
+      </div>
+      <div class="col-md-9 col-12 mt-3">
+        <div class="catalog-grid">
+          <div class="product-list-slider__item">
+            <div class="single-product">
+              <div class="product-img">
+                <a href="/product/acefast-d7-car-mount-magnetic-holder-afd7">
+                  <img class="product-img" src="assets/img/images/32.jpg" alt="#">
+                </a>
+                <div class="button-head">
+                  <div class="product-action">
+                  </div>
+                </div>
+              </div>
+              <div class="product-content">
+                <h3><a href="/product/acefast-d7-car-mount-magnetic-holder-afd7">Acefast D7 Car Mount Magnetic
+                  Holder (AFD7)</a></h3>
+
+                <div class="product-price d-flex justify-content-between align-items-md-end flex-column flex-md-row">
+                  <div class="current">23 144 грн</div>
+                  <div class="old"></div>
+                </div>
+                <div class="product-buy">
+                  <div class="add-to-cart">
+                    Купити
+                    <svg class="button-arrow">
+                      <use xlink:href="./assets/img/icons/sprites.svg#button-arrow"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <div class="single-product__details">
+
+
+                <div class="row">
+                  <div class="col-6"> Бренд</div>
+                  <div class="col-6"> Apple</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6"> Оперативна пам'ять, ГБ</div>
+                  <div class="col-6"> 4</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6"> Діагональ, дюйми</div>
+                  <div class="col-6"> 6,1</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6"> Лінійка</div>
+                  <div class="col-6"> iPhone 13</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6"> Вбудована пам'ять, ГБ</div>
+                  <div class="col-6"> 128</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6"> Тип SIM-карти</div>
+                  <div class="col-6"> Nano-SIM</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6"> Фронтальна камера, Мп</div>
+                  <div class="col-6"> 12 (f / 2.2)</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6"> Колір корпусу</div>
+                  <div class="col-6"> синій</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6"> Стан</div>
+                  <div class="col-6"> Новий</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-list-slider__item">
+            <div class="single-product">
+              <div class="product-img">
+                <a href="/product/acefast-d7-car-mount-magnetic-holder-afd7">
+                  <img class="product-img" src="assets/img/images/32.jpg" alt="#">
+                </a>
+                <div class="button-head">
+                  <div class="product-action">
+                  </div>
+                </div>
+              </div>
+              <div class="product-content">
+                <h3><a href="/product/acefast-d7-car-mount-magnetic-holder-afd7">Acefast D7 Car Mount Magnetic
+                  Holder (AFD7)</a></h3>
+
+                <div class="product-price d-flex justify-content-between align-items-md-end flex-column flex-md-row">
+                  <div class="current">23 144 грн</div>
+                  <div class="old">26 199 грн</div>
+                </div>
+                <div class="product-buy">
+                  <div class="add-to-cart">
+                    Купити
+                    <svg class="button-arrow">
+                      <use xlink:href="./assets/img/icons/sprites.svg#button-arrow"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="single-product__details">
+
+
+                <div class="row">
+                  <div class="col-6"> Бренд</div>
+                  <div class="col-6"> Apple</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6"> Оперативна пам'ять, ГБ</div>
+                  <div class="col-6"> 4</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6"> Діагональ, дюйми</div>
+                  <div class="col-6"> 6,1</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6"> Лінійка</div>
+                  <div class="col-6"> iPhone 13</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6"> Вбудована пам'ять, ГБ</div>
+                  <div class="col-6"> 128</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6"> Тип SIM-карти</div>
+                  <div class="col-6"> Nano-SIM</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6"> Фронтальна камера, Мп</div>
+                  <div class="col-6"> 12 (f / 2.2)</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6"> Колір корпусу</div>
+                  <div class="col-6"> синій</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6"> Стан</div>
+                  <div class="col-6"> Новий</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="product-list-slider__item">
+            <div class="single-product">
+              <div class="product-img">
+                <a href="/product/acefast-d7-car-mount-magnetic-holder-afd7">
+                  <img class="product-img" src="assets/img/images/32.jpg" alt="#">
+                </a>
+                <div class="button-head">
+                  <div class="product-action">
+                  </div>
+                </div>
+              </div>
+              <div class="product-content">
+                <h3><a href="/product/acefast-d7-car-mount-magnetic-holder-afd7">Acefast D7 Car Mount Magnetic
+                  Holder (AFD7)</a></h3>
+
+                <div class="product-price d-flex justify-content-between align-items-md-end flex-column flex-md-row">
+                  <div class="current">23 144 грн</div>
+                  <div class="old">26 199 грн</div>
+                </div>
+                <div class="product-buy">
+                  <div class="add-to-cart">
+                    Купити
+                    <svg class="button-arrow">
+                      <use xlink:href="./assets/img/icons/sprites.svg#button-arrow"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="single-product__details">
+
+
+                <div class="row">
+                  <div class="col-6"> Бренд</div>
+                  <div class="col-6"> Apple</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6"> Оперативна пам'ять, ГБ</div>
+                  <div class="col-6"> 4</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6"> Діагональ, дюйми</div>
+                  <div class="col-6"> 6,1</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6"> Лінійка</div>
+                  <div class="col-6"> iPhone 13</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6"> Вбудована пам'ять, ГБ</div>
+                  <div class="col-6"> 128</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6"> Тип SIM-карти</div>
+                  <div class="col-6"> Nano-SIM</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6"> Фронтальна камера, Мп</div>
+                  <div class="col-6"> 12 (f / 2.2)</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6"> Колір корпусу</div>
+                  <div class="col-6"> синій</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6"> Стан</div>
+                  <div class="col-6"> Новий</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="product-list-slider__item">
+            <div class="single-product">
+              <div class="product-img">
+                <a href="/product/acefast-d7-car-mount-magnetic-holder-afd7">
+                  <img class="product-img" src="assets/img/images/32.jpg" alt="#">
+                </a>
+                <div class="button-head">
+                  <div class="product-action">
+                  </div>
+                </div>
+              </div>
+              <div class="product-content">
+                <h3><a href="/product/acefast-d7-car-mount-magnetic-holder-afd7">Acefast D7 Car Mount Magnetic
+                  Holder (AFD7)</a></h3>
+
+                <div class="product-price d-flex justify-content-between align-items-md-end flex-column flex-md-row">
+                  <div class="current">23 144 грн</div>
+                  <div class="old">26 199 грн</div>
+                </div>
+                <div class="product-buy">
+                  <div class="add-to-cart">
+                    Купити
+                    <svg class="button-arrow">
+                      <use xlink:href="./assets/img/icons/sprites.svg#button-arrow"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="single-product__details">
+
+
+                <div class="row">
+                  <div class="col-6"> Бренд</div>
+                  <div class="col-6"> Apple</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6"> Оперативна пам'ять, ГБ</div>
+                  <div class="col-6"> 4</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6"> Діагональ, дюйми</div>
+                  <div class="col-6"> 6,1</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6"> Лінійка</div>
+                  <div class="col-6"> iPhone 13</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6"> Вбудована пам'ять, ГБ</div>
+                  <div class="col-6"> 128</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6"> Тип SIM-карти</div>
+                  <div class="col-6"> Nano-SIM</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6"> Фронтальна камера, Мп</div>
+                  <div class="col-6"> 12 (f / 2.2)</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6"> Колір корпусу</div>
+                  <div class="col-6"> синій</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6"> Стан</div>
+                  <div class="col-6"> Новий</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="product-list-slider__item">
+            <div class="single-product">
+              <div class="product-img">
+                <a href="/product/acefast-d7-car-mount-magnetic-holder-afd7">
+                  <img class="product-img" src="assets/img/images/32.jpg" alt="#">
+                </a>
+                <div class="button-head">
+                  <div class="product-action">
+                  </div>
+                </div>
+              </div>
+              <div class="product-content">
+                <h3><a href="/product/acefast-d7-car-mount-magnetic-holder-afd7">Acefast D7 Car Mount Magnetic
+                  Holder (AFD7)</a></h3>
+
+                <div class="product-price d-flex justify-content-between align-items-md-end flex-column flex-md-row">
+                  <div class="current">23 144 грн</div>
+                  <div class="old">26 199 грн</div>
+                </div>
+                <div class="product-buy">
+                  <div class="add-to-cart">
+                    Купити
+                    <svg class="button-arrow">
+                      <use xlink:href="./assets/img/icons/sprites.svg#button-arrow"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="single-product__details">
+
+
+                <div class="row">
+                  <div class="col-6"> Бренд</div>
+                  <div class="col-6"> Apple</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6"> Оперативна пам'ять, ГБ</div>
+                  <div class="col-6"> 4</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6"> Діагональ, дюйми</div>
+                  <div class="col-6"> 6,1</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6"> Лінійка</div>
+                  <div class="col-6"> iPhone 13</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6"> Вбудована пам'ять, ГБ</div>
+                  <div class="col-6"> 128</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6"> Тип SIM-карти</div>
+                  <div class="col-6"> Nano-SIM</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6"> Фронтальна камера, Мп</div>
+                  <div class="col-6"> 12 (f / 2.2)</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6"> Колір корпусу</div>
+                  <div class="col-6"> синій</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6"> Стан</div>
+                  <div class="col-6"> Новий</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="product-list-slider__item">
+            <div class="single-product">
+              <div class="product-img">
+                <a href="/product/acefast-d7-car-mount-magnetic-holder-afd7">
+                  <img class="product-img" src="assets/img/images/32.jpg" alt="#">
+                </a>
+                <div class="button-head">
+                  <div class="product-action">
+                  </div>
+                </div>
+              </div>
+              <div class="product-content">
+                <h3><a href="/product/acefast-d7-car-mount-magnetic-holder-afd7">Acefast D7 Car Mount Magnetic
+                  Holder (AFD7)</a></h3>
+
+                <div class="product-price d-flex justify-content-between align-items-md-end flex-column flex-md-row">
+                  <div class="current">23 144 грн</div>
+                  <div class="old">26 199 грн</div>
+                </div>
+                <div class="product-buy">
+                  <div class="add-to-cart">
+                    Купити
+                    <svg class="button-arrow">
+                      <use xlink:href="./assets/img/icons/sprites.svg#button-arrow"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="single-product__details">
+
+
+                <div class="row">
+                  <div class="col-6"> Бренд</div>
+                  <div class="col-6"> Apple</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6"> Оперативна пам'ять, ГБ</div>
+                  <div class="col-6"> 4</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6"> Діагональ, дюйми</div>
+                  <div class="col-6"> 6,1</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6"> Лінійка</div>
+                  <div class="col-6"> iPhone 13</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6"> Вбудована пам'ять, ГБ</div>
+                  <div class="col-6"> 128</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6"> Тип SIM-карти</div>
+                  <div class="col-6"> Nano-SIM</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6"> Фронтальна камера, Мп</div>
+                  <div class="col-6"> 12 (f / 2.2)</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6"> Колір корпусу</div>
+                  <div class="col-6"> синій</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6"> Стан</div>
+                  <div class="col-6"> Новий</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="product-list-slider__item">
+            <div class="single-product">
+              <div class="product-img">
+                <a href="/product/acefast-d7-car-mount-magnetic-holder-afd7">
+                  <img class="product-img" src="assets/img/images/32.jpg" alt="#">
+                </a>
+                <div class="button-head">
+                  <div class="product-action">
+                  </div>
+                </div>
+              </div>
+              <div class="product-content">
+                <h3><a href="/product/acefast-d7-car-mount-magnetic-holder-afd7">Acefast D7 Car Mount Magnetic
+                  Holder (AFD7)</a></h3>
+
+                <div class="product-price d-flex justify-content-between align-items-md-end flex-column flex-md-row">
+                  <div class="current">23 144 грн</div>
+                  <div class="old">26 199 грн</div>
+                </div>
+                <div class="product-buy">
+                  <div class="add-to-cart">
+                    Купити
+                    <svg class="button-arrow">
+                      <use xlink:href="./assets/img/icons/sprites.svg#button-arrow"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="single-product__details">
+
+
+                <div class="row">
+                  <div class="col-6"> Бренд</div>
+                  <div class="col-6"> Apple</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6"> Оперативна пам'ять, ГБ</div>
+                  <div class="col-6"> 4</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6"> Діагональ, дюйми</div>
+                  <div class="col-6"> 6,1</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6"> Лінійка</div>
+                  <div class="col-6"> iPhone 13</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6"> Вбудована пам'ять, ГБ</div>
+                  <div class="col-6"> 128</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6"> Тип SIM-карти</div>
+                  <div class="col-6"> Nano-SIM</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6"> Фронтальна камера, Мп</div>
+                  <div class="col-6"> 12 (f / 2.2)</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6"> Колір корпусу</div>
+                  <div class="col-6"> синій</div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6"> Стан</div>
+                  <div class="col-6"> Новий</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="pagination center">
+
+
+          <ul class="pagination-list">
+
+            <li class="disabled"><a><i class="fa-solid fa-arrow-left"></i></a></li>
+
+
+            <li class="active"><a>1</a></li>
+
+
+            <li><a href="/catalog/smartfony/1=1;page=2">2</a></li>
+
+
+            <li><a>...</a></li>
+
+
+            <li><a href="/catalog/smartfony/1=1;page=8">8</a></li>
+
+
+            <li><a href="/catalog/smartfony/1=1;page=2"><i class="fa-solid fa-arrow-right"></i></a></li>
+
+          </ul>
+
+        </div>
+      </div>
+
+
+    </div>
+
+  </section>
+</main>
+
+
+<footer class="footer">
+  <div class="footer-top section">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-md-2 d-flex flex-column">
+          <div class="logo">
+            <a href="/"><img src="assets/img/images/logo.png" alt="#"></a>
+          </div>
+          <div class="copyright desktop">
+            © <span id="date">2024</span> re-tech
+          </div>
+        </div>
+
+        <div class="col-md-4 col-12">
+          <h4>Наша дружня RETECH-команда чекає на ВАС та готова надати найкращі послуги:</h4>
+          <ul>
+            <li>Викуп по програмі Trade-in: можливість обміну вашого старого пристрою на новий.</li>
+            <li>Обмін iPhone на гроші: ви можете обміняти свій iPhone на грошову винагороду.</li>
+            <li>Гарантована якість: всі наші телефони перевірені та сертифіковані в офіційних центрах Apple.</li>
+            <li>Конкурентні ціни: ми пропонуємо доступні та конкурентоспроможні ціни на всі товари.</li>
+          </ul>
+        </div>
+
+        <div class="col-md-2 col-6">
+          <h4>Інформація</h4>
+          <ul>
+            <li><a href="/about">Про нас</a></li>
+            <li><a href="/contacts">Контакти</a></li>
+            <li class="promo-menu"><a href="/promo">Акції</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-2 col-6">
+          <h4>Обслуговування Клієнтів</h4>
+          <ul>
+            <li><a href="/delivery-and-payments">Умови доставки і оплати товару</a></li>
+            <li><a href="/return">Умови повернення товару</a></li>
+            <li><a href="/terms-of-use">Умови користування сайтом</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-2 col-6">
+          <h4>Зв`яжіться з нами</h4>
+          <ul>
+            <li>вул. Велика Васильківська, 33, Київ, Україна</li>
+            <li><a href="#">info@re-tech.com.ua</a></li>
+            <li class="phone desktop"><b>0800 331 221</b></li>
+            <li class="social-media desktop">
+              <a href="https://www.facebook.com/retech.tradein">
+                <svg class="icon-m">
+                  <use xlink:href="./assets/img/icons/sprites.svg#facebook"></use>
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/retech_tradein/">
+                <svg class="icon-m">
+                  <use xlink:href="./assets/img/icons/sprites.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile">© <span id="date-mobile">2024</span> re-tech</li>
+          </ul>
+        </div>
+
+        <div class="col-md-2 col-6 mobile">
+          <h4></h4>
+          <ul>
+            <li></li>
+            <li></li>
+            <li class="phone"><b>0800 331 221</b></li>
+            <li class="social-media">
+              <a href="https://www.facebook.com/retech.tradein">
+                <svg class="icon-m">
+                  <use xlink:href="./assets/img/icons/sprites.svg#facebook"></use>
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/retech_tradein/">
+                <svg class="icon-m">
+                  <use xlink:href="./assets/img/icons/sprites.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a id="scrollUp" href="#top" style="position: fixed; z-index: 13; display: none"><span><i
+    class="fa-solid fa-arrow-up-long"></i></span></a>
+
+<script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/504ede88cc.js" crossorigin="anonymous"></script>
+
+<script src="assets/scripts/slick.min.js"></script>
+<script src="assets/scripts/index.js"></script>
+<script src="assets/scripts/catalog.js"></script>
+</body>
+</html>

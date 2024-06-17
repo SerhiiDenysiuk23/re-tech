@@ -24,6 +24,10 @@
 
 }
 
+.shopping-cart p{
+    min-height: 54px;
+}
+
 
 .cart-title i {
     font-size: 20px;

@@ -203,18 +203,18 @@ a.single-icon{
     font-size: 13px;
     color: #333;
     margin: 0;
+    padding-right: 90px;
 }
 
 .shopping-list .quantity {
     line-height: 22px;
     font-size: 13px;
     padding-bottom: 30px;
+    padding-right: 90px;
 }
 
-.shopping-list .quantity {
-    line-height: 22px;
-    font-size: 13px;
-    padding-bottom: 30px;
+.shopping-list .quantity .amount{
+    float: right;
 }
 
 .shopping-item .bottom {

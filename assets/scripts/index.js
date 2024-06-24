@@ -57,7 +57,28 @@ $(document).ready(function () {
 
 
 
+  const selectWrapper = $(".select-wrapper")
+  selectWrapper.on("click", ".select", function(e) {
+    const $this = $(this);
+    $(".select").not($this).removeClass("open").find(".options").hide();
+    $this.toggleClass("open").find(".options").toggle();
+    e.stopPropagation();
+  });
 
+  selectWrapper.on("click", ".option", function(e) {
+    const $this = $(this);
+    const $wrapper = $this.closest(".select-wrapper");
+    $wrapper.find(".option").removeClass("selected");
+    $this.addClass("selected");
+    $wrapper.find(".select-trigger").html($this.text());
+    $wrapper.find(".select").removeClass("open").find(".options").hide();
+    e.stopPropagation();
+  });
+
+  $(document).on("click", function() {
+    $(".select").removeClass("open");
+    $(".options").hide();
+  });
 
 
 

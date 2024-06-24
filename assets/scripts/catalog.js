@@ -94,7 +94,6 @@ $(document).ready(function() {
     handleMouseDown(event, $thumbMax, false);
   });
 
-  // Обновляем позиции элементов при изменении размера окна
   $(window).resize(function() {
     updateSlider();
   });

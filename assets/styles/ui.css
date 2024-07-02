@@ -230,6 +230,10 @@
 }
 
 
+.rounded-img{
+    border-radius: 24px;
+}
+
 .color-filter-value-341 {
     background: #b76e79;
 }

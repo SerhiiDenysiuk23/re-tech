@@ -85,6 +85,16 @@ h6{
 }
 
 
+.contacts-page .about__contacts{
+    justify-content: start;
+    align-items: start;
+}
+
+.contacts-page__contacts{
+    flex-direction: column;
+    gap: 2em;
+}
+
 
 
 @media screen and (max-width: 600px){

@@ -627,7 +627,7 @@
 
             <ul class="bread-list">
               <li><a href="/" previewlistener="true">Home</a></li>
-              <li class="active"> Контакти</li>
+              <li class="active"> Про нас</li>
             </ul>
 
 
@@ -636,85 +636,118 @@
       </div>
     </div>
   </section>
-  <section class="container contacts-page my-5">
+
+  <section class="container my-5 about">
+
     <div class="about-flex">
-        <div class="checkout-form">
-          <form action="https://re-tech.com.ua/order-submit" method="POST"
-                class="form orderCheckout">
-            <input type="hidden" name="_token" value="Nof1ySdT2gLGKyOipvWK1U7lh2nZRYaKIVZKXMkV" autocomplete="off">
-            <div class="row">
-              <h2>Напишіть нам повідомлення</h2>
-            </div>
+      <div class="about__text">
+        <h1>Про нас</h1>
+        <br>
+        <h6> Retech - ваш надійний партнер у світі Apple-продукції! </h6>
+        <br>
+        <p>Наша команда складається з експертів, які пристрасно вивчають та розуміють кожен аспект технологій Apple. Ми
+          не просто продаємо продукцію, ми допомагаємо вам зробити найкращий вибір. Наш пріоритет - ваша довіра!
+          <br><br>
+          Retech - це не просто місце для покупки. Тут ви можете випробувати та протестувати будь-який пристрій Apple,
+          щоб впевнитися, що ваш вибір відповідає вашим потребам. </p>
+      </div>
+      <div class="about__team">
+        <img class="rounded-img" src="./assets/img/images/team.png" alt="Наша команда">
+      </div>
+    </div>
 
-                <div class="form-group">
-                  <label>Ваше ім`я<span>*</span></label>
-                  <input type="text" class="form-control" id="name" name="name" placeholder="Введіть ваше ім`я"
-                         onfocus="this.placeholder = ''" onblur="this.placeholder = 'Введіть ваше ім`я'" required="required"
-                         value="">
-                </div>
-                <div class="form-group">
-                  <label>Ваш Email<span>*</span></label>
-                  <input type="text" class="form-control " id="surname" name="surname" placeholder="Введіть ваш email"
-                         onfocus="this.placeholder = ''" onblur="this.placeholder = 'Введіть ваш email'"
-                         required="required" value="">
-                </div>
-                <div class="form-group">
-                  <label>Тема повідомлення<span>*</span></label>
-                  <input type="text" class="form-control " id="email" name="email" placeholder="Введіть тему повідомлення"
-                         onfocus="this.placeholder = ''" onblur="this.placeholder = 'Введіть тему повідомлення'"
-                         required="required" value="">
-                </div>
+    <h2>Наші переваги</h2>
+    <div class="about-grid">
+      <div class="about-card">
+        <div class="about-card__title">Оригінальна продукція</div>
+        <img class="my-4 rounded-img" src="./assets/img/images/original-production.png" alt="Оригінальна продукція">
+        <p class="about-card__description">
+          У нас ви знайдете лише оригінальну продукцію Apple, що забезпечується офіційною гарантією якості. Ми
+          гарантуємо цілісність продуктів і забезпечуємо гарантію як від виробника, так і від нашого магазину на всі
+          нові та оновлені пристрої.
+        </p>
+      </div>
+      <div class="about-card">
+        <div class="about-card__title">Trade-in програма</div>
+        <img class="my-4 rounded-img" src="./assets/img/images/tradein-program.png" alt="Оригінальна продукція">
+        <p class="about-card__description">
+          Ви маєте можливість обміняти свій старий гаджет на новий за вигідними умовами, швидко оцінивши його вартість у
+          нашому магазині.
+        </p>
+      </div>
+      <div class="about-card">
+        <div class="about-card__title">Викуп вашого пристрою</div>
+        <img class="my-4 rounded-img" src="./assets/img/images/redemption.png" alt="Оригінальна продукція">
+        <p class="about-card__description">
+          Ви - здаєте свій старий девайс (будь-якої моделі та стану), ми - його оцінюємо та пропонуємо вигідний викуп за
+          гроші.
+        </p>
+      </div>
+      <div class="about-card">
+        <div class="about-card__title">Вигідні ціни</div>
+        <img class="my-4 rounded-img" src="./assets/img/images/good-prices.png" alt="Оригінальна продукція">
+        <p class="about-card__description">
+          Наш магазин пропонує найвигідніші ціни на продукцію Apple на ринку, дозволяючи вам отримати якісний товар за
+          найкращою ціною.
+        </p>
+      </div>
+      <div class="about-card">
+        <div class="about-card__title">Повноцінна комплектація</div>
+        <img class="my-4 rounded-img" src="./assets/img/images/full-complect.png" alt="Оригінальна продукція">
+        <p class="about-card__description">
+          На відміну від багатьох компаній, які обмежують комплектацію пристроїв, ми надаємо повний комплект із зарядним
+          кабелем, адаптером і, за потреби, перехідником.
+        </p>
+      </div>
+      <div class="about-card">
+        <div class="about-card__title">Подовжена гарантія</div>
+        <img class="my-4 rounded-img" src="./assets/img/images/guarantee.png" alt="Оригінальна продукція">
+        <p class="about-card__description">
+          На весь наш товар розповсюджується 30- денна безкоштовна гарантія, а також можливість придбання 1- або
+          2-річної гарантії на ваш вибір. Крім того, ми готові надати підмінний фонд під час ремонту.
+        </p>
+      </div>
 
-                <div class="form-group">
-                  <label>Ваше повідомлення<span>*</span></label>
-                  <textarea name="description" id="description" rows="5" class="form-control"
-                            placeholder="Текст повідомлення" onfocus="this.placeholder = ''"
-                            onblur="this.placeholder = 'Текст повідомлення'"></textarea>
-                </div>
+    </div>
 
-            <div class="checkout-section col-xl-3 col-lg-4 col-12">
-              <button type="button" class="btn checkout-btn">Відправити</button>
-            </div>
-          </form>
-        </div>
-        <div class="about-flex contacts-page__contacts">
-          <div class="about__contacts">
-            <ul>
-              <h1>Наші контакти</h1>
+    <div class="about-flex">
+      <div class="about__contacts">
+        <ul>
+          <h2>Наші контакти</h2>
 
-              <li>
-                <a href="mailto:info@re-tech.com.ua">
-                  <svg class="icon-s">
-                    <use xlink:href="./assets/img/icons/sprites.svg#location"></use>
-                  </svg>
-                  вул. Велика Васильківська, 33, Київ, Україна
-                </a>
-              </li>
-              <li>
-                <a href="tel:0800331221">
-                  <svg class="icon-s">
-                    <use xlink:href="./assets/img/icons/sprites.svg#phone"></use>
-                  </svg>
-                  <b>0800 331 221</b>
-                </a>
-              </li>
-              <li>
-                <a href="mailto:info@re-tech.com.ua">
-                  <svg class="icon-s">
-                    <use xlink:href="./assets/img/icons/sprites.svg#mail"></use>
-                  </svg>
-                  info@re-tech.com.ua
-                </a>
-              </li>
+          <li>
+            <a href="mailto:info@re-tech.com.ua">
+              <svg class="icon-s">
+                <use xlink:href="./assets/img/icons/sprites.svg#location"></use>
+              </svg>
+              вул. Велика Васильківська, 33, Київ, Україна
+            </a>
+          </li>
+          <li>
+            <a href="tel:0800331221">
+              <svg class="icon-s">
+                <use xlink:href="./assets/img/icons/sprites.svg#phone"></use>
+              </svg>
+              <b>0800 331 221</b>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:info@re-tech.com.ua">
+              <svg class="icon-s">
+                <use xlink:href="./assets/img/icons/sprites.svg#mail"></use>
+              </svg>
+              info@re-tech.com.ua
+            </a>
+          </li>
 
-            </ul>
-          </div>
-          <div class="about__place">
-            <img class="rounded-img" src="./assets/img/images/store-photo.png" alt="Наш магазин">
-          </div>
-        </div>
+        </ul>
+      </div>
+      <div class="about__place">
+        <img class="rounded-img" src="./assets/img/images/store-photo.png" alt="Наш магазин">
+      </div>
     </div>
   </section>
+
   <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d924.7689284550439!2d30.515534066909773!3d50.43776276073904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cefc230623a9%3A0x9da1e5e3b91b7886!2z0JLQtdC70LjQutCwINCS0LDRgdC40LvRjNC60ZbQstGB0YzQutCwLCAzMywg0JrQuNGX0LIsIDAyMDAw!5e0!3m2!1suk!2sua!4v1702289725185!5m2!1suk!2sua"
       referrerpolicy="no-referrer-when-downgrade" class="w-100" height="450" style="border:0;" allowfullscreen

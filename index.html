@@ -636,89 +636,156 @@
       </div>
     </div>
   </section>
-  <section class="container contacts-page my-5">
-    <div class="about-flex">
-        <div class="checkout-form">
-          <form action="https://re-tech.com.ua/order-submit" method="POST"
-                class="form orderCheckout">
-            <input type="hidden" name="_token" value="Nof1ySdT2gLGKyOipvWK1U7lh2nZRYaKIVZKXMkV" autocomplete="off">
-            <div class="row">
-              <h2>Напишіть нам повідомлення</h2>
-            </div>
-
-                <div class="form-group">
-                  <label>Ваше ім`я<span>*</span></label>
-                  <input type="text" class="form-control" id="name" name="name" placeholder="Введіть ваше ім`я"
-                         onfocus="this.placeholder = ''" onblur="this.placeholder = 'Введіть ваше ім`я'" required="required"
-                         value="">
-                </div>
-                <div class="form-group">
-                  <label>Ваш Email<span>*</span></label>
-                  <input type="text" class="form-control " id="surname" name="surname" placeholder="Введіть ваш email"
-                         onfocus="this.placeholder = ''" onblur="this.placeholder = 'Введіть ваш email'"
-                         required="required" value="">
-                </div>
-                <div class="form-group">
-                  <label>Тема повідомлення<span>*</span></label>
-                  <input type="text" class="form-control " id="email" name="email" placeholder="Введіть тему повідомлення"
-                         onfocus="this.placeholder = ''" onblur="this.placeholder = 'Введіть тему повідомлення'"
-                         required="required" value="">
-                </div>
-
-                <div class="form-group">
-                  <label>Ваше повідомлення<span>*</span></label>
-                  <textarea name="description" id="description" rows="5" class="form-control"
-                            placeholder="Текст повідомлення" onfocus="this.placeholder = ''"
-                            onblur="this.placeholder = 'Текст повідомлення'"></textarea>
-                </div>
-
-            <div class="checkout-section col-xl-3 col-lg-4 col-12">
-              <button type="button" class="btn checkout-btn">Відправити</button>
-            </div>
-          </form>
+  <section class="container conditions my-5">
+    <div class="row">
+      <h1>Вигідний Trade-in iPhone, iPad, iMac.<br>Обмінюй свій гаджет на новий з
+        економією до 90%</h1>
+      <div class="col-12 mt-4">
+        <img class="banner rounded-img" src="assets/img/images/delivery-and-payment-banner.png" alt="banner">
+      </div>
+      <h6 class="mt-5">Мій старий пристрій</h6>
+      <div class="col-12 radio-group">
+        <div class="checkbox-size">
+          <input class="catalog-filter-checkbox-size" checked type="radio" value=""
+                 id="iphone-old" name="old-gadget">
+          <label for="iphone-old">
+            iPhone </label>
         </div>
-        <div class="about-flex contacts-page__contacts">
-          <div class="about__contacts">
-            <ul>
-              <h1>Наші контакти</h1>
+        <div class="checkbox-size">
+          <input class="catalog-filter-checkbox-size" type="radio" value=""
+                 id="ipad-old" name="old-gadget">
+          <label for="ipad-old">
+            iPad </label>
+        </div>
+        <div class="checkbox-size">
+          <input class="catalog-filter-checkbox-size" type="radio" value=""
+                 id="mac-old" name="old-gadget">
+          <label for="mac-old">
+            Mac </label>
+        </div>
+        <div class="checkbox-size">
+          <input class="catalog-filter-checkbox-size" type="radio" value=""
+                 id="apple-watch-old" name="old-gadget">
+          <label for="apple-watch-old">
+            Apple Watch </label>
+        </div>
+      </div>
+      <div class="col-md-8 col-12 mt-3">
+        <div class="row">
+          <div class="col-md-4 sort-container">
+            <div id="old-model" class="select-wrapper">
+              <div class="select" id="old-model-select">
+                <div class="select-caret"></div>
 
-              <li>
-                <a href="mailto:info@re-tech.com.ua">
-                  <svg class="icon-s">
-                    <use xlink:href="./assets/img/icons/sprites.svg#location"></use>
-                  </svg>
-                  вул. Велика Васильківська, 33, Київ, Україна
-                </a>
-              </li>
-              <li>
-                <a href="tel:0800331221">
-                  <svg class="icon-s">
-                    <use xlink:href="./assets/img/icons/sprites.svg#phone"></use>
-                  </svg>
-                  <b>0800 331 221</b>
-                </a>
-              </li>
-              <li>
-                <a href="mailto:info@re-tech.com.ua">
-                  <svg class="icon-s">
-                    <use xlink:href="./assets/img/icons/sprites.svg#mail"></use>
-                  </svg>
-                  info@re-tech.com.ua
-                </a>
-              </li>
-
-            </ul>
+                <div class="select-trigger">Оберіть модель
+                </div>
+                <div class="options">
+                  <div class="option selected" data-value="">Оберіть модель</div>
+                  <div class="option" data-value="1">m1</div>
+                  <div class="option" data-value="2">m2</div>
+                  <div class="option" data-value="3">m3</div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="about__place">
-            <img class="rounded-img" src="./assets/img/images/store-photo.png" alt="Наш магазин">
+          <div class="col-md-4 sort-container">
+            <div id="old-size" class="select-wrapper">
+              <div class="select" id="old-size-select">
+                <div class="select-caret"></div>
+
+                <div class="select-trigger">Об'єм пам'яті
+                </div>
+                <div class="options">
+                  <div class="option selected" data-value="">Об'єм пам'яті</div>
+                  <div class="option" data-value="32">32 ГБ</div>
+                  <div class="option" data-value="64">64 ГБ</div>
+                  <div class="option" data-value="128">128 ГБ</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 sort-container">
+            <div id="old-version" class="select-wrapper">
+              <div class="select" id="old-version-select">
+                <div class="select-caret"></div>
+
+                <div class="select-trigger">Версія
+                </div>
+                <div class="options">
+                  <div class="option selected" data-value="">Версія</div>
+                  <div class="option" data-value="1">v1</div>
+                  <div class="option" data-value="2">v2</div>
+                  <div class="option" data-value="3">v3</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+
+      </div>
+
+      <h6 class="mt-5">Мій новий пристрій</h6>
+      <div class="col-12 radio-group">
+        <div class="checkbox-size">
+          <input class="catalog-filter-checkbox-size" checked type="radio" value=""
+                 id="iphone-new" name="new-gadget">
+          <label for="iphone-new">
+            iPhone </label>
+        </div>
+        <div class="checkbox-size">
+          <input class="catalog-filter-checkbox-size" checked type="radio" value=""
+                 id="iphone-used-new" name="new-gadget">
+          <label for="iphone-new">
+            Вживані iPhone </label>
+        </div>
+        <div class="checkbox-size">
+          <input class="catalog-filter-checkbox-size" type="radio" value=""
+                 id="ipad-new" name="new-gadget">
+          <label for="ipad-new">
+            iPad </label>
+        </div>
+        <div class="checkbox-size">
+          <input class="catalog-filter-checkbox-size" type="radio" value=""
+                 id="mac-new" name="new-gadget">
+          <label for="mac-new">
+            Mac </label>
+        </div>
+        <div class="checkbox-size">
+          <input class="catalog-filter-checkbox-size" type="radio" value=""
+                 id="apple-watch-new" name="new-gadget">
+          <label for="apple-watch-new">
+            Apple Watch </label>
+        </div>
+        <div class="checkbox-size">
+          <input class="catalog-filter-checkbox-size" type="radio" value=""
+                 id="apple-airpods-new" name="new-gadget">
+          <label for="apple-airpods-new">
+            Apple AirPods </label>
+        </div>
+      </div>
+      <div class="col-md-8 col-12 mt-3">
+        <div class="row">
+          <div class="col-12 sort-container">
+            <div id="new-model" class="select-wrapper">
+              <div class="select" id="new-model-select">
+                <div class="select-caret"></div>
+
+                <div class="select-trigger">Оберіть модель
+                </div>
+                <div class="options">
+                  <div class="option selected" data-value="">Оберіть модель</div>
+                  <div class="option" data-value="1">m1</div>
+                  <div class="option" data-value="2">m2</div>
+                  <div class="option" data-value="3">m3</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
-  <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d924.7689284550439!2d30.515534066909773!3d50.43776276073904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cefc230623a9%3A0x9da1e5e3b91b7886!2z0JLQtdC70LjQutCwINCS0LDRgdC40LvRjNC60ZbQstGB0YzQutCwLCAzMywg0JrQuNGX0LIsIDAyMDAw!5e0!3m2!1suk!2sua!4v1702289725185!5m2!1suk!2sua"
-      referrerpolicy="no-referrer-when-downgrade" class="w-100" height="450" style="border:0;" allowfullscreen
-      loading="lazy"></iframe>
 </main>
 <footer class="footer">
   <div class="footer-top section">

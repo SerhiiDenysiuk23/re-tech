@@ -95,7 +95,33 @@ h6{
     gap: 2em;
 }
 
+.banner{
+    width: 100%;
+}
+.conditions .checkbox-size label{
+    width: auto;
+    padding: 0 25px;
+}
 
+.checkbox-size label{
+    background: white;
+}
+.conditions .radio-group{
+    display: flex;
+    gap: 1em;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.conditions .select{
+    justify-content: start;
+    padding: 5px 27px;
+    width: 100%;
+}
+
+.conditions .select-wrapper{
+    flex-grow: 1;
+}
 
 @media screen and (max-width: 600px){
     .desktop{

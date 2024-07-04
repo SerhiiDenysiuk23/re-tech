@@ -1,0 +1,10 @@
+.delivery-payment-conditions__block{
+    padding: 40px;
+    border-radius: 24px;
+    border: 1px solid #dfdfdf;
+    background: white;
+}
+.delivery-payment-conditions__block ol{
+    padding-left: 15px;
+    margin-top: 1em;
+}

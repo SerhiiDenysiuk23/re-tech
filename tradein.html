@@ -636,29 +636,169 @@
       </div>
     </div>
   </section>
-  <section class="container my-5">
-    <h1>Умови доставки і оплати товару</h1>
-    <h6 class="col-md-6 col-12 mt-3">Оформлюючи замовлення в магазині Retech Ви маєте змогу обрати вказані нижче варіанти оплати та доставки</h6>
-    <div class="about-flex mt-4">
-      <div class="delivery-payment-conditions__block">
-        <h6>Способи оплати</h6>
-        <ol>
-          <li>Готівкою в магазині або кур'єру</li>
-          <li>Онлайн оплата картою на сайті</li>
-          <li>Картою в магазині</li>
-          <li>Оплата частинам від Mono або Privat</li>
-          <li>Миттєва розстрочка від Mono або Privat</li>
-          <li>На рахунок ФОП по IBAN</li>
-        </ol>
+  <section class="container trade-in-page my-5">
+    <div class="row">
+      <h1>Вигідний Trade-in iPhone, iPad, iMac.<br>Обмінюй свій гаджет на новий з
+        економією до 90%</h1>
+      <div class="col-12 mt-4">
+        <img class="banner rounded-img" src="assets/img/images/delivery-and-payment-banner.png" alt="banner">
+      </div>
+      <h6 class="mt-5">Мій старий пристрій</h6>
+      <div class="col-12 radio-group">
+        <div class="checkbox-size">
+          <input class="catalog-filter-checkbox-size" checked type="radio" value=""
+                 id="iphone-old" name="old-gadget">
+          <label for="iphone-old">
+            iPhone </label>
+        </div>
+        <div class="checkbox-size">
+          <input class="catalog-filter-checkbox-size" type="radio" value=""
+                 id="ipad-old" name="old-gadget">
+          <label for="ipad-old">
+            iPad </label>
+        </div>
+        <div class="checkbox-size">
+          <input class="catalog-filter-checkbox-size" type="radio" value=""
+                 id="mac-old" name="old-gadget">
+          <label for="mac-old">
+            Mac </label>
+        </div>
+        <div class="checkbox-size">
+          <input class="catalog-filter-checkbox-size" type="radio" value=""
+                 id="apple-watch-old" name="old-gadget">
+          <label for="apple-watch-old">
+            Apple Watch </label>
+        </div>
+      </div>
+      <div class="col-12 col-xxl-9 mt-3 old-params">
+        <div class="row">
+          <div class="col-md-4 sort-container">
+            <div id="old-model" class="select-wrapper">
+              <div class="select" id="old-model-select">
+                <div class="select-caret"></div>
+                <input type="text" class="search-box select-trigger" placeholder="Оберіть модель"/>
+
+                <!--                <div class="select-trigger">Оберіть модель</div>-->
+                <div class="options">
+                  <div class="option selected" data-value="">Оберіть модель</div>
+                  <div class="option" data-value="1">m1</div>
+                  <div class="option" data-value="2">m2</div>
+                  <div class="option" data-value="3">m3</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 sort-container">
+            <div id="old-rom" class="select-wrapper" data-disabled="true">
+              <div class="select" id="old-rom-select">
+                <div class="select-caret"></div>
+                <input type="text" disabled class="search-box select-trigger" placeholder="Об'єм пам'яті"/>
+                <!--                <div class="select-trigger">Об'єм пам'яті</div>-->
+                <div class="options">
+                  <div class="option selected" data-value="">Об'єм пам'яті</div>
+                  <div class="option" data-value="32">32 ГБ</div>
+                  <div class="option" data-value="64">64 ГБ</div>
+                  <div class="option" data-value="128">128 ГБ</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 sort-container">
+            <div id="old-other" class="select-wrapper" data-disabled="true">
+              <div class="select" id="old-other-select">
+                <div class="select-caret"></div>
+                <input disabled="true" type="text" class="search-box select-trigger" placeholder="Версія"/>
+
+<!--                <div class="select-trigger">Версія</div>-->
+                <div class="options">
+                  <div class="option selected" data-value="">Версія</div>
+                  <div class="option" data-value="1">v1</div>
+                  <div class="option" data-value="2">v2</div>
+                  <div class="option" data-value="3">v3</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 sort-container">
+            <div id="old-ram" class="select-wrapper" data-disabled="true">
+              <div class="select" id="old-ram-select">
+                <div class="select-caret"></div>
+                <input type="text" disabled="true" class="search-box select-trigger" placeholder="Оперативна пам'ять"/>
+
+                <!--                <div class="select-trigger">Версія</div>-->
+                <div class="options">
+                  <div class="option selected" data-value="">Версія</div>
+                  <div class="option" data-value="1">v1</div>
+                  <div class="option" data-value="2">v2</div>
+                  <div class="option" data-value="3">v3</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
       </div>
 
-      <div class="delivery-payment-conditions__block">
-        <h6>Способи доставки</h6>
-        <ol>
-          <li>Самовивіз із нашого магазину за адресою Велика Васильківська 33</li>
-          <li>Доставка службою "Нова Пошта" у відділення або поштомат</li>
-          <li>Доставка кур'єром по Києву</li>
-        </ol>
+      <h6 class="mt-5">Мій новий пристрій</h6>
+      <div class="col-12 radio-group">
+        <div class="checkbox-size">
+          <input class="catalog-filter-checkbox-size" checked type="radio" value=""
+                 id="iphone-new" name="new-gadget">
+          <label for="iphone-new">
+            iPhone </label>
+        </div>
+        <div class="checkbox-size">
+          <input class="catalog-filter-checkbox-size" type="radio" value=""
+                 id="iphone-used-new" name="new-gadget">
+          <label for="iphone-used-new">
+            Вживані iPhone </label>
+        </div>
+        <div class="checkbox-size">
+          <input class="catalog-filter-checkbox-size" type="radio" value=""
+                 id="ipad-new" name="new-gadget">
+          <label for="ipad-new">
+            iPad </label>
+        </div>
+        <div class="checkbox-size">
+          <input class="catalog-filter-checkbox-size" type="radio" value=""
+                 id="mac-new" name="new-gadget">
+          <label for="mac-new">
+            Mac </label>
+        </div>
+        <div class="checkbox-size">
+          <input class="catalog-filter-checkbox-size" type="radio" value=""
+                 id="apple-watch-new" name="new-gadget">
+          <label for="apple-watch-new">
+            Apple Watch </label>
+        </div>
+        <div class="checkbox-size">
+          <input class="catalog-filter-checkbox-size" type="radio" value=""
+                 id="apple-airpods-new" name="new-gadget">
+          <label for="apple-airpods-new">
+            Apple AirPods </label>
+        </div>
+      </div>
+      <div class="col-md-8 col-12 mt-3">
+        <div class="row">
+          <div class="col-12 sort-container">
+            <div id="new-model" class="select-wrapper">
+              <div class="select" id="new-model-select">
+                <div class="select-caret"></div>
+
+                <div class="select-trigger">Оберіть модель
+                </div>
+                <div class="options">
+                  <div class="option selected" data-value="">Оберіть модель</div>
+                  <div class="option" data-value="1">m1</div>
+                  <div class="option" data-value="2">m2</div>
+                  <div class="option" data-value="3">m3</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>

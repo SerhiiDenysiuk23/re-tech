@@ -9,6 +9,7 @@
 @import "shoping-cart.css";
 @import "checkout.css";
 @import "about.css";
+@import "conditions.css";
 
 
 * {
@@ -98,7 +99,7 @@ h6{
 .banner{
     width: 100%;
 }
-.conditions .checkbox-size label{
+.trade-in-page .checkbox-size label{
     width: auto;
     padding: 0 25px;
 }
@@ -106,20 +107,20 @@ h6{
 .checkbox-size label{
     background: white;
 }
-.conditions .radio-group{
+.trade-in-page .radio-group{
     display: flex;
     gap: 1em;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-.conditions .select{
+.trade-in-page .select{
     justify-content: start;
     padding: 5px 27px;
     width: 100%;
 }
 
-.conditions .select-wrapper{
+.trade-in-page .select-wrapper{
     flex-grow: 1;
 }
 

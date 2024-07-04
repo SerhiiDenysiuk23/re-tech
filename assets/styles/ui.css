@@ -87,6 +87,12 @@
     user-select: none;
 }
 
+.select-wrapper[data-disabled="true"] .select {
+    background-color: #f0f0f0;
+    opacity: 0.5;
+    cursor: initial;
+}
+
 .select{
     display: flex;
     align-items: center;
@@ -149,6 +155,14 @@
     background-image: url("data:image/svg+xml,%3Csvg%20width%3D'24'%20height%3D'24'%20viewBox%3D'0%200%2024%2024'%20fill%3D'none'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20stroke%3D'%23000000'%3E%3Cpath%20d%3D'M19.1416%209.92896L12.7776%2016.2929C12.3871%2016.6834%2011.7539%2016.6834%2011.3634%2016.2929L4.99946%209.92895'%20stroke-width%3D'1'%20stroke%3D'black'%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
     background-repeat: no-repeat;
     background-position: center;
+}
+.search-box{
+    border: none;
+    outline: none;
+    width: 100%;
+}
+.search-box::placeholder{
+    color: black;
 }
 
 

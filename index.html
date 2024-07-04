@@ -670,15 +670,15 @@
             Apple Watch </label>
         </div>
       </div>
-      <div class="col-md-8 col-12 mt-3">
+      <div class="col-12 col-xxl-9 mt-3 old-params">
         <div class="row">
           <div class="col-md-4 sort-container">
             <div id="old-model" class="select-wrapper">
               <div class="select" id="old-model-select">
                 <div class="select-caret"></div>
+                <input type="text" class="search-box select-trigger" placeholder="Оберіть модель"/>
 
-                <div class="select-trigger">Оберіть модель
-                </div>
+                <!--                <div class="select-trigger">Оберіть модель</div>-->
                 <div class="options">
                   <div class="option selected" data-value="">Оберіть модель</div>
                   <div class="option" data-value="1">m1</div>
@@ -689,12 +689,11 @@
             </div>
           </div>
           <div class="col-md-4 sort-container">
-            <div id="old-size" class="select-wrapper">
-              <div class="select" id="old-size-select">
+            <div id="old-rom" class="select-wrapper" data-disabled="true">
+              <div class="select" id="old-rom-select">
                 <div class="select-caret"></div>
-
-                <div class="select-trigger">Об'єм пам'яті
-                </div>
+                <input type="text" disabled class="search-box select-trigger" placeholder="Об'єм пам'яті"/>
+                <!--                <div class="select-trigger">Об'єм пам'яті</div>-->
                 <div class="options">
                   <div class="option selected" data-value="">Об'єм пам'яті</div>
                   <div class="option" data-value="32">32 ГБ</div>
@@ -705,12 +704,12 @@
             </div>
           </div>
           <div class="col-md-4 sort-container">
-            <div id="old-version" class="select-wrapper">
-              <div class="select" id="old-version-select">
+            <div id="old-other" class="select-wrapper" data-disabled="true">
+              <div class="select" id="old-other-select">
                 <div class="select-caret"></div>
+                <input disabled="true" type="text" class="search-box select-trigger" placeholder="Версія"/>
 
-                <div class="select-trigger">Версія
-                </div>
+<!--                <div class="select-trigger">Версія</div>-->
                 <div class="options">
                   <div class="option selected" data-value="">Версія</div>
                   <div class="option" data-value="1">v1</div>
@@ -720,6 +719,23 @@
               </div>
             </div>
           </div>
+          <div class="col-md-3 sort-container">
+            <div id="old-ram" class="select-wrapper" data-disabled="true">
+              <div class="select" id="old-ram-select">
+                <div class="select-caret"></div>
+                <input type="text" disabled="true" class="search-box select-trigger" placeholder="Оперативна пам'ять"/>
+
+                <!--                <div class="select-trigger">Версія</div>-->
+                <div class="options">
+                  <div class="option selected" data-value="">Версія</div>
+                  <div class="option" data-value="1">v1</div>
+                  <div class="option" data-value="2">v2</div>
+                  <div class="option" data-value="3">v3</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
 
       </div>
@@ -733,9 +749,9 @@
             iPhone </label>
         </div>
         <div class="checkbox-size">
-          <input class="catalog-filter-checkbox-size" checked type="radio" value=""
+          <input class="catalog-filter-checkbox-size" type="radio" value=""
                  id="iphone-used-new" name="new-gadget">
-          <label for="iphone-new">
+          <label for="iphone-used-new">
             Вживані iPhone </label>
         </div>
         <div class="checkbox-size">
@@ -887,7 +903,7 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/504ede88cc.js" crossorigin="anonymous"></script>
-<script src="assets/scripts/checkout.js"></script>
+<script src="assets/scripts/tradein.js"></script>
 <script src="assets/scripts/index.js"></script>
 
 </body>

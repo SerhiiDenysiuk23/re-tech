@@ -60,17 +60,40 @@ $(document).ready(function () {
   const selectWrapper = $(".select-wrapper")
   selectWrapper.on("click", ".select", function(e) {
     const $this = $(this);
+    const $wrapper = $this.closest(".select-wrapper");
+
+    if ($wrapper.data("disabled")) {
+      e.stopPropagation();
+      return;
+    }
+
+
+
     $(".select").not($this).removeClass("open").find(".options").hide();
     $this.toggleClass("open").find(".options").toggle();
+
+    if ($this.hasClass("open")) {
+      $this.find(".options .option").show();
+    }
     e.stopPropagation();
   });
 
   selectWrapper.on("click", ".option", function(e) {
     const $this = $(this);
     const $wrapper = $this.closest(".select-wrapper");
+
+    if ($wrapper.data("disabled")) {
+      e.stopPropagation();
+      return;
+    }
+
     $wrapper.find(".option").removeClass("selected");
     $this.addClass("selected");
     $wrapper.find(".select-trigger").html($this.text());
+    if ($this.data("value"))
+      $wrapper.find(".select-trigger").val($this.text());
+    else
+      $wrapper.find(".select-trigger").val("");
     $wrapper.find(".select").removeClass("open").find(".options").hide();
     e.stopPropagation();
   });
@@ -78,6 +101,24 @@ $(document).ready(function () {
   $(document).on("click", function() {
     $(".select").removeClass("open");
     $(".options").hide();
+  });
+
+  function filterOptions(searchTerm, options) {
+    options.each(function() {
+      const $option = $(this);
+      if ($option.text().toLowerCase().includes(searchTerm.toLowerCase()) || !$option.data("value")) {
+        $option.show();
+      } else {
+        $option.hide();
+      }
+    });
+  }
+
+  selectWrapper.on("input", ".search-box", function() {
+    const $this = $(this);
+    const searchTerm = $this.val();
+    const $options = $this.siblings(".options").find(".option");
+    filterOptions(searchTerm, $options);
   });
 
 

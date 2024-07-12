@@ -627,8 +627,7 @@
 
             <ul class="bread-list">
               <li><a href="/" previewlistener="true">Home</a></li>
-              <li><a href="/" previewlistener="true">Category</a></li>
-              <li class="active"> Name of product</li>
+              <li class="active"> Контакти</li>
             </ul>
 
 
@@ -637,305 +636,373 @@
       </div>
     </div>
   </section>
+  <section class="container my-5 promo-page">
 
-  <section class="container mt-5">
-    <div class="row">
-      <div class="col-12 col-md-8 col-xxl-9">
+    <h1>Весняний розпродаж</h1>
+    <div>Дати проведення акції з 14/03/2024 по 16/04/2024</div>
 
-        <div class="checkout-form">
+    <img class="col-12 rounded-img mt-4 mt-md-5" src="./assets/img/images/delivery-and-payment-banner.png" alt="Баннер">
 
-          <form action="https://re-tech.com.ua/order-submit" method="POST" id="orderCheckout"
-                class="form orderCheckout">
-            <input type="hidden" name="_token" value="Nof1ySdT2gLGKyOipvWK1U7lh2nZRYaKIVZKXMkV" autocomplete="off">
-            <div class="row">
-              <h2>Ваша контактна інформація</h2>
-              <p></p>
-            </div>
-
-            <div class="row">
-              <div class="col-lg-6 col-md-6 col-12">
-                <div class="form-group">
-                  <label>Ім`я<span>*</span></label>
-                  <input type="text" class="form-control" id="name" name="name" placeholder="Введіть ім`я"
-                         onfocus="this.placeholder = ''" onblur="this.placeholder = 'Введіть ім`я'" required="required"
-                         value="">
-                </div>
-              </div>
-              <div class="col-lg-6 col-md-6 col-12">
-                <div class="form-group">
-                  <label>Прізвище<span>*</span></label>
-                  <input type="text" class="form-control " id="surname" name="surname" placeholder="Введіть прізвище"
-                         onfocus="this.placeholder = ''" onblur="this.placeholder = 'Введіть прізвище'"
-                         required="required" value="">
-                </div>
-              </div>
-              <div class="col-lg-6 col-md-6 col-12">
-                <div class="form-group">
-                  <label>Адреса електронної пошти<span>*</span></label>
-                  <input type="text" class="form-control " id="email" name="email" placeholder="Введіть ваш email"
-                         onfocus="this.placeholder = ''" onblur="this.placeholder = 'Введіть ваш email'"
-                         required="required" value="">
-                </div>
-              </div>
-              <div class="col-lg-6 col-md-6 col-12">
-                <div class="form-group">
-                  <label>Номер телефону<span>*</span></label>
-                  <input type="text" class="form-control " id="phone" name="phone"
-                         placeholder="Введіть у форматі (063) 221-01-01" onfocus="this.placeholder = ''"
-                         onblur="this.placeholder = 'Введіть у форматі (063) 221-01-01'" required="required" value=""
-                         maxlength="18">
-                </div>
-              </div>
-
-              <div class="col-lg-12 col-md-12 col-12">
-                <div class="form-group">
-                  <label>Примітки до замовлення</label>
-                  <textarea name="description" id="description" rows="5" class="form-control"
-                            placeholder="Примітки до замовлення (необов`язково)" onfocus="this.placeholder = ''"
-                            onblur="this.placeholder = 'Примітки до замовлення (необов`язково)'"></textarea>
-                </div>
-              </div>
-
-
-            </div>
-
-            <div class="row">
-              <div class="col-12 col-md-6 my-5 my-md-0">
-                <h2>Інформація для оплати</h2>
-                <h6>Способи оплати</h6>
-                <div class="radio-group">
-
-                  <div class="radio-button">
-                    <input type="radio" id="payments_method_cash" value="cash" checked="checked" name="payments">
-                    <label for="payments_method_cash">Готівкою</label>
-                  </div>
-                  <div class="radio-button">
-                    <input type="radio" id="payments_method_pay_parts" value="pay_parts" name="payments">
-                    <label for="payments_method_pay_parts">Оплата частинами</label>
-                  </div>
-
-
-                  <div class="pay-parts-info hidden">
-                    <div class="col-12 my-4">
-                      <label for="payments_method_pay_parts_bank" class="sort-label">Банк <span>*</span></label>
-
-                      <div id="payments_method_pay_parts_bank" class="select-wrapper">
-                        <div class="select" id="payments_method_pay_parts_bank-select">
-                          <div class="select-caret"></div>
-                          <div class="select-trigger">Оберіть банк
-                          </div>
-                          <div class="options">
-                            <div class="option selected" data-value="">Оберіть банк</div>
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-
-                    <div class="col-12">
-                      <label for="payments_method_pay_parts_product" class="sort-label">Кількість платежів
-                        <span>*</span></label>
-
-                      <div id="payments_method_pay_parts_product" class="select-wrapper">
-                        <div class="select" id="payments_method_pay_parts_product-select">
-                          <div class="select-caret"></div>
-                          <div class="select-trigger">Кількість платежів
-                          </div>
-                          <div class="options">
-                            <div class="option selected" data-value="">Кількість платежів</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-
-              <div class="col-12 col-md-6">
-                <h2>Інформація для доставки</h2>
-                <h6>Метод доставки</h6>
-                <div class="radio-group">
-                  <div class="radio-button">
-                    <input type="radio" id="delivery_method_pickup" value="pickup" checked="checked"
-                           name="delivery_method">
-                    <label for="delivery_method_pickup">Самовивіз</label>
-                  </div>
-                  <div class="radio-button">
-                    <input type="radio" id="delivery_method_novaposhta_wh_wh" value="novaposhta_wh_wh"
-                           name="delivery_method">
-                    <label for="delivery_method_novaposhta_wh_wh">Нова Пошта</label>
-                  </div>
-                  <div class="radio-button">
-                    <input type="radio" id="delivery_method_delivery_kyiv" value="delivery_kyiv" name="delivery_method">
-                    <label for="delivery_method_delivery_kyiv">Доставка Київ</label>
-                  </div>
+    <div class="row mt-5">
+      <div class="catalog-grid">
+        <div class="product-list-slider__item">
+          <div class="single-product">
+            <div class="product-img">
+              <a href="/product/acefast-d7-car-mount-magnetic-holder-afd7">
+                <img class="product-img" src="assets/img/images/32.jpg" alt="#">
+              </a>
+              <div class="button-head">
+                <div class="product-action">
                 </div>
               </div>
             </div>
+            <div class="product-content">
+              <h3><a href="/product/acefast-d7-car-mount-magnetic-holder-afd7">Acefast D7 Car Mount Magnetic
+                Holder (AFD7)</a></h3>
 
-            <div id="pickup-point-section" class="row get-product-details active">
-              <h6>Адреса самовивозу</h6>
-
-              <div class="col-12">
-                <label for="pickup-point" class="sort-label">Пункт видачі <span>*</span></label>
-
-                <div id="pickup-point" class="select-wrapper">
-                  <div class="select" id="pickup-point-select">
-                    <div class="select-caret"></div>
-                    <div class="select-trigger">Оберіть пункт видачі
-                    </div>
-                    <div class="options">
-                      <div class="option selected" data-value="">Оберіть пункт видачі</div>
-                    </div>
-                  </div>
+              <div class="product-price d-flex justify-content-between align-items-md-end flex-column flex-md-row">
+                <div class="current">23 144 грн</div>
+                <div class="old"></div>
+              </div>
+              <div class="product-buy">
+                <div class="add-to-cart">
+                  Купити
+                  <svg class="button-arrow">
+                    <use xlink:href="./assets/img/icons/sprites.svg#button-arrow"></use>
+                  </svg>
                 </div>
               </div>
             </div>
-
-            <div id="nova-post-section" class="row get-product-details">
-              <h6>Відділення Нової Пошти</h6>
-
-
-              <div class="col-12 col-md-6 nova-post-info">
-                <label for="np-region" class="sort-label">Область <span>*</span></label>
-
-                <div id="np-region" class="select-wrapper">
-                  <div class="select" id="np-region-select">
-                    <div class="select-caret"></div>
-<!--                    <div class="select-trigger">Оберіть область</div>-->
-                    <input type="text" class="search-box select-trigger" placeholder="Оберіть область"/>
-
-                    <div class="options">
-                      <div class="option selected" data-value="">Оберіть область</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-12 col-md-6 mt-4 mt-md-0 nova-post-info hidden">
-                <label for="np-locality" class="sort-label">Населений пункт <span>*</span></label>
-
-                <div id="np-locality" class="select-wrapper">
-                  <div class="select" id="np-locality-select">
-                    <div class="select-caret"></div>
-<!--                    <div class="select-trigger">Оберіть населений пункт</div>-->
-                    <input type="text" class="search-box select-trigger" placeholder="Оберіть населений пункт"/>
-
-                    <div class="options">
-                      <div class="option selected" data-value="">Оберіть населений пункт</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-12 mt-4 nova-post-info hidden">
-                <label for="np-branch" class="sort-label">Відділення <span>*</span></label>
-
-                <div id="np-branch" class="select-wrapper">
-                  <div class="select" id="np-branch-select">
-                    <div class="select-caret"></div>
-<!--                    <div class="select-trigger">Оберіть відділення</div>-->
-                    <input type="text" class="search-box select-trigger" placeholder="Оберіть відділення"/>
-                    <div class="options">
-                      <div class="option selected" data-value="">Оберіть відділення</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div id="delivery_kyiv-section" class="row get-product-details">
-              <h6>Адреса для доставки</h6>
-
-              <div class="col-12">
-
-                <div class="form-group">
-                  <label>Вулиця <span>*</span></label>
-                  <input type="text" class="form-control" id="delivery_kyiv-street" name="delivery_kyiv-street"
-                         placeholder="Введіть назву вулиці"
-                         onfocus="this.placeholder = ''" onblur="this.placeholder = 'Введіть назву вулиці'"
-                         required="required"
-                         value="">
-                </div>
-
-              </div>
-
-
-              <div class="col-12 col-md-6">
-
-                <div class="form-group">
-                  <label>Номер будинку <span>*</span></label>
-                  <input type="text" class="form-control" id="delivery_kyiv-house-number"
-                         name="delivery_kyiv-house-number" placeholder="Введіть номер будинку"
-                         onfocus="this.placeholder = ''" onblur="this.placeholder = 'Введіть номер будинку'"
-                         required="required"
-                         value="">
-                </div>
-
-              </div>
-
-              <div class="col-12 col-md-6">
-
-                <div class="form-group">
-                  <label>Номер під'їзду</label>
-                  <input type="text" class="form-control" id="delivery_kyiv-entrance" name="delivery_kyiv-entrance"
-                         placeholder="Введіть номер під'їзду"
-                         onfocus="this.placeholder = ''" onblur="this.placeholder = 'Введіть номер під\'їзду'"
-                         required="required"
-                         value="">
-                </div>
-
-              </div>
-
-            </div>
-
-          </form>
-
+          </div>
         </div>
-
-      </div>
-
-      <div class="col-12 col-md-4 col-xxl-3">
-
-        <!-- Total Amount -->
-        <div class="cart-total-amount checkout-card-total">
-          <ul class="shopping-list">
-            <li>
-              <a class="cart-img" href="/product/apple-iphone-13-128gb-midnight-mlml3">
-                <img src="assets/img/images/32.jpg" alt="Apple iPhone 13 128GB Midnight (MLPF3)">
+        <div class="product-list-slider__item">
+          <div class="single-product">
+            <div class="product-img">
+              <a href="/product/acefast-d7-car-mount-magnetic-holder-afd7">
+                <img class="product-img" src="assets/img/images/32.jpg" alt="#">
               </a>
-              <h4>
-                <a href="/product/apple-iphone-13-128gb-midnight-mlml3">Apple iPhone 13 128GB Midnight (MLPF3)</a>
-              </h4>
-              <p class="quantity">1x - <span class="amount">23144.00грн</span></p>
-            </li>
-            <li>
-              <a class="cart-img" href="/product/apple-iphone-13-128gb-midnight-mlml3">
-                <img src="assets/img/images/32.jpg" alt="Apple iPhone 13 128GB Midnight (MLPF3)">
-              </a>
-              <h4>
-                <a href="/product/apple-iphone-13-128gb-midnight-mlml3">Apple iPhone 13 128GB Midnight (MLPF3)</a>
-              </h4>
-              <p class="quantity">1x - <span class="amount">23144.00грн</span></p>
-            </li>
-            <li>
-              <a class="cart-img" href="/product/apple-iphone-13-128gb-midnight-mlml3">
-                <img src="assets/img/images/32.jpg" alt="Apple iPhone 13 128GB Midnight (MLPF3)">
-              </a>
-              <h4>
-                <a href="/product/apple-iphone-13-128gb-midnight-mlml3">Apple iPhone 13 128GB Midnight (MLPF3)</a>
-              </h4>
-              <p class="quantity">1x - <span class="amount">23144.00грн</span></p>
-            </li>
+              <div class="button-head">
+                <div class="product-action">
+                </div>
+              </div>
+            </div>
+            <div class="product-content">
+              <h3><a href="/product/acefast-d7-car-mount-magnetic-holder-afd7">Acefast D7 Car Mount Magnetic
+                Holder (AFD7)</a></h3>
 
-          </ul>
+              <div class="product-price d-flex justify-content-between align-items-md-end flex-column flex-md-row">
+                <div class="current">23 144 грн</div>
+                <div class="old"></div>
+              </div>
+              <div class="product-buy">
+                <div class="add-to-cart">
+                  Купити
+                  <svg class="button-arrow">
+                    <use xlink:href="./assets/img/icons/sprites.svg#button-arrow"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-list-slider__item">
+          <div class="single-product">
+            <div class="product-img">
+              <a href="/product/acefast-d7-car-mount-magnetic-holder-afd7">
+                <img class="product-img" src="assets/img/images/32.jpg" alt="#">
+              </a>
+              <div class="button-head">
+                <div class="product-action">
+                </div>
+              </div>
+            </div>
+            <div class="product-content">
+              <h3><a href="/product/acefast-d7-car-mount-magnetic-holder-afd7">Acefast D7 Car Mount Magnetic
+                Holder (AFD7)</a></h3>
 
-          <ul>
-            <li class="last">До оплати<span id="cart_total"><b>27099грн</b></span></li>
-          </ul>
-          <div class="checkout-section">
-            <button type="button" class="btn checkout-btn">Оформити замовлення</button>
+              <div class="product-price d-flex justify-content-between align-items-md-end flex-column flex-md-row">
+                <div class="current">23 144 грн</div>
+                <div class="old"></div>
+              </div>
+              <div class="product-buy">
+                <div class="add-to-cart">
+                  Купити
+                  <svg class="button-arrow">
+                    <use xlink:href="./assets/img/icons/sprites.svg#button-arrow"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-list-slider__item">
+          <div class="single-product">
+            <div class="product-img">
+              <a href="/product/acefast-d7-car-mount-magnetic-holder-afd7">
+                <img class="product-img" src="assets/img/images/32.jpg" alt="#">
+              </a>
+              <div class="button-head">
+                <div class="product-action">
+                </div>
+              </div>
+            </div>
+            <div class="product-content">
+              <h3><a href="/product/acefast-d7-car-mount-magnetic-holder-afd7">Acefast D7 Car Mount Magnetic
+                Holder (AFD7)</a></h3>
+
+              <div class="product-price d-flex justify-content-between align-items-md-end flex-column flex-md-row">
+                <div class="current">23 144 грн</div>
+                <div class="old"></div>
+              </div>
+              <div class="product-buy">
+                <div class="add-to-cart">
+                  Купити
+                  <svg class="button-arrow">
+                    <use xlink:href="./assets/img/icons/sprites.svg#button-arrow"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-list-slider__item">
+          <div class="single-product">
+            <div class="product-img">
+              <a href="/product/acefast-d7-car-mount-magnetic-holder-afd7">
+                <img class="product-img" src="assets/img/images/32.jpg" alt="#">
+              </a>
+              <div class="button-head">
+                <div class="product-action">
+                </div>
+              </div>
+            </div>
+            <div class="product-content">
+              <h3><a href="/product/acefast-d7-car-mount-magnetic-holder-afd7">Acefast D7 Car Mount Magnetic
+                Holder (AFD7)</a></h3>
+
+              <div class="product-price d-flex justify-content-between align-items-md-end flex-column flex-md-row">
+                <div class="current">23 144 грн</div>
+                <div class="old"></div>
+              </div>
+              <div class="product-buy">
+                <div class="add-to-cart">
+                  Купити
+                  <svg class="button-arrow">
+                    <use xlink:href="./assets/img/icons/sprites.svg#button-arrow"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-list-slider__item">
+          <div class="single-product">
+            <div class="product-img">
+              <a href="/product/acefast-d7-car-mount-magnetic-holder-afd7">
+                <img class="product-img" src="assets/img/images/32.jpg" alt="#">
+              </a>
+              <div class="button-head">
+                <div class="product-action">
+                </div>
+              </div>
+            </div>
+            <div class="product-content">
+              <h3><a href="/product/acefast-d7-car-mount-magnetic-holder-afd7">Acefast D7 Car Mount Magnetic
+                Holder (AFD7)</a></h3>
+
+              <div class="product-price d-flex justify-content-between align-items-md-end flex-column flex-md-row">
+                <div class="current">23 144 грн</div>
+                <div class="old"></div>
+              </div>
+              <div class="product-buy">
+                <div class="add-to-cart">
+                  Купити
+                  <svg class="button-arrow">
+                    <use xlink:href="./assets/img/icons/sprites.svg#button-arrow"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-list-slider__item">
+          <div class="single-product">
+            <div class="product-img">
+              <a href="/product/acefast-d7-car-mount-magnetic-holder-afd7">
+                <img class="product-img" src="assets/img/images/32.jpg" alt="#">
+              </a>
+              <div class="button-head">
+                <div class="product-action">
+                </div>
+              </div>
+            </div>
+            <div class="product-content">
+              <h3><a href="/product/acefast-d7-car-mount-magnetic-holder-afd7">Acefast D7 Car Mount Magnetic
+                Holder (AFD7)</a></h3>
+
+              <div class="product-price d-flex justify-content-between align-items-md-end flex-column flex-md-row">
+                <div class="current">23 144 грн</div>
+                <div class="old"></div>
+              </div>
+              <div class="product-buy">
+                <div class="add-to-cart">
+                  Купити
+                  <svg class="button-arrow">
+                    <use xlink:href="./assets/img/icons/sprites.svg#button-arrow"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-list-slider__item">
+          <div class="single-product">
+            <div class="product-img">
+              <a href="/product/acefast-d7-car-mount-magnetic-holder-afd7">
+                <img class="product-img" src="assets/img/images/32.jpg" alt="#">
+              </a>
+              <div class="button-head">
+                <div class="product-action">
+                </div>
+              </div>
+            </div>
+            <div class="product-content">
+              <h3><a href="/product/acefast-d7-car-mount-magnetic-holder-afd7">Acefast D7 Car Mount Magnetic
+                Holder (AFD7)</a></h3>
+
+              <div class="product-price d-flex justify-content-between align-items-md-end flex-column flex-md-row">
+                <div class="current">23 144 грн</div>
+                <div class="old"></div>
+              </div>
+              <div class="product-buy">
+                <div class="add-to-cart">
+                  Купити
+                  <svg class="button-arrow">
+                    <use xlink:href="./assets/img/icons/sprites.svg#button-arrow"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-list-slider__item">
+          <div class="single-product">
+            <div class="product-img">
+              <a href="/product/acefast-d7-car-mount-magnetic-holder-afd7">
+                <img class="product-img" src="assets/img/images/32.jpg" alt="#">
+              </a>
+              <div class="button-head">
+                <div class="product-action">
+                </div>
+              </div>
+            </div>
+            <div class="product-content">
+              <h3><a href="/product/acefast-d7-car-mount-magnetic-holder-afd7">Acefast D7 Car Mount Magnetic
+                Holder (AFD7)</a></h3>
+
+              <div class="product-price d-flex justify-content-between align-items-md-end flex-column flex-md-row">
+                <div class="current">23 144 грн</div>
+                <div class="old"></div>
+              </div>
+              <div class="product-buy">
+                <div class="add-to-cart">
+                  Купити
+                  <svg class="button-arrow">
+                    <use xlink:href="./assets/img/icons/sprites.svg#button-arrow"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-list-slider__item">
+          <div class="single-product">
+            <div class="product-img">
+              <a href="/product/acefast-d7-car-mount-magnetic-holder-afd7">
+                <img class="product-img" src="assets/img/images/32.jpg" alt="#">
+              </a>
+              <div class="button-head">
+                <div class="product-action">
+                </div>
+              </div>
+            </div>
+            <div class="product-content">
+              <h3><a href="/product/acefast-d7-car-mount-magnetic-holder-afd7">Acefast D7 Car Mount Magnetic
+                Holder (AFD7)</a></h3>
+
+              <div class="product-price d-flex justify-content-between align-items-md-end flex-column flex-md-row">
+                <div class="current">23 144 грн</div>
+                <div class="old"></div>
+              </div>
+              <div class="product-buy">
+                <div class="add-to-cart">
+                  Купити
+                  <svg class="button-arrow">
+                    <use xlink:href="./assets/img/icons/sprites.svg#button-arrow"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-list-slider__item">
+          <div class="single-product">
+            <div class="product-img">
+              <a href="/product/acefast-d7-car-mount-magnetic-holder-afd7">
+                <img class="product-img" src="assets/img/images/32.jpg" alt="#">
+              </a>
+              <div class="button-head">
+                <div class="product-action">
+                </div>
+              </div>
+            </div>
+            <div class="product-content">
+              <h3><a href="/product/acefast-d7-car-mount-magnetic-holder-afd7">Acefast D7 Car Mount Magnetic
+                Holder (AFD7)</a></h3>
+
+              <div class="product-price d-flex justify-content-between align-items-md-end flex-column flex-md-row">
+                <div class="current">23 144 грн</div>
+                <div class="old"></div>
+              </div>
+              <div class="product-buy">
+                <div class="add-to-cart">
+                  Купити
+                  <svg class="button-arrow">
+                    <use xlink:href="./assets/img/icons/sprites.svg#button-arrow"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-list-slider__item">
+          <div class="single-product">
+            <div class="product-img">
+              <a href="/product/acefast-d7-car-mount-magnetic-holder-afd7">
+                <img class="product-img" src="assets/img/images/32.jpg" alt="#">
+              </a>
+              <div class="button-head">
+                <div class="product-action">
+                </div>
+              </div>
+            </div>
+            <div class="product-content">
+              <h3><a href="/product/acefast-d7-car-mount-magnetic-holder-afd7">Acefast D7 Car Mount Magnetic
+                Holder (AFD7)</a></h3>
+
+              <div class="product-price d-flex justify-content-between align-items-md-end flex-column flex-md-row">
+                <div class="current">23 144 грн</div>
+                <div class="old"></div>
+              </div>
+              <div class="product-buy">
+                <div class="add-to-cart">
+                  Купити
+                  <svg class="button-arrow">
+                    <use xlink:href="./assets/img/icons/sprites.svg#button-arrow"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -943,8 +1010,6 @@
 
     </div>
   </section>
-
-
 </main>
 <footer class="footer">
   <div class="footer-top section">
@@ -1046,8 +1111,6 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/504ede88cc.js" crossorigin="anonymous"></script>
-<script src="assets/scripts/checkout.js"></script>
-<script src="assets/scripts/index.js"></script>
 
 </body>
 </html>

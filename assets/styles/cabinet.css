@@ -1,0 +1,51 @@
+.account-sidebar, .account-content{
+    padding: 25px 20px;
+    border-radius: 24px;
+    border: 1px solid #dfdfdf;
+    background: white;
+}
+
+
+.account-content{
+    min-height: 100%;
+}
+
+.sidebar-list{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.sidebar-list li{
+    cursor: pointer;
+    display: flex;
+}
+
+.sidebar-list .icon-20px{
+    margin-right: .5em;
+}
+
+.sidebar-list .icon-stroke{
+    stroke: black;
+}
+.sidebar-list .icon-fill{
+    fill: black;
+}
+
+.sidebar-list li{
+    font-size: 16px;
+}
+
+.sidebar-list li.active, .sidebar-list li:hover{
+    color: #7fab16;
+}
+.sidebar-list li.active .icon-fill, .sidebar-list li:hover .icon-fill, .account-content-title .icon-fill{
+    fill: #7fab16;
+}
+.sidebar-list li.active .icon-stroke, .sidebar-list li:hover .icon-stroke, .account-content-title .icon-stroke{
+    stroke: #7fab16;
+}
+
+.sidebar-list span{
+    display: inline-block;
+    margin-left: auto;
+}

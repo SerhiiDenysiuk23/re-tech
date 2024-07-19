@@ -8,12 +8,12 @@
 
 
 
-.checkout-form .form-group .form-control{
+.form .form-group .form-control{
     border-radius: 24px;
     outline: none;
 }
 
-.checkout-form .form-group .form-control:focus{
+.form .form-group .form-control:focus{
     box-shadow: none;
 }
 
@@ -21,15 +21,15 @@
     padding: 0 0 65px;
 }
 
-.checkout-form label{
+.form label{
     padding-left: 22px;
 }
 
-.radio-button label{
+.form .radio-button label, .form .checkbox label{
     padding: 0;
 }
 
-.checkout-form label span{
+.form label span{
     color: red;
     margin-left: .5em;
 }

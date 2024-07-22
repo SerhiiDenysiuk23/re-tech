@@ -1,4 +1,4 @@
-.account-sidebar, .account-content{
+.account-sidebar, .account-content, .order-summary{
     padding: 25px 20px;
     border-radius: 24px;
     border: 1px solid #dfdfdf;
@@ -48,4 +48,64 @@
 .sidebar-list span{
     display: inline-block;
     margin-left: auto;
+}
+
+
+
+
+.order-list{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.order-summary__title{
+    font-weight: bold;
+    color: #7D7D7D;
+}
+.order-summary__data{
+    color: #7D7D7D;
+}
+.order-summary__status{
+    width: 70px;
+    padding: 5px 0;
+    border: 1px solid #d2d2d2;
+    border-radius: 16.5px;
+    text-align: center;
+    font-weight: 500;
+}
+
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.order-summary__table{
+    border-collapse: separate;
+    border-spacing: 20px 2em;
+    font-weight: bold;
+
+}
+
+.order-summary__table td:first-child{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    font-weight: normal;
+    min-width: 175px;
+}
+
+.order-summary__table img{
+    max-height: 100px;
+}
+
+
+.status-test{
+    background: #d0d4de;
+}
+
+@media screen and (max-width: 600px){
+    .order-summary__table img{
+        max-height: 60px;
+    }
 }
